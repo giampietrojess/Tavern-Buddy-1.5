@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-   Add a Character questions
-
+   
+   Finished Character Sheets
+   
 @endsection
