@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+// Create resource routes and controllers for 
+    // Add New Character blade
+    // View Your Characters blade
+    // View Users blade
+
