@@ -15,14 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/addCharacter', function () {
-    return view('addCharacter');
-});
-
-Route::get('/CharacterSheet', function () {
-    return view('CharacterSheet');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
