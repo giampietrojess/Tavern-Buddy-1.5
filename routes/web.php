@@ -11,16 +11,16 @@
 |
 */
 
+// Landing Page
 Route::get('/', function () {
     return view('welcome');
 });
 
+// Login and Registration (authentication) Routes
 Auth::routes();
 
+// Home Route
 Route::get('/home', 'HomeController@index')->name('home');
-// Create resource routes and controllers for 
-    // Add New Character blade
-    // View Your Characters blade
-    // View Users blade
 
+// Character Routes
 Route::resource('characters', 'CharactersController');
