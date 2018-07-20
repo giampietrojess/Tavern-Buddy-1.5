@@ -25,7 +25,7 @@ class CharactersController extends Controller
      */
     public function create()
     {
-        //
+        return view('characters.create');
     }
 
     /**
@@ -47,7 +47,7 @@ class CharactersController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('characters.show');
     }
 
     /**
