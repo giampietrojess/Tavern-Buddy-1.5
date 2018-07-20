@@ -5027,7 +5027,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-  color: pink
+  color: pink;
   border-color: rgba(0, 0, 0, 0.1);
 }
 
