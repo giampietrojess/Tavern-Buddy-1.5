@@ -23,3 +23,4 @@ Route::get('/home', 'HomeController@index')->name('home');
     // View Your Characters blade
     // View Users blade
 
+Route::resource('characters', 'CharactersController');
