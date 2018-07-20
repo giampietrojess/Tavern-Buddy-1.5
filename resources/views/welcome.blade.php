@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="jumbotron">
+    <div class="jumbotron text-center">
 
-        <img src="{{URL::asset('resources/assets/img/TBHeader.png')}}">
+        <img class="img-fluid" src="./img/TBHeader.png">
+        <h3>A Dungeons and Dragons 5th Edition Character Manager for the New Adventurer!</h3>
 
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
@@ -11,8 +12,8 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a class="btn" href="{{ route('login') }}">Login</a>
+                        <a class="btn" href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
             @endif
