@@ -8,10 +8,12 @@
     </div>
     <div class="container text-center">
         
-        
         <div class="row justify-content-center">
-            <div class="col-md-8">
+
+            <div class="col-md-12">
+
                 <div class="card">
+
                     <div class="card-header">Dashboard</div>
 
                     <div class="card-body">
@@ -26,6 +28,14 @@
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center">
+
+            <div class="col-md-12">
+               My Characters Here
+            </div>
+        </div>
+
+
     </div>
 </div>
 @endsection
