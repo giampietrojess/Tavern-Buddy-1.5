@@ -23,9 +23,9 @@
 <body>
     <div id="app">
         @include('inc.Navbar')
-            <div class="container">
+            
             @yield('content')
-            </div>
+            
     
     </div>
 </body>
