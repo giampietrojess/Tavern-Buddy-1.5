@@ -4578,9 +4578,9 @@ input[type="button"].btn-block {
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
-  color: #fff;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  color: #fff;
 }
 
 .nav-pills .nav-link {
@@ -4998,7 +4998,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-brand {
-  color:#fff;
+  color: white;
 }
 
 .navbar-light .navbar-brand:hover,
@@ -5027,7 +5027,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-  color: pink;
+  color: pink
   border-color: rgba(0, 0, 0, 0.1);
 }
 
