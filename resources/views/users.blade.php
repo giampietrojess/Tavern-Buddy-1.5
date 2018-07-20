@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-   Users blade
+   Character Sheet Blade
 
 @endsection
