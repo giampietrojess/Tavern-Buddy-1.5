@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>My Characters</h1>
-    @if(count($characters) > 1)
+    @if(count($characters) > 0)
         @foreach($characters as $character)
             <div class="card">
                 <h3>{{$character->name}}</h3>
