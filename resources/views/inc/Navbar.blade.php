@@ -39,8 +39,8 @@
                                         Add Character
                                     </a>
 
-                                    <a class="dropdown-item" href="/characters/show">
-                                        View Characters
+                                    <a class="dropdown-item" href="/characters">
+                                        View All Characters
                                     </a>
                                 
                                     <a class="dropdown-item" href="{{ route('logout') }}"

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-    <h1>View All My Characters</h1>
+    <h1>View All Characters</h1>
         @if(count($characters) > 0)
             @foreach($characters as $character)
                 <div class="card">

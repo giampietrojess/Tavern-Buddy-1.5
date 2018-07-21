@@ -27,7 +27,7 @@
 
                         <div class="col-md-12 justify-content-center">
                             <a href="/characters/create" class="btn btn-lg btn-primary">Add a Character</a>
-                            <a href="/characters/show" class="btn btn-lg btn-primary">View Characters</a>
+                            <a href="/mycharacters" class="btn btn-lg btn-primary">View Characters</a>
                         </div>
                         <div class="col-md-12 justify-content-center">
                             <table class="table table-striped">
