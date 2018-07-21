@@ -5,7 +5,7 @@
     @if(count($characters) > 0)
         @foreach($characters as $character)
             <div class="card">
-                <h3>{{$character->name}}</h3>
+                <h3>{{$character->character_name}}</h3>
             </div> 
         @endforeach
     @else
