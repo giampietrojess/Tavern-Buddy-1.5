@@ -142,20 +142,33 @@
                     <div class="form-group">
                         <h3>{{Form::label('What is your Character\'s Alignment?')}}</h3>
                         <p>
-                        {{Form::label('Human')}}
-                        {{Form::radio('alignment', 'Human', true, ['class' => 'radio'])}}
+                        {{Form::label('Lawful Good')}}
+                        {{Form::radio('alignment', 'Lawful Good', true, ['class' => 'radio'])}}
 
-                        {{Form::label('Elf')}}
-                        {{Form::radio('alignment', 'Elf', ['class' => 'radio radio-inline'])}}
+                        {{Form::label('Neutral Good')}}
+                        {{Form::radio('alignment', 'Lawful Neutral', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('Dwarf')}}
-                        {{Form::radio('alignment', 'Dwarf')}}
+                        {{Form::label('Chaotic Good')}}
+                        {{Form::radio('alignment', 'Lawful Evil',  ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('Halfling')}}
-                        {{Form::radio('alignment', 'Halfling', ['class' => 'radio radio-inline'])}}
+                         {{Form::label('Lawful Neutral')}}
+                        {{Form::radio('alignment', 'Lawful Good', true, ['class' => 'radio'])}}
 
-                        {{Form::label('Gnome')}}
-                        {{Form::radio('alignment', 'Gnome', ['class' => 'radio radio-inline'])}}
+                        {{Form::label('True Neutral')}}
+                        {{Form::radio('alignment', 'Lawful Neutral', ['class' => 'radio radio-inline'])}}
+
+                        {{Form::label('Chaotic Neutral')}}
+                        {{Form::radio('alignment', 'Lawful Evil', ['class' => 'radio radio-inline'])}}
+
+                         {{Form::label('Lawful Evil')}}
+                        {{Form::radio('alignment', 'Lawful Good', true, ['class' => 'radio'])}}
+
+                        {{Form::label('Lawful Neutral')}}
+                        {{Form::radio('alignment', 'Lawful Neutral', ['class' => 'radio radio-inline'])}}
+
+                        {{Form::label('Lawful Good')}}
+                        {{Form::radio('alignment', 'Lawful Evil',  ['class' => 'radio radio-inline'])}}
+
                         </p>
                         <hr>
                     </div>
