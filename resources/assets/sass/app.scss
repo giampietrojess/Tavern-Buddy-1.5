@@ -337,6 +337,47 @@ img {
   left: 900px;
   z-index: 999;
   font-family: 'Gaegu', cursive;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 
+}
+
+.attributesHere {
+  background: url('/img/AttribBG.png') no-repeat top center;
+  position: relative;
+  height: 160px;
+  -webkit-background-size: 100% auto;
+  	-moz-background-size:100% auto;
+  	-o-background-size: 100% auto;
+  	background-size: 100% auto;
+
+}
+
+.attBox {
+  background: url('/img/attboxBG.png') no-repeat top center;
+  
+  float: none;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin: 12px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-background-size: contain;
+  	-moz-background-size:contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+
+}
+
+.score {
+  z-index: 999;
+  font-family: 'Gaegu', cursive;
+  font-size: 2.5rem;
+  margin-top:-10px!important;
+}
+
+.modifier {
+  font-family: 'Gaegu', cursive;
+  font-size: 1.5rem;
 }
