@@ -29,6 +29,22 @@
                             <a href="/characters/create" class="btn btn-lg btn-primary">Add a Character</a>
                             <a href="/characters/show" class="btn btn-lg btn-primary">View Characters</a>
                         </div>
+                        <div class="col-md-12 justify-content-center">
+                            <table class="table table-striped">
+                                <tr>
+                                    <th>Character Name</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                                @foreach($characters as $character)
+                                    <tr>
+                                        <th>{{$character->character_name}}</th>
+                                    <th><a href="#" class="btn btn-primary">Edit</a></th>
+                                        <th><a href="#" class="btn btn-danger">Delete</a></th>
+                                    </tr>
+                                @endforeach
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
