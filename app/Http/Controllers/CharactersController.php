@@ -47,7 +47,8 @@ class CharactersController extends Controller
      */
     public function show($id)
     {
-        return view('characters.show');
+        $character = Character::find($id);
+        return view('characters.show')->with('character', $character);
     }
 
     /**
