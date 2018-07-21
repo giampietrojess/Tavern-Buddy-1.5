@@ -13,7 +13,7 @@
                 <div class="bgBox">{{$character->background}}</div>
                 <div class="alignmentBox">{{$character->alignment}}</div>
                 <div class="xpBox">X</div>
-                <div class="userBox">{{$character->user_id}}</div>
+                <div class="userBox">{{$character->user->name}}</div>
             </div>
         </div>
     </div>
