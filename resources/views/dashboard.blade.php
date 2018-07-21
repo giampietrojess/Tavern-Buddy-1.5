@@ -31,7 +31,8 @@
         <div class="row justify-content-center">
 
             <div class="col-md-12">
-               My Characters Here
+               <a href="/characters/create" class="btn btn-lg btn-primary">Add a Character</a>
+               <a href="/characters/show" class="btn btn-lg btn-primary">View Characters</a>
             </div>
         </div>
 
