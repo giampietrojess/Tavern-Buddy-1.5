@@ -9,72 +9,78 @@
                 {!! Form::open(['action' => 'CharactersController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                     <!-- Character Name -->
                     <div class="form-group">
-                        <h3>{{Form::label('title', 'Choose a Name for your Character')}}</h3>
-                        {{Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'Title'])}}
+                        <h3>{{Form::label('Choose a Name for your Character')}}</h3>
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6">
+                                    {{Form::text('character_name', '', ['class' => 'form-control character-name', 'placeholder' => 'Title'])}}
+                                </div> 
+                                <div class="col-md-3"></div>
+                            </div>
                     </div>
                     <hr>
                     <!-- Character Race -->
                     <div class="form-group">
-                        <h3>{{Form::label('race', 'What Race is your Character?')}}</h3>
+                        <h3>{{Form::label('What Race is your Character?')}}</h3>
                         <p>
-                        {{Form::label('race', 'Human')}}
+                        {{Form::label('Human')}}
                         {{Form::radio('race', 'Human', ['class' => 'radio'])}}
 
-                        {{Form::label('race', 'Elf', ['class' => 'radio radio-inline'])}}
+                        {{Form::label('Elf')}}
                         {{Form::radio('race', 'Elf', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('race', 'Dwarf', ['class' => 'radio radio-inline'])}}
+                        {{Form::label('Dwarf')}}
                         {{Form::radio('race', 'Dwarf', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('race', 'Halfling', ['class' => 'radio radio-inline'])}}
+                        {{Form::label('Halfling')}}
                         {{Form::radio('race', 'Halfling', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('race', 'Gnome', ['class' => 'radio radio-inline'])}}
+                        {{Form::label('Gnome')}}
                         {{Form::radio('race', 'Gnome', ['class' => 'radio radio-inline'])}}
                         </p>
                         <hr>
                     </div>
                     <!-- Character Class -->
                     <div class="form-group">
-                        <h3>{{Form::label('class', 'What Class is your Character?')}}</h3>
+                        <h3>{{Form::label('What Class is your Character?')}}</h3>
                         <p>
-                        {{Form::label('class', 'Barbarian')}}
+                        {{Form::label('Barbarian')}}
                         {{Form::radio('class', 'Human', ['class' => 'radio'])}}
 
-                        {{Form::label('class', 'Bard')}}
+                        {{Form::label('Bard')}}
                         {{Form::radio('class', 'Bard', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Cleric')}}
+                        {{Form::label('Cleric')}}
                         {{Form::radio('class', 'Cleric', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Druid')}}
+                        {{Form::label('Druid')}}
                         {{Form::radio('class', 'Druid', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Fighter')}}
+                        {{Form::label('Fighter')}}
                         {{Form::radio('class', 'Fighter', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Monk')}}
+                        {{Form::label('Monk')}}
                         {{Form::radio('class', 'Monk', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Paladin')}}
+                        {{Form::label('Paladin')}}
                         {{Form::radio('class', 'Paladin', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Ranger')}}
+                        {{Form::label('Ranger')}}
                         {{Form::radio('class', 'Ranger', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Rogue')}}
+                        {{Form::label('Rogue')}}
                         {{Form::radio('class', 'Rogue', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Sorcerer')}}
+                        {{Form::label('Sorcerer')}}
                         {{Form::radio('class', 'Sorcerer', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Warlock')}}
+                        {{Form::label('Warlock')}}
                         {{Form::radio('class', 'Warlock', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Rogue')}}
+                        {{Form::label('Rogue')}}
                         {{Form::radio('class', 'Rogue', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('class', 'Wizard')}}
+                        {{Form::label('Wizard')}}
                         {{Form::radio('class', 'Wizard', ['class' => 'radio radio-inline'])}}
                         </p>
                     </div>
@@ -82,40 +88,45 @@
 
                     <!-- Ability Scores: Strength, Dex, Constitution, Intelligence, Wisdom, Charisma -->
                     <div class="form-group">
-                        <h3>{{Form::label('score', 'Establish your Ability Scores!')}}</h3>
+                        <h3>{{Form::label('Establish your Ability Scores!')}}</h3>
                         <div class="row">
                             <!-- Strength -->
-                            <div class="col-md-1"></div>
+                            
                             <div class="col-md-2">
                             {{Form::label('name', 'Strength')}}
-                            <p>{{Form::number('score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('str_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                             <!-- Dexterity -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Dexterity')}}
-                            <p>{{Form::number('score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('dex_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                             <!-- Constitution -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Constitution')}}
-                            <p>{{Form::number('score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('con_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                             <!-- Intelligence -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Intelligence')}}
-                            <p>{{Form::number('score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('int_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            </div>
+                            <!-- Intelligence -->
+                            <div class="col-md-2">
+                            {{Form::label('name', 'Wisdom')}}
+                            <p>{{Form::number('wis_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                             <!-- Charisma -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Charisma')}}
-                            <p>{{Form::number('score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('cha_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                         </div>
                     </div>
                     <hr>
                     <!-- Background: Acolyte, Criminal/Spy, Folk Hero, Haunted One, Noble, Sage, Soldier   -->
                     <div class="form-group">
-                        <h3>{{Form::label('title', 'What is your Character\'s Background?')}}</h3>
+                        <h3>{{Form::label('What is your Character\'s Background?')}}</h3>
                         {{Form::select('background', 
                             [   'acolyte' => 'Acolyte', 
                                 'criminal/spy' => 'Criminal/Spy', 
@@ -129,21 +140,21 @@
                     <hr>
                     <!-- Alignment: Lawful Good, Neutral Good, Chaotic Good, Lawful Neutral, True Neutral, Chaotic Neutral, Lawful Evil, Neutral Evil, Chaotic Evil -->
                     <div class="form-group">
-                        <h3>{{Form::label('race', 'What is your Character\'s Alignment?')}}</h3>
+                        <h3>{{Form::label('What is your Character\'s Alignment?')}}</h3>
                         <p>
-                        {{Form::label('name', 'Human')}}
+                        {{Form::label('Human')}}
                         {{Form::radio('alignment', 'Human', true, ['class' => 'radio'])}}
 
-                        {{Form::label('race', 'Elf')}}
+                        {{Form::label('Elf')}}
                         {{Form::radio('alignment', 'Elf', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('race', 'Dwarf')}}
+                        {{Form::label('Dwarf')}}
                         {{Form::radio('alignment', 'Dwarf')}}
 
-                        {{Form::label('race', 'Halfling')}}
+                        {{Form::label('Halfling')}}
                         {{Form::radio('alignment', 'Halfling', ['class' => 'radio radio-inline'])}}
 
-                        {{Form::label('race', 'Gnome')}}
+                        {{Form::label('Gnome')}}
                         {{Form::radio('alignment', 'Gnome', ['class' => 'radio radio-inline'])}}
                         </p>
                         <hr>
