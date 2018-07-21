@@ -34,7 +34,14 @@
                                      <a class="dropdown-item" href="/dashboard">
                                         Home
                                     </a>
-                                
+
+                                    <a class="dropdown-item" href="/characters/create">
+                                        Add Character
+                                    </a>
+
+                                    <a class="dropdown-item" href="/characters/show">
+                                        View Characters
+                                    </a>
                                 
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
