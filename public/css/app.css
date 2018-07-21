@@ -226,6 +226,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  float:none;
 }
 
 svg:not(:root) {
@@ -3527,10 +3528,11 @@ fieldset:disabled a.btn {
 
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   font-size: 1.125rem;
   line-height: 1.5;
   border-radius: 0.3rem;
+  margin-top:20px;
 }
 
 .btn-sm,
@@ -10478,3 +10480,66 @@ a.text-dark:focus {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+/* MY CUSTOM CSS HERE BECAUSE IT'S EASIER THAN ANYWHERE ELSE */
+.row {
+  margin-left:0px!important;
+  margin-right:0px!important;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%!important;
+  height: auto !important;
+  height: 100%!important;
+}
+
+
+#wrap > .container {
+  padding: 0px 15px 0!important;
+}
+.container .credit {
+  margin: 0!important;
+}
+
+.container1 {
+  margin: 100px!important;
+}
+
+.divider {
+	height:100px!important;
+}
+
+
+
+section {
+  color: #ffffff;
+  min-height: 500px;
+  height: auto !important;
+  height: 100%;
+  padding-top:100px;
+
+}
+
+.bg-1 {
+	background: url('/img/bridge2.jpg') no-repeat top center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-2 {
+	background: url('/img/pumpkin heads.jpg') no-repeat top center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-3 {
+	background: url('/img/players Handbook new.jpg') no-repeat top center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
