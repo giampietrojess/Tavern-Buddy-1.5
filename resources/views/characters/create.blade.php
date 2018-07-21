@@ -160,7 +160,7 @@
                         {{Form::label('Chaotic Neutral')}}
                         {{Form::radio('alignment', 'Lawful Evil', ['class' => 'radio radio-inline'])}}
 
-                         {{Form::label('Lawful Evil')}}
+                        {{Form::label('Lawful Evil')}}
                         {{Form::radio('alignment', 'Lawful Good', true, ['class' => 'radio'])}}
 
                         {{Form::label('Neutral Evil')}}

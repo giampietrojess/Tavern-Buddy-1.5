@@ -2,6 +2,11 @@
 
 @section('content')
    
-   Finished Character Sheets
-   
+   <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+               View Individual Character Sheet
+            </div>
+        </div>
+    </div>
 @endsection
