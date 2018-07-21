@@ -36,7 +36,14 @@ class CharactersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'character_name' => 'required',
+            'race' => 'required',
+            'class' => 'required',
+            'background' => 'required',
+            'alignment' => 'required',
+        ]);
+        return 123;
     }
 
     /**
