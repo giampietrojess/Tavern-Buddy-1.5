@@ -58,6 +58,7 @@ class CharactersController extends Controller
         $character->cha_score = $request->input('cha_score');
         $character->background = $request->input('background');
         $character->alignment = $request->input('alignment');
+        $character->user_id = auth()->user()->id;
         $character->save();
 
         return redirect('/characters')->with('success', 'Character Created');
