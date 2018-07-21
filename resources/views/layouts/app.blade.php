@@ -23,7 +23,7 @@
 <body>
     <div id="app">
         @include('inc.Navbar')
-            
+            @include('inc.messages')
             @yield('content')
             
     
