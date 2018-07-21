@@ -38,7 +38,7 @@
                                 </tr>
                                 @foreach($characters as $character)
                                     <tr>
-                                        <th>{{$character->character_name}}</th>
+                                        <th><a href="/characters/{{$character->id}}">{{$character->character_name}}</a></th>
                                     <th><a href="#" class="btn btn-primary">Edit</a></th>
                                         <th><a href="#" class="btn btn-danger">Delete</a></th>
                                     </tr>
