@@ -24,16 +24,18 @@
                         @endif
 
                         You are logged in!
+
+                        <div class="col-md-12 justify-content-center">
+                            <a href="/characters/create" class="btn btn-lg btn-primary">Add a Character</a>
+                            <a href="/characters/show" class="btn btn-lg btn-primary">View Characters</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
 
-            <div class="col-md-12">
-               <a href="/characters/create" class="btn btn-lg btn-primary">Add a Character</a>
-               <a href="/characters/show" class="btn btn-lg btn-primary">View Characters</a>
-            </div>
+          
         </div>
 
 
