@@ -10700,3 +10700,7 @@ section {
   text-align: center;
 }
 
+img {
+  pointer-events: none;
+}
+
