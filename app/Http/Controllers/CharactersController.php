@@ -8,7 +8,7 @@ use App\Character;
 class CharactersController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display all of a user's characters
      *
      * @return \Illuminate\Http\Response
      */
@@ -19,7 +19,7 @@ class CharactersController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new character.
      *
      * @return \Illuminate\Http\Response
      */
@@ -29,7 +29,7 @@ class CharactersController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created character in the DB.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -40,7 +40,7 @@ class CharactersController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the selected Character Sheet.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -51,7 +51,7 @@ class CharactersController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the selected character.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -62,7 +62,7 @@ class CharactersController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the character data in the DB.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -74,7 +74,7 @@ class CharactersController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a character from the DB.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
