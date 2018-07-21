@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Character;
+use App\User;
 
 class CharactersController extends Controller
 {
@@ -61,7 +62,7 @@ class CharactersController extends Controller
         $character->user_id = auth()->user()->id;
         $character->save();
 
-        return redirect('/characters')->with('success', 'Character Created');
+        return redirect('/dashboard')->with('success', 'Character Created');
     }
 
     /**
@@ -74,6 +75,13 @@ class CharactersController extends Controller
     {
         $character = Character::find($id);
         return view('characters.show')->with('character', $character);
+    }
+
+    public function mycharacters()
+    {
+        $user_id = auth()->user()->id;
+        $user = User::find($user_id);
+        return view('characters.mycharacters')->with('characters', $user->characters);
     }
 
     /**

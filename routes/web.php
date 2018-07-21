@@ -24,3 +24,5 @@ Route::get('/dashboard', 'DashboardController@index');
 
 // Character Routes
 Route::resource('characters', 'CharactersController');
+
+Route::get('/mycharacters', 'CharactersController@mycharacters');
