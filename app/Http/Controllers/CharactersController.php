@@ -29,6 +29,61 @@ class CharactersController extends Controller
         return view('characters.create');
     }
 
+    public function nameQuest()
+    {
+        return view('characters.Form.nameQuest');
+    }
+
+    public function raceQuest()
+    {
+        return view('characters.Form.raceQuest');
+    }
+
+    public function classQuest()
+    {
+        return view('characters.Form.classQuest');
+    }
+
+    public function abilityQuest()
+    {
+        return view('characters.Form.abilityQuest');
+    }
+
+
+    public function backgroundQuest()
+    {
+        return view('characters.Form.backgroundQuest');
+    }
+
+
+    public function alignQuest()
+    {
+        return view('characters.Form.alignQuest');
+    }
+
+
+    public function reviewQuest()
+    {
+        return view('characters.Form.reviewQuest');
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     /**
      * Store a newly created character in the DB.
      *
