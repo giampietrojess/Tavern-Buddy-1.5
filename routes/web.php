@@ -26,3 +26,14 @@ Route::get('/dashboard', 'DashboardController@index');
 Route::resource('characters', 'CharactersController');
 
 Route::get('/mycharacters', 'CharactersController@mycharacters');
+
+
+
+//Character Form Builder Routes
+Route::get('/nameQuest', 'CharactersController@nameQuest');
+Route::get('/raceQuest', 'CharactersController@raceQuest');
+Route::get('/classQuest', 'CharactersController@classQuest');
+Route::get('/abilityQuest', 'CharactersController@abilityQuest');
+Route::get('/backgroundQuest', 'CharactersController@backgroundQuest');
+Route::get('/alignQuest', 'CharactersController@alignQuest');
+Route::get('/reviewQuest', 'CharactersController@reviewQuest');
