@@ -1,9 +1,50 @@
 @extends('layouts.app')
 
+
 @section('content')
    
-   <div class="container">
-       
+    <div class="container">
+        <div class="row">
+         
+            <div class="col-md-9">    
+                <!-- Dice Link -->
+            
+                <div class="linkCont">
+                    <img src="/img/Dice-GoBack.png" alt="Go Back" class="imageLink">
+                    <div class="middle">
+                        <div class="text">
+                            <a href="/mycharacters" class="burr">Back?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="col-md-3">    
+                <!-- Pencil Link -->
+                
+                <div class="linkCont">
+                    <img src="/img/Pencil-Edit.png" alt="Edit" class="imageLink">
+                    <div class="middle">
+                        <div class="text">
+                            <a href="#" class="ham">Edit?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eraser Link -->
+                <div class="linkCont">
+                    <img src="/img/Eraser-Delete.png" alt="Delete" class="imageLink">
+                    <div class="middle">
+                        <div class="text">
+                            <a href="#" class="ham">Delete?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
         <div class="container">
             <div class="characterSheetHead">
                 <div class="nameBox">{{$character->character_name}}</div>
