@@ -16,11 +16,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
 // Login and Registration (authentication) Routes
 Auth::routes();
 
 // Home Route
 Route::get('/dashboard', 'DashboardController@index');
+
+// Other Home Route (in case a user types /home instead of clicking buttons)
+Route::get('/home', 'DashboardController@index');
 
 // Character Routes
 Route::resource('characters', 'CharactersController');
