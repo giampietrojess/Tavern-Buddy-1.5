@@ -8,11 +8,10 @@ use App\User;
 
 class RaceController extends Controller
 {
-    public function index(Request $request)
-    {   
-        $raceName = json_decode(file_get_contents('http://dnd5eapi.co/api/classes'));
+    public function raceQuest(Request $request)
+    {
         $character = $request->session()->get('character');
-        return view('characters.Form.raceQuest', compact('raceName', $raceName), compact('character', $character));
+        return view('characters.Form.raceQuest', compact('character', $character));
     }
 
     public function postraceQuest(Request $request)

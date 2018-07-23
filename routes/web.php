@@ -33,14 +33,13 @@ Route::resource('characters', 'Character\CharactersController');
 Route::get('/mycharacters', 'Character\CharactersController@mycharacters');
 
 
-
 //Character Form Builder Routes
 
     // Shows Name Quest, then saves the results
     Route::get('/nameQuest', 'Character\NameController@nameQuest');
     Route::post('/nameQuest', 'Character\NameController@postnameQuest');
 
-    Route::get('/raceQuest', 'Character\RaceController@index');
+    Route::get('/raceQuest', 'Character\RaceController@raceQuest');
     Route::post('/raceQuest', 'Character\RaceController@postraceQuest');
 
     Route::get('/classQuest', 'Character\ClassController@classQuest');
