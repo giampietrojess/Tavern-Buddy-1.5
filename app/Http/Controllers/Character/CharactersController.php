@@ -13,9 +13,7 @@ class CharactersController extends Controller
     {
         $this->middleware('auth');
     }
-
-
-
+    
     /**
      * Display all of a user's characters
      *
