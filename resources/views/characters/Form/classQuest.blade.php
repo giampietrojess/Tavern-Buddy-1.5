@@ -4,7 +4,7 @@
 <div class="container text-center">
     <h1>What is your Character's Class?</h1>
     
-    {!! Form::open(['action' => 'CharactersController@classQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+    {!! Form::open(['action' => 'Character\ClassController@classQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         {{ csrf_field() }}
 
         <!-- Character Class -->

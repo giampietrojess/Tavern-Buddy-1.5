@@ -28,35 +28,35 @@ Route::get('/dashboard', 'DashboardController@index');
 Route::get('/home', 'DashboardController@index');
 
 // Character Routes
-Route::resource('characters', 'CharactersController');
+Route::resource('characters', 'Character\CharactersController');
 
-Route::get('/mycharacters', 'CharactersController@mycharacters');
+Route::get('/mycharacters', 'Character\CharactersController@mycharacters');
 
 
 //Character Form Builder Routes
 
     // Shows Name Quest, then saves the results
-    Route::get('/nameQuest', 'CharactersController@nameQuest');
-    Route::post('/nameQuest', 'CharactersController@postnameQuest');
+    Route::get('/nameQuest', 'Character\NameController@nameQuest');
+    Route::post('/nameQuest', 'Character\NameController@postnameQuest');
 
-    Route::get('/raceQuest', 'CharactersController@raceQuest');
-    Route::post('/raceQuest', 'CharactersController@postraceQuest');
+    Route::get('/raceQuest', 'Character\RaceController@raceQuest');
+    Route::post('/raceQuest', 'Character\RaceController@postraceQuest');
 
-    Route::get('/classQuest', 'CharactersController@classQuest');
-    Route::post('/classQuest', 'CharactersController@postclassQuest');
+    Route::get('/classQuest', 'Character\ClassController@classQuest');
+    Route::post('/classQuest', 'Character\ClassController@postclassQuest');
 
-    Route::get('/abilityQuest', 'CharactersController@abilityQuest');
-    Route::post('/abilityQuest', 'CharactersController@postabilityQuest');
+    Route::get('/abilityQuest', 'Character\AbilityController@abilityQuest');
+    Route::post('/abilityQuest', 'Character\AbilityController@postabilityQuest');
 
-    Route::get('/backgroundQuest', 'CharactersController@backgroundQuest');
-    Route::post('/backgroundQuest', 'CharactersController@postbackgroundQuest');
+    Route::get('/backgroundQuest', 'Character\BackgroundController@backgroundQuest');
+    Route::post('/backgroundQuest', 'Character\BackgroundController@postbackgroundQuest');
 
-    Route::get('/alignQuest', 'CharactersController@alignQuest');
-    Route::post('/alignQuest', 'CharactersController@postalignQuest');
+    Route::get('/alignQuest', 'Character\AlignmentController@alignQuest');
+    Route::post('/alignQuest', 'Character\AlignmentController@postalignQuest');
 
     //  Shows the user their choices, gives opportunity to return to 
     //  earlier answers and change them. 
     //  If satisfied, stores information to the DB
 
-    Route::get('/reviewQuest', 'CharactersController@reviewQuest');
-    Route::post('/characters/store', 'CharactersController@store');
+    Route::get('/reviewQuest', 'Character\CharactersController@reviewQuest');
+    Route::post('/characters/store', 'Character\CharactersController@store');

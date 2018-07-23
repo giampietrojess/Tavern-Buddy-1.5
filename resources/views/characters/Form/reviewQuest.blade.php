@@ -4,7 +4,7 @@
 <div class="container text-center">
     <h1>Let's Review Your Information!</h1>
 
-    {!! Form::open(['action' => 'CharactersController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}  
+    {!! Form::open(['action' => 'Character\CharactersController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}  
         <table class="table">
                 <tr>
                     <td>Character Name:</td>
