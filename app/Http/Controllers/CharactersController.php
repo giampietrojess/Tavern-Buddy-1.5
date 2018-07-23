@@ -247,28 +247,6 @@ class CharactersController extends Controller
      */
     public function store(Request $request)
     {
-        // Form Validation
-        // $this->validate($request, [
-        //     'character_name' => 'required',
-        //     'race' => 'required',
-        //     'class' => 'required',
-        //     'background' => 'required',
-        //     'alignment' => 'required',
-        // ]);
-        
-        // Create Character from Input
-        // $character = new Character;
-        // $character->character_name = $request->input('character_name');
-        // $character->race = $request->input('race');
-        // $character->class = $request->input('class');
-        // $character->str_score = $request->input('str_score');
-        // $character->dex_score = $request->input('dex_score');
-        // $character->con_score = $request->input('con_score');
-        // $character->int_score = $request->input('int_score');
-        // $character->wis_score = $request->input('wis_score');
-        // $character->cha_score = $request->input('cha_score');
-        // $character->background = $request->input('background');
-        // $character->alignment = $request->input('alignment');
         $character = $request->session()->get('character');
         $character->user_id = auth()->user()->id;
         $character->save();
