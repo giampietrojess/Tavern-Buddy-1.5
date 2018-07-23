@@ -39,7 +39,7 @@
                             <div class="middle">
                                 <div class="text">
                                     
-                                {!!Form::open(['action' => ['CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
+                                {!!Form::open(['action' => ['Character\CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
                                     {{Form::hidden('_method', 'DELETE')}}
                                     {{Form::submit('Delete?', ['class' => 'ham'])}}
                                 {!!Form::close()!!}
