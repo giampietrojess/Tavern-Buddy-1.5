@@ -28,7 +28,7 @@
                             <img src="/img/Pencil-Edit.png" alt="Edit" class="imageLink">
                             <div class="middle">
                                 <div class="text">
-                                    <a href="/character/{{$character->id}}/edit" class="ham">Edit?</a>
+                                    <a href="/character/{{$character->id}}/edit" class="ham wiggle-me">Edit?</a>
                                 </div>
                             </div>
                         </div>
