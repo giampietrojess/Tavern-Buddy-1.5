@@ -37,42 +37,189 @@ class CharactersController extends Controller
         return view('characters.create');
     }
 
-    public function nameQuest()
+    public function nameQuest(Request $request)
     {
-        return view('characters.Form.nameQuest');
+        $character = new \stdClass();
+        $character->character_name = $request->session()->get('character');
+        
+        return view('characters.Form.nameQuest', compact('character', $character));
     }
 
-    public function raceQuest()
+    public function postnameQuest(Request $request)
     {
-        return view('characters.Form.raceQuest');
+        $this->validate($request, [
+            'character_name' => 'required',
+        ]);
+
+        if(empty($request->session()->get('character'))){
+            $character = new Character();
+            $character->character_name = $request->input('character_name');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }else{
+            $character = $request->session()->get('character');
+            $character->character_name = $request->input('character_name');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }
+        
+
+
+        return redirect('/raceQuest')->with('success', 'Name Saved!');
     }
 
-    public function classQuest()
+
+
+    public function raceQuest(Request $request)
     {
+        $character = $request->session()->get('character');
+        return view('characters.Form.raceQuest', compact('character', $character));
+    }
+
+    public function postraceQuest(Request $request)
+    {
+        $this->validate($request, [
+            'race' => 'required'
+        ]);
+        $character = $request->session()->get('character');
+        if(empty($request->session()->get('character'))){
+            $character = new Character();
+            $character->race = $request->input('race');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }else{
+            $character = $request->session()->get('character');
+            $character->race = $request->input('race');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }
+        
+        return redirect('/classQuest')->with('success', 'Race Saved!');
+    }
+
+
+
+    public function classQuest(Request $request)
+    {
+        $character = $request->session()->get('character');
+
         return view('characters.Form.classQuest');
     }
 
-    public function abilityQuest()
+    public function postclassQuest(Request $request)
     {
-        return view('characters.Form.abilityQuest');
+        $this->validate($request, [
+            'class' => 'required'
+        ]);
+        $character = $request->session()->get('character');
+        if(empty($request->session()->get('character'))){
+            $character = new Character();
+            $character->class = $request->input('class');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }else{
+            $character = $request->session()->get('character');
+            $character->class = $request->input('class');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }
+        return redirect('/abilityQuest')->with('success', 'Class Saved!');
+    }
+    
+    public function abilityQuest(Request $request)
+    {
+        $character = $request->session()->get('character');
+        return view('characters.Form.abilityQuest', compact('character', $character));
+    }
+
+    public function postabilityQuest(Request $request)
+    {
+        $character = $request->session()->get('character');
+        if(empty($request->session()->get('character'))){
+            $character = new Character();
+            $character->str_score = $request->input('str_score');
+            $character->dex_score = $request->input('dex_score');
+            $character->con_score = $request->input('con_score');
+            $character->int_score = $request->input('int_score');
+            $character->wis_score = $request->input('wis_score');
+            $character->cha_score = $request->input('cha_score');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }else{
+            $character = $request->session()->get('character');
+            $character->str_score = $request->input('str_score');
+            $character->dex_score = $request->input('dex_score');
+            $character->con_score = $request->input('con_score');
+            $character->int_score = $request->input('int_score');
+            $character->wis_score = $request->input('wis_score');
+            $character->cha_score = $request->input('cha_score');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }
+        
+    return redirect('/backgroundQuest')->with('success', 'Abilities Saved!');
+    }
+
+    public function backgroundQuest(Request $request)
+    {
+        $character = $request->session()->get('character');
+        return view('characters.Form.backgroundQuest', compact('character', $character));
+    }
+
+    public function postbackgroundQuest(Request $request)
+    {
+        $this->validate($request, [
+            'background' => 'required'
+        ]);
+        $character = $request->session()->get('character');
+        if(empty($request->session()->get('character'))){
+            $character = new Character();
+            $character->background = $request->input('background');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }else{
+            $character = $request->session()->get('character');
+            $character->background = $request->input('background');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }
+        return redirect('/alignQuest')->with('success', 'Alignment Saved!');
     }
 
 
-    public function backgroundQuest()
+    public function alignQuest(Request $request)
     {
-        return view('characters.Form.backgroundQuest');
+        $character = $request->session()->get('character');
+        return view('characters.Form.alignQuest', compact('character', $character));
+    }
+
+    public function postalignQuest(Request $request)
+    {
+        $this->validate($request, [
+            'alignment' => 'required'
+        ]);
+        $character = $request->session()->get('character');
+        if(empty($request->session()->get('character'))){
+            $character = new Character();
+            $character->alignment = $request->input('alignment');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }else{
+            $character = $request->session()->get('character');
+            $character->alignment = $request->input('alignment');
+            $character->user_id = auth()->user()->id;
+            $request->session()->put('character', $character);
+        }
+        return redirect('/reviewQuest')->with('success', 'Alignment Saved!');
+
     }
 
 
-    public function alignQuest()
-    {
-        return view('characters.Form.alignQuest');
-    }
 
-
-    public function reviewQuest()
+    public function reviewQuest(Request $request)
     {
-        return view('characters.Form.reviewQuest');
+        $character = $request->session()->get('character');
+        return view('characters.Form.reviewQuest', compact('character', $character));
     }
 
    
@@ -101,27 +248,28 @@ class CharactersController extends Controller
     public function store(Request $request)
     {
         // Form Validation
-        $this->validate($request, [
-            'character_name' => 'required',
-            'race' => 'required',
-            'class' => 'required',
-            'background' => 'required',
-            'alignment' => 'required',
-        ]);
+        // $this->validate($request, [
+        //     'character_name' => 'required',
+        //     'race' => 'required',
+        //     'class' => 'required',
+        //     'background' => 'required',
+        //     'alignment' => 'required',
+        // ]);
         
         // Create Character from Input
-        $character = new Character;
-        $character->character_name = $request->input('character_name');
-        $character->race = $request->input('race');
-        $character->class = $request->input('class');
-        $character->str_score = $request->input('str_score');
-        $character->dex_score = $request->input('dex_score');
-        $character->con_score = $request->input('con_score');
-        $character->int_score = $request->input('int_score');
-        $character->wis_score = $request->input('wis_score');
-        $character->cha_score = $request->input('cha_score');
-        $character->background = $request->input('background');
-        $character->alignment = $request->input('alignment');
+        // $character = new Character;
+        // $character->character_name = $request->input('character_name');
+        // $character->race = $request->input('race');
+        // $character->class = $request->input('class');
+        // $character->str_score = $request->input('str_score');
+        // $character->dex_score = $request->input('dex_score');
+        // $character->con_score = $request->input('con_score');
+        // $character->int_score = $request->input('int_score');
+        // $character->wis_score = $request->input('wis_score');
+        // $character->cha_score = $request->input('cha_score');
+        // $character->background = $request->input('background');
+        // $character->alignment = $request->input('alignment');
+        $character = $request->session()->get('character');
         $character->user_id = auth()->user()->id;
         $character->save();
 
