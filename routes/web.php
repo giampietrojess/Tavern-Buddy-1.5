@@ -33,7 +33,6 @@ Route::resource('characters', 'CharactersController');
 Route::get('/mycharacters', 'CharactersController@mycharacters');
 
 
-
 //Character Form Builder Routes
 
     // Shows Name Quest, then saves the results

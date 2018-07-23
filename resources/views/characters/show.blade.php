@@ -8,7 +8,7 @@
          
             <div class="col-md-9">    
                 <!-- Dice Link -->
-            
+         
                 <div class="linkCont">
                     <img src="/img/Dice-GoBack.png" alt="Go Back" class="imageLink">
                     <div class="middle">
@@ -20,18 +20,50 @@
             </div>
                 
             <div class="col-md-3">    
-                <!-- Pencil Link -->
-                
-                <div class="linkCont">
+                <!-- If the user who is viewing the character is the one who created the character, show edit and delete buttons -->
+                @if(!Auth::guest())
+                    @if(Auth::user()->id == $character->user_id)
+                        <!-- Pencil Link -->
+                        <div class="linkCont">
+                            <img src="/img/Pencil-Edit.png" alt="Edit" class="imageLink">
+                            <div class="middle">
+                                <div class="text">
+                                    <a href="/character/{{$character->id}}/edit" class="ham">Edit?</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Eraser Link -->
+                        <div class="linkCont">
+                            <img src="/img/Eraser-Delete.png" alt="Delete" class="imageLink">
+                            <div class="middle">
+                                <div class="text">
+                                    
+                                {!!Form::open(['action' => ['CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
+                                    {{Form::hidden('_method', 'DELETE')}}
+                                    {{Form::submit('Delete?', ['class' => 'ham'])}}
+                                {!!Form::close()!!}
+                                
+                              
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        
+                    @endif
+                @endif   
+                <!-- <div class="linkCont">
                     <img src="/img/Pencil-Edit.png" alt="Edit" class="imageLink">
                     <div class="middle">
                         <div class="text">
                             <a href="#" class="ham">Edit?</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <!-- Eraser Link -->
+                <!-- Eraser Link
                 <div class="linkCont">
                     <img src="/img/Eraser-Delete.png" alt="Delete" class="imageLink">
                     <div class="middle">
@@ -39,7 +71,7 @@
                             <a href="#" class="ham">Delete?</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 

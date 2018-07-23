@@ -20,7 +20,10 @@
                     <tr>
                         <th><a href="/characters/{{$character->id}}">{{$character->character_name}}</a></th>
                     <th><a href="#" class="btn btn-primary">Edit</a></th>
-                        <th><a href="#" class="btn btn-danger">Delete</a></th>
+                        <th> <th>{!!Form::open(['action' => ['CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
+                                    {{Form::hidden('_method', 'DELETE')}}
+                                    {{Form::submit('Delete?', ['class' => 'ham'])}}
+                                {!!Form::close()!!}</th></th>
                     </tr>
                 @endforeach
             </table>
