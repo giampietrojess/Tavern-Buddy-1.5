@@ -37,36 +37,36 @@ class CharactersController extends Controller
         return view('characters.create');
     }
 
-    public function nameQuest(Request $request)
-    {
-        $character = new \stdClass();
-        $character->character_name = $request->session()->get('character');
+    // public function nameQuest(Request $request)
+    // {
+    //     $character = new \stdClass();
+    //     $character->character_name = $request->session()->get('character');
         
-        return view('characters.Form.nameQuest', compact('character', $character));
-    }
+    //     return view('characters.Form.nameQuest', compact('character', $character));
+    // }
 
-    public function postnameQuest(Request $request)
-    {
-        $this->validate($request, [
-            'character_name' => 'required',
-        ]);
+    // public function postnameQuest(Request $request)
+    // {
+    //     $this->validate($request, [
+    //         'character_name' => 'required',
+    //     ]);
 
-        if(empty($request->session()->get('character'))){
-            $character = new Character();
-            $character->character_name = $request->input('character_name');
-            $character->user_id = auth()->user()->id;
-            $request->session()->put('character', $character);
-        }else{
-            $character = $request->session()->get('character');
-            $character->character_name = $request->input('character_name');
-            $character->user_id = auth()->user()->id;
-            $request->session()->put('character', $character);
-        }
+    //     if(empty($request->session()->get('character'))){
+    //         $character = new Character();
+    //         $character->character_name = $request->input('character_name');
+    //         $character->user_id = auth()->user()->id;
+    //         $request->session()->put('character', $character);
+    //     }else{
+    //         $character = $request->session()->get('character');
+    //         $character->character_name = $request->input('character_name');
+    //         $character->user_id = auth()->user()->id;
+    //         $request->session()->put('character', $character);
+    //     }
         
 
 
-        return redirect('/raceQuest')->with('success', 'Name Saved!');
-    }
+    //     return redirect('/raceQuest')->with('success', 'Name Saved!');
+    // }
 
 
 

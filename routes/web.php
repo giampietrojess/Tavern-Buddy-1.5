@@ -36,8 +36,8 @@ Route::get('/mycharacters', 'CharactersController@mycharacters');
 //Character Form Builder Routes
 
     // Shows Name Quest, then saves the results
-    Route::get('/nameQuest', 'CharactersController@nameQuest');
-    Route::post('/nameQuest', 'CharactersController@postnameQuest');
+    Route::get('/nameQuest', 'CharacterNameController@nameQuest');
+    Route::post('/nameQuest', 'CharacterNameController@postnameQuest');
 
     Route::get('/raceQuest', 'CharactersController@raceQuest');
     Route::post('/raceQuest', 'CharactersController@postraceQuest');
