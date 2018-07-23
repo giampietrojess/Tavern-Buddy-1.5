@@ -4,7 +4,7 @@
 <div class="container text-center">
     <h1>What are your Character's Ability Scores?</h1>
 
-    {!! Form::open(['action' => 'CharactersController@abilityQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+    {!! Form::open(['action' => 'Character\AbilityController@abilityQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
     {{ csrf_field() }}
         <div class="form-group">
             <h3>{{Form::label('Establish your Ability Scores!')}}</h3>

@@ -4,7 +4,7 @@
 <div class="container text-center">
     <h1>What is your Character's Name?</h1>
 
-        {!! Form::open(['action' => 'CharacterNameController@nameQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+        {!! Form::open(['action' => 'Character\NameController@nameQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
             {{ csrf_field() }}
             <!-- Character Name -->
             <div class="form-group">

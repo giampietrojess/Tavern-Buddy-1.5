@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Character;
 
 use Illuminate\Http\Request;
 use App\Character;
 use App\User;
 
-class CharacterNameController extends Controller
+class NameController extends Controller
 {
     public function nameQuest(Request $request)
     {

@@ -4,7 +4,7 @@
 <div class="container text-center">
     <h1>What is your Character's Background?</h1>
 
-    {!! Form::open(['action' => 'CharactersController@backgroundQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+    {!! Form::open(['action' => 'Character\BackgroundController@backgroundQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         {{ csrf_field() }}
 
         <div class="form-group">
