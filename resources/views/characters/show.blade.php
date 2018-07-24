@@ -239,7 +239,7 @@
                 
                 <div class="inventoryContainer text-center">
             
-                <img class="iconR" src="/img/weaponicon.png" alt="weapon"><h4>Weapons and inventory</h4>
+                    <img class="iconR" src="/img/weaponicon.png" alt="weapon"><div class="head">Weapons</div>
 
                     <div class="inner clearfix">
                             
@@ -250,7 +250,7 @@
                         Text text text text text text text text text text text text text text
 
                     </div>
-                    <img class="iconL" src="/img/inventoryicon.png" alt="bag"><h4>Inventory</h4>
+                    <img class="iconL" src="/img/inventoryicon.png" alt="bag"><div class="head">Inventory</div>
                     <div class="inner clearfix">
                             
                         text text text text text text text text text text text
@@ -261,7 +261,7 @@
                         Text text text text text text text text text text text text text text
 
                     </div>
-                    <img class="iconR" src="/img/moneyIcon.png" alt="money"> <h4>Money Pouch</h4>
+                    <img class="iconR" src="/img/moneyIcon.png" alt="money"><div class="head">Money Pouch</div>
                     <div class="inner clearfix">
                             
                         Text text text text text text text text text text text text text text

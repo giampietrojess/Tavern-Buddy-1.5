@@ -11052,11 +11052,20 @@ hr {
 .iconL {
   width: 70px;
   float: left !important;
+  margin: 10px;
+}
+
+.head {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  font-size: 29px;
 }
 
 .iconR {
   width: 70px;
   float: right !important;
+  margin: 10px;
 }
 
 .clearfix {
