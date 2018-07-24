@@ -615,3 +615,38 @@ hr {
   font-size: 13px;
   margin-bottom:0!important;
 }
+
+.inventoryContainer {
+  background: url('/img/WeaponsAndInventorybg.png') no-repeat;
+  height: 500px;
+  width: 350px;
+  padding: 10px;
+  position: relative;
+  -webkit-background-size: 100% auto;
+  -moz-background-size:100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+
+}
+
+.iconL {
+  width: 70px;
+  float: left!important;
+}
+
+.iconR {
+  width: 70px;
+  float: right!important;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.inner {
+  border: 0px solid black;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 20px;
+}
