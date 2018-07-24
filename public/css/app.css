@@ -10977,6 +10977,7 @@ a.burr {
   position: relative;
   height: 125px;
   width: 350px;
+  margin-top: 10px;
   background-size: contain;
 }
 
@@ -10985,8 +10986,57 @@ a.burr {
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  height: 160px;
+  height: 110px;
   width: 350px;
   background-size: contain;
+}
+
+.hitDice {
+  background: url("/img/HitDice&SavingThrowsbg.png") no-repeat top center;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  height: 200px;
+  width: 165px;
+  padding: 10px;
+  background-size: contain;
+}
+
+.proficiency {
+  background: url("/img/proficiencyBG.png") no-repeat top center;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  height: 100px;
+  width: 320px;
+  padding-top: 25px;
+  background-size: contain;
+}
+
+.skills {
+  background: url("/img/skillsbg.png") no-repeat top center;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  width: 320px;
+  padding: 10px;
+  overflow: auto;
+  margin: auto;
+  background-size: contain;
+}
+
+.proficiencyScore {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+hr {
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+}
+
+.skilly {
+  font-size: 13px;
+  margin-bottom: 0 !important;
 }
 
