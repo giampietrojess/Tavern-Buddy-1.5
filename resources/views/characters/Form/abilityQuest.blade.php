@@ -4,7 +4,7 @@
 <div class="container text-center">
     <h1>What are your Character's Ability Scores?</h1>
 
-    {!! Form::open(['action' => 'Character\AbilityController@abilityQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+    {!! Form::open(['action' => 'Character\AbilityController@index', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
     {{ csrf_field() }}
         <div class="form-group">
             <h3>{{Form::label('Establish your Ability Scores!')}}</h3>
@@ -45,7 +45,8 @@
         {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
 
-    <a href="/backgroundQuest" class="btn btn-lg">Next</a>
+    {{-- <a href="/backgroundQuest" class="btn btn-lg">Next</a> --}}
+    <div>{{$strength->full_name}} | {{$dexterity->full_name}} | {{$constitution->full_name}} | {{$intelligence->full_name}} | {{$wisdom->full_name}}</div>
 
 
 @endsection
