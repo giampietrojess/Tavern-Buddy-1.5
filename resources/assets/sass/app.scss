@@ -268,7 +268,7 @@ img {
   	background-size: 100% auto;
 }
 .nameBox {
-  position: absolute;
+  position: relative;
   top: 80px;
   left: 120px;
   z-index: 999;
@@ -346,10 +346,9 @@ img {
   position: relative;
   height: 160px;
   -webkit-background-size: 100% auto;
-  	-moz-background-size:100% auto;
-  	-o-background-size: 100% auto;
-  	background-size: 100% auto;
-
+  -moz-background-size:100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
 }
 
 .attBox {
@@ -460,6 +459,98 @@ a.burr {
   font-family: 'Gaegu', cursive;
   text-decoration: none!important;
   font-size: 35px;
+
+}
+
+.HPcontainer {
+  background: url('/img/savingthrowbg.png') no-repeat;
+  height: 500px;
+  width: 350px;
+  margin-top: 20px;
+  padding: 10px;
+  position: relative;
+  -webkit-background-size: 100% auto;
+  -moz-background-size:100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+.armorClass {
+  background: url('/img/ArmorClassBG.png') no-repeat top center;
+  
+  float: none;
+  display: inline-block;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  padding-top:15px;
+  line-height: 1;
+  text-transform: uppercase;
+  -webkit-background-size: contain;
+  	-moz-background-size:contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+}
+
+.speedBox {
+  background: url('/img/Initiative:ArmorClass.png') no-repeat top center;
+  
+  float: none;
+  display: inline-block;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  padding-top:10px;
+  text-transform: uppercase;
+  -webkit-background-size: contain;
+  	-moz-background-size:contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+}
+
+
+.initiative {
+  background: url('/img/Initiative:ArmorClass.png') no-repeat top center;
+  
+  float: none;
+  display: inline-block;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  padding-top:10px;
+  text-transform: uppercase;
+  -webkit-background-size: contain;
+  	-moz-background-size:contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+}
+
+
+.currentHP {
+  background: url('/img/CurrentHPbg.png') no-repeat top center;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  height: 125px;
+  width:350px;
+  -webkit-background-size: contain;
+  	-moz-background-size:contain;
+  	-o-background-size: contain;
+  	background-size: contain;
+
+}
+
+.tempHP {
+  background: url('/img/TempHPbg.png') no-repeat top center;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  height: 160px;
+  width:350px;
+  -webkit-background-size: contain;
+  	-moz-background-size:contain;
+  	-o-background-size: contain;
+  	background-size: contain;
 
 }
 
