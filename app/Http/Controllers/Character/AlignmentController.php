@@ -20,17 +20,17 @@ class AlignmentController extends Controller
             'alignment' => 'required'
         ]);
         $character = $request->session()->get('character');
-        if(empty($request->session()->get('character'))){
-            $character = new Character();
-            $character->alignment = $request->input('alignment');
-            $character->user_id = auth()->user()->id;
-            $request->session()->put('character', $character);
-        }else{
+        // if(empty($request->session()->get('character'))){
+        //     $character = new Character();
+        //     $character->alignment = $request->input('alignment');
+        //     $character->user_id = auth()->user()->id;
+        //     $request->session()->put('character', $character);
+        // }else{
             $character = $request->session()->get('character');
             $character->alignment = $request->input('alignment');
             $character->user_id = auth()->user()->id;
             $request->session()->put('character', $character);
-        }
+        // }
         return redirect('/reviewQuest')->with('success', 'Alignment Saved!');
 
     }
