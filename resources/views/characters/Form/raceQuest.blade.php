@@ -5,6 +5,9 @@
     <h1>What is your Character's Race?</h1>
     <div>{{$dwarf->name}}</div>
     <div>{{$elf->name}}</div>
+    <div>{{$halfling->name}}</div>
+    <div>{{$human->name}}</div>
+    <div>{{$gnome->name}}</div>
     {!! Form::open(['action' => 'Character\RaceController@index', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         <div class="form-group">
             <h3>{{Form::label('What Race is your Character?')}}</h3>
