@@ -54,24 +54,7 @@
                         
                     @endif
                 @endif   
-                <!-- <div class="linkCont">
-                    <img src="/img/Pencil-Edit.png" alt="Edit" class="imageLink">
-                    <div class="middle">
-                        <div class="text">
-                            <a href="#" class="ham">Edit?</a>
-                        </div>
-                    </div>
-                </div> -->
 
-                <!-- Eraser Link
-                <div class="linkCont">
-                    <img src="/img/Eraser-Delete.png" alt="Delete" class="imageLink">
-                    <div class="middle">
-                        <div class="text">
-                            <a href="#" class="ham">Delete?</a>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
 
@@ -138,6 +121,9 @@
                     <div class="modifier">+?</div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
     
