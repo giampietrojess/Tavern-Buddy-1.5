@@ -42,7 +42,7 @@ Route::get('/mycharacters', 'Character\CharactersController@mycharacters');
     Route::get('/raceQuest', 'Character\RaceController@index');
     Route::post('/raceQuest', 'Character\RaceController@postraceQuest');
 
-    Route::get('/classQuest', 'Character\ClassController@classQuest');
+    Route::get('/classQuest', 'Character\ClassController@index');
     Route::post('/classQuest', 'Character\ClassController@postclassQuest');
 
     Route::get('/abilityQuest', 'Character\AbilityController@abilityQuest');
