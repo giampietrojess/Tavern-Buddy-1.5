@@ -26,17 +26,10 @@ class RaceController extends Controller
             'race' => 'required'
         ]);
         $character = $request->session()->get('character');
-        // if(empty($request->session()->get('character'))){
-        //     $character = new Character();
-        //     $character->race = $request->input('race');
-        //     $character->user_id = auth()->user()->id;
-        //     $request->session()->put('character', $character);
-        // }else{
-            // $character = $request->session()->get('character');
-            $character->race = $request->input('race');
-            $character->user_id = auth()->user()->id;
-            $request->session()->put('character', $character);
-        // }
+        $character->race = $request->input('race');
+        $character->user_id = auth()->user()->id;
+        $request->session()->put('character', $character);
+
         
         return redirect('/classQuest')->with('success', 'Race Saved!');
     }
