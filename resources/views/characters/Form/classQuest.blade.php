@@ -12,7 +12,7 @@
             <h3>{{Form::label('What Class is your Character?')}}</h3>
             <p>
             {{Form::label('Barbarian')}}
-            {{Form::radio('class', 'Human', ['class' => 'radio'])}}
+            {{Form::radio('class', 'Barbarian', ['class' => 'radio'])}}
 
             {{Form::label('Bard')}}
             {{Form::radio('class', 'Bard', ['class' => 'radio radio-inline'])}}
