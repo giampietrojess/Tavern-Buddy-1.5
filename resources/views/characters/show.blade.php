@@ -80,7 +80,7 @@
                         <div class="col-md-12 text-center score">
                             {{$character->str_score}}
                         </div>
-                        <div class="modifier">+?</div>
+                        <div class="modifier">{{$character->str_mod}}</div>
                     </div>
 
                     <div class="attBox">
@@ -88,7 +88,7 @@
                         <div class="col-md-12 text-center score">
                             {{$character->dex_score}}
                         </div>
-                        <div class="modifier">+?</div>
+                        <div class="modifier">{{$character->dex_mod}}</div>
                     </div>
 
                     <div class="attBox">
@@ -96,7 +96,7 @@
                         <div class="col-md-12 text-center score">
                             {{$character->con_score}}
                         </div>
-                        <div class="modifier">+?</div>
+                        <div class="modifier">{{$character->con_mod}}</div>
                     </div>
 
                     <div class="attBox">
@@ -104,7 +104,7 @@
                         <div class="col-md-12 text-center score">
                             {{$character->int_score}}
                         </div>
-                        <div class="modifier">+?</div>
+                        <div class="modifier">{{$character->int_mod}}</div>
                     </div>
 
                     <div class="attBox">
@@ -112,7 +112,7 @@
                         <div class="col-md-12 text-center score">
                             {{$character->wis_score}}
                         </div>
-                        <div class="modifier">+?</div>
+                        <div class="modifier">{{$character->wis_mod}}</div>
                     </div>
 
                     <div class="attBox">
@@ -120,7 +120,7 @@
                         <div class="col-md-12 text-center score">
                             {{$character->cha_score}}
                         </div>
-                        <div class="modifier">+?</div>
+                        <div class="modifier">{{$character->cha_mod}}</div>
                     </div>
                 
                 </div>
