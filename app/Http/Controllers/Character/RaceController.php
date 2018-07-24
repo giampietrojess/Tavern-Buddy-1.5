@@ -14,9 +14,10 @@ class RaceController extends Controller
         $elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/2'));
         $halfling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/3'));
         $human = json_decode(file_get_contents('http://dnd5eapi.co/api/races/4'));
+        $dragonborn = json_decode(file_get_contents('http://dnd5eapi.co/api/races/5'));
         $gnome = json_decode(file_get_contents('http://dnd5eapi.co/api/races/6'));
         $character = $request->session()->get('character');
-        return view('characters.Form.raceQuest', compact('dwarf', 'elf', 'halfling', 'human', 'gnome', 'character'));
+        return view('characters.Form.raceQuest', compact('dwarf', 'elf', 'halfling', 'human', 'dragonborn', 'gnome', 'character'));
     }
 
     public function postraceQuest(Request $request)

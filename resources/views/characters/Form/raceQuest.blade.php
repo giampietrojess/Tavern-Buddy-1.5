@@ -3,11 +3,6 @@
 @section('content')
 <div class="container text-center">
     <h1>What is your Character's Race?</h1>
-    <div>{{$dwarf->name}}</div>
-    <div>{{$elf->name}}</div>
-    <div>{{$halfling->name}}</div>
-    <div>{{$human->name}}</div>
-    <div>{{$gnome->name}}</div>
     {!! Form::open(['action' => 'Character\RaceController@index', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         <div class="form-group">
             <h3>{{Form::label('What Race is your Character?')}}</h3>
@@ -26,13 +21,18 @@
 
             {{Form::label('Gnome')}}
             {{Form::radio('race', 'Gnome', ['class' => 'radio radio-inline'])}}
+
+            {{Form::label('Dragonborn')}}
+            {{Form::radio('race', 'Dragonborn', ['class' => 'radio radio-inline'])}}
             </p>
             <hr>
         </div>
     {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
 
-    <a href="/classQuest" class="btn btn-lg">Not Next</a>
+    {{-- <a href="/classQuest" class="btn btn-lg">Not Next</a> --}}
+    <div>{{$dwarf->name}} | {{$elf->name}} | {{$halfling->name}} | {{$human->name}} | {{$gnome->name}} | {{$dragonborn->name}}</div>
+
 
 
 @endsection
