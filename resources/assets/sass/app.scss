@@ -464,10 +464,11 @@ a.burr {
 
 .HPcontainer {
   background: url('/img/savingthrowbg.png') no-repeat;
-  height: 500px;
+  height: 480px;
   width: 350px;
   margin-top: 20px;
   padding: 10px;
+  float: left;
   position: relative;
   -webkit-background-size: 100% auto;
   -moz-background-size:100% auto;
@@ -576,6 +577,7 @@ a.burr {
   text-align: center;
   text-transform: uppercase;
   position: relative;
+  float: left;
   height: 100px;
   width: 320px;
   padding-top: 25px;
@@ -595,6 +597,7 @@ a.burr {
   width: 320px;
   padding: 10px;
   overflow: auto;
+  float: left;
   margin:auto;
   -webkit-background-size: contain;
   	-moz-background-size:contain;
@@ -604,6 +607,7 @@ a.burr {
 .proficiencyScore{
   font-size:20px;
   padding-left:20px;
+  margin-top: 10px;
 }
 
 hr {
@@ -621,12 +625,14 @@ hr {
   height: 500px;
   width: 350px;
   padding: 10px;
+  float: left;
   position: relative;
   -webkit-background-size: 100% auto;
   -moz-background-size:100% auto;
   -o-background-size: 100% auto;
   background-size: 100% auto;
-
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
 .iconL {
@@ -657,4 +663,22 @@ hr {
   height: 150px;
   margin: auto;
   margin-bottom: 20px;
+}
+.profskiCon {
+  height: 850px;
+  width: 330px;
+  float: left;
+}
+.extraBox {
+  background: url('/img/blankBG.png') no-repeat;
+  height: 350px;
+  width: 350px;
+  padding: 10px;
+  float: left;
+  position: relative;
+  -webkit-background-size: 100% auto;
+  -moz-background-size:100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+
 }
