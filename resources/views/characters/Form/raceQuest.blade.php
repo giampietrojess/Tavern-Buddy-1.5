@@ -3,8 +3,9 @@
 @section('content')
 <div class="container text-center">
     <h1>What is your Character's Race?</h1>
-
-    {!! Form::open(['action' => 'Character\RaceController@raceQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+    <div>{{$dwarf->name}}</div>
+    <div>{{$elf->name}}</div>
+    {!! Form::open(['action' => 'Character\RaceController@index', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         <div class="form-group">
             <h3>{{Form::label('What Race is your Character?')}}</h3>
             <p>
