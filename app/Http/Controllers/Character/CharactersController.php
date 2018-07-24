@@ -13,7 +13,9 @@ class CharactersController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
+
+
     /**
      * Display all of a user's characters
      *
@@ -52,6 +54,7 @@ class CharactersController extends Controller
         $character = $request->session()->get('character');
         $character->user_id = auth()->user()->id;
         $character->save();
+        $request->session()->forget('character');
 
         return redirect('/dashboard')->with('success', 'Character Created');
     }

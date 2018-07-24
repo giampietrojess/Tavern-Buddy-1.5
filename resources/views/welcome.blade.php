@@ -38,6 +38,7 @@
         <div class="container">
             <div class="text-center">
                 <h3>WHAT IS IT?</h3>
+                <example-component></example-component>
                 <p>Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
                 Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
                 Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
