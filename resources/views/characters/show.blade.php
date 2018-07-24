@@ -131,7 +131,70 @@
 
         <div class='row'>
 
-            <div class="col-md-4">Something</div>
+            <div class="col-md-4">
+                <div class="row">
+                    
+                    <div class="proficiency">
+                        <div class="row">
+                            <div class="col-md-3 text-center proficiencyScore">
+                            ?
+                            </div>
+                            <div class="col-md-9 text-center">
+                                Proficiency Bonus
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="skills">
+                        
+                        <h5><u>Strength Skills</u></h5>
+                     
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Saving Throws: ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Athletics:  ___</p>
+                        <hr>
+                        <h5><u>Dexterity Skills</u></h5>
+                
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Saving Throws: ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Acrobatics:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Sleight of Hand:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Stealth:  ___</p>
+                        <hr>
+                        <h5><u>Constitution Skills</u></h5>
+                        
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Saving Throws: ___</p>
+                        <hr>
+                        <h5><u>Intelligence Skills</u></h5>
+                    
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Saving Throws: ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Arcana:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> History:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Investigation:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Nature:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Religion:  ___</p>
+                        <hr>
+                        <h5><u>Wisdom Skills</u></h5>
+                        
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Saving Throws: ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Animal Handling:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Insight:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Medicine:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Perception:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Survival:  ___</p>
+                        <hr>
+                        <h5><u>Charisma Skills</u></h5>
+                    
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Saving Throws: ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Deception:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Intimidation:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Performance:  ___</p>
+                        <p class="skilly"><i class="fa fa-circle-thin"></i> Persuasion:  ___</p>
+                        <hr>
+                    </div>
+                </div>
+
+            </div>
             
             <div class="HPcontainer">
 
@@ -161,7 +224,15 @@
                         Temporary Hit Points
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="hitDice">
+                        Hit Dice
+                    </div>
+                    <div class="hitDice">
+                        Death Saves
+                    </div>
+                    
+                </div>
             </div>
 
             <div class="col-md-3">Something</div>
