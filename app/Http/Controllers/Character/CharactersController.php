@@ -137,9 +137,9 @@ class CharactersController extends Controller
         $character = Character::find($id);
         // Check for correct user
         if(auth()->user()->id !==$character->user_id){
-            return redirect('/characters')->with('error', 'You can only remove your own Characters');
+            return redirect('/mycharacters')->with('error', 'You can only remove your own Characters');
         }
         $character->delete();
-        return redirect('/characters')->with('success', 'Character Removed');
+        return redirect('/mycharacters')->with('success', 'Character Removed');
     }
 }
