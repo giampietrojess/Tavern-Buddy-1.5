@@ -4,7 +4,7 @@
 <div class="container text-center">
     <h1>What is your Character's Class?</h1>
     
-    {!! Form::open(['action' => 'Character\ClassController@classQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+    {!! Form::open(['action' => 'Character\ClassController@index', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         {{ csrf_field() }}
 
         <!-- Character Class -->
@@ -50,12 +50,13 @@
             {{Form::label('Wizard')}}
             {{Form::radio('class', 'Wizard', ['class' => 'radio radio-inline'])}}
             </p>
+            <hr>
         </div>
 
         {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
 
-
+    <div>{{$barbarian->name}} | {{$bard->name}} | {{$cleric->name}} | {{$druid->name}} | {{$fighter->name}} | {{$monk->name}} | {{$paladin->name}} | {{$ranger->name}} | {{$rogue->name}} | {{$sorcerer->name}} | {{$warlock->name}} | {{$wizard->name}}</div>
    
 
 
