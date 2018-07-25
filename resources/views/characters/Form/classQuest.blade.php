@@ -8,7 +8,28 @@
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
-        
+            @foreach ($classArray as $class)
+                <li><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#yourModal{{$class->index}}"></li>
+            @endforeach
+
+            @foreach ($classArray as $class)    
+                <div class="modal fade" id="yourModal{{$class->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">{{$class->name}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        {{$class->name}}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            @endforeach
             {!! Form::open(['action' => 'Character\ClassController@index', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                 {{ csrf_field() }}
 
@@ -100,8 +121,6 @@
 
         </div>
         <div class="col-md-2"></div>
-          <!-- <div>{{$barbarian->name}} | {{$bard->name}} | {{$cleric->name}} | {{$druid->name}} | {{$fighter->name}} | {{$monk->name}} | {{$paladin->name}} | {{$ranger->name}} | {{$rogue->name}} | {{$sorcerer->name}} | {{$warlock->name}} | {{$wizard->name}}</div>
-    -->
     </div>
 </div>
 
