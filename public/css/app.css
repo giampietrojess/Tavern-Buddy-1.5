@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400);@import url(https://fonts.googleapis.com/css?family=Gaegu);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);@import url(https://fonts.googleapis.com/css?family=Gaegu);@import url(https://fonts.googleapis.com/css?family=Rammetto+One);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.1.2 (https://getbootstrap.com/)
@@ -10907,6 +10907,22 @@ section {
 
 .diceLinks {
   padding-top: 20px;
+}
+
+.secText {
+  font-size: 6rem;
+  padding-top: 70px;
+  color: pink;
+  -webkit-text-stroke: 10px black;
+  paint-order: stroke fill;
+  font-family: 'Rammetto One', cursive;
+}
+
+.card-img-top {
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-top: 20px;
 }
 
 a.ham {

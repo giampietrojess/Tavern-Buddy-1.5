@@ -126,8 +126,8 @@
         <div class="divider" id="section2"></div>
     
         <section class="bg-1">
-            <div class="col-sm-6 col-sm-offset-3 text-center">
-                <h5>Section 2</h5>
+            <div class="col-md-12 text-center">
+                <span class="secText">WHAT IS TAVERN BUDDY?</span>
             </div>
         </section>
     
@@ -135,12 +135,12 @@
     
         <div class="container">
             <div class="text-center">
-                <h3>WHAT IS IT?</h3>
-                <example-component></example-component>
-                <p>Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
+                <h2>WHAT IS TAVERN BUDDY?</h2>
+                <h5>This is our site. There are many like it, but this one is ours.</h5>
+                
+                <p>Tavern Buddy is a Character Sheet Builder for Dungeons and Dragons, 5th Edition. While many sites exist like it, Tavern Buddy
+                strives to be a welcoming companion to an Adventurer who is new to the game Dungeons and Dragons. We aim to make this site not only
+                easy to use, but also aesthetically pleasing whether viewing the site on a computer or on your phone or tablet. 
                 </p> 
             </div>   
         </div>
@@ -148,8 +148,8 @@
         <div class="divider" id="section4"></div>
  
         <section class="bg-2">
-            <div class="col-sm-6 col-sm-offset-3 text-center">      
-                <h5>Section 4</h5>
+            <div class="col-md-12 text-center">      
+            <span class="secText">WHO ARE WE?</span>
             </div>
         </section>
         
@@ -157,12 +157,38 @@
 
         <div class="container">
             <div class="text-center">
-                <h3>HOW IT WORKS</h3>
-                <p>Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                </p> 
+                <h1>WHO WE ARE</h1>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="/img/me.png" alt="Card image" style="width:50%">
+                            <div class="card-body">
+                                <h4 class="card-title">Jess Giampietro</h4>
+                                <p class="card-text">Jess is a web developer and adventurer with a penchant for playing rangers and rolling poorly. Heres her profile which totally isn’t done now but may be done for demo day.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-5">
+                        
+                        <div class="card" style="width:400px">
+                            <img class="card-img-top" src="/img/you.png" alt="Card image" style="width:50%">
+                            <div class="card-body">
+                                <h4 class="card-title">Hillary B. Lavin</h4>
+                                <p class="card-text">Hillary is a web developer and creative-type who wishes she played more Dungeons and Dragons than she currently does.  Here’s her profile which totally isn’t done now but may be done for demo day.</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+
             </div>   
         </div>
 
