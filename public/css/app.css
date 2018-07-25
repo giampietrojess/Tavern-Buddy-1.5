@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400);@import url(https://fonts.googleapis.com/css?family=Gaegu);/*!
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);@import url(https://fonts.googleapis.com/css?family=Gaegu);@charset "UTF-8";
+
+/*!
  * Bootstrap v4.1.2 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -10792,7 +10794,6 @@ img {
 .attributesHere {
   background: url("/img/AttribBG.png") no-repeat top center;
   position: relative;
-  height: 160px;
   background-size: 100% auto;
 }
 
@@ -11030,8 +11031,15 @@ a.burr {
 
 .proficiencyScore {
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 50px;
   margin-top: 10px;
+}
+
+.profTitle {
+  text-transform: uppercase;
+  padding-left: 48px;
+  padding-top: 12px;
+  font-size: 17px;
 }
 
 hr {
@@ -11067,6 +11075,7 @@ hr {
   text-align: center;
   padding: 20px;
   font-size: 29px;
+  height: 74åpx;
 }
 
 .iconR {
@@ -11079,12 +11088,29 @@ hr {
   overflow: auto;
 }
 
-.inner {
+.innerWeapon {
   border: 0px solid black;
-  width: 300px;
-  height: 150px;
+  width: 310px;
+  height: 340px;
   margin: auto;
-  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.innerInventory {
+  border: 0px solid black;
+  width: 310px;
+  height: 240px;
+  margin: auto;
+  padding: 10px;
+}
+
+.moneySection {
+  width: 330px;
+  height: 77px;
+  margin: auto;
+  padding: 16px;
+  margin: auto;
+  margin-top: -14px;
 }
 
 .profskiCon {
@@ -11100,6 +11126,37 @@ hr {
   padding: 10px;
   float: left;
   position: relative;
+  overflow: hidden;
   background-size: 100% auto;
+}
+
+.extraExtra {
+  width: 300px;
+  height: 80px;
+  margin: auto;
+  overflow: scroll;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+.moneyBox {
+  background: url("/img/moneyBox.png") no-repeat top center;
+  float: left;
+  height: 43px;
+  width: 74px;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  background-size: contain;
+  font-size: 20px;
+}
+
+.outerMoney {
+  float: left;
+  text-align: center;
+  width: 74px;
+  height: 60px;
+  line-height: .7;
 }
 

@@ -344,7 +344,6 @@ img {
 .attributesHere {
   background: url('/img/AttribBG.png') no-repeat top center;
   position: relative;
-  height: 160px;
   -webkit-background-size: 100% auto;
   -moz-background-size:100% auto;
   -o-background-size: 100% auto;
@@ -605,11 +604,16 @@ a.burr {
   	background-size: contain;
 }
 .proficiencyScore{
-  font-size:20px;
-  padding-left:20px;
+  font-size: 20px;
+  padding-left: 50px;
   margin-top: 10px;
 }
-
+.profTitle {
+text-transform:uppercase;
+padding-left: 48px;
+padding-top: 12px;
+font-size: 17px;
+}
 hr {
   margin-top: .2rem;
   margin-bottom: .2rem;
@@ -646,6 +650,7 @@ hr {
   text-align: center;
   padding: 20px;
   font-size: 29px;
+  height: 74åpx;
 }
 .iconR {
   width: 70px;
@@ -657,12 +662,28 @@ hr {
   overflow: auto;
 }
 
-.inner {
+.innerWeapon {
   border: 0px solid black;
-  width: 300px;
-  height: 150px;
+  width: 310px;
+  height: 340px;
   margin: auto;
-  margin-bottom: 20px;
+  padding: 10px;
+}
+.innerInventory {
+  border: 0px solid black;
+  width: 310px;
+  height: 240px;
+  margin: auto;
+  padding: 10px;
+}
+
+.moneySection {
+  width: 330px;
+  height: 77px;
+  margin: auto;
+  padding: 16px;
+  margin: auto;
+  margin-top:-14px;
 }
 .profskiCon {
   height: 850px;
@@ -676,9 +697,41 @@ hr {
   padding: 10px;
   float: left;
   position: relative;
+  overflow: hidden;
   -webkit-background-size: 100% auto;
   -moz-background-size:100% auto;
   -o-background-size: 100% auto;
   background-size: 100% auto;
 
+}
+.extraExtra{
+width: 300px;
+height: 80px;
+margin: auto;
+overflow: scroll;
+padding: 10px;
+overflow-x: hidden;
+}
+
+.moneyBox {
+  background: url("/img/moneyBox.png") no-repeat top center;
+  float: left;
+  height: 43px;
+  width: 74px;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  background-size: contain;
+  font-size: 20px;
+
+
+}
+
+.outerMoney {
+  float: left;
+  text-align: center;
+  width: 74px;
+  height: 60px;
+  line-height: .7;
 }
