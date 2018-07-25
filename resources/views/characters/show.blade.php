@@ -225,17 +225,18 @@
                 </div>
 
                     
-                <div class="inventoryContainer text-center">
+                <div class="inventoryContainer">
             
                     <img class="iconR" src="/img/weaponicon.png" alt="weapon"><div class="head">Weapons</div>
 
                     <div class="innerWeapon">
-                            
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
+                        <p>This is where data from the DnD 5e API will populate regarding the character's weapon proficiencies. For example:<p>
+                            <ul>
+                                <li>Light Armor</li>
+                                <li>Medium Armor</li>
+                                <li>Shields</li>
+                                <li>Simple Weapons</li>
+                            </ul>
 
                     </div>
 
@@ -246,12 +247,13 @@
                     <img class="iconL" src="/img/inventoryicon.png" alt="bag"><div class="head">Inventory</div>
                     <div class="innerInventory">
                             
-                        text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
+                        <p>This is where data from the DnD 5e API will populate regarding the character's starting equipment. Users will also be able to update the character's inventory manually using the "Edit" function. For example:<p>
+                                <ul>
+                                    <li>One (1) Explorer's Pack</li>
+                                    <li>Four (4) Javelins</li>
+                                    <li>One (1) Battleaxe</li>
+                                    <li>One (1) Handaxe</li>
+                                </ul>
 
                     </div>
                 </div>
@@ -287,9 +289,9 @@
 
                     <hr>
                     <img class="iconL" src="/img/MiscBg.png" alt="money"><div class="head">Other</div>
-                    <div class="extraExtra">text text  text  text  text  text  text  text  text  text  text  text  text  text  text  text  text 
-                    text  text  text  text  text  text  text 
-                    text  text  text  text  text  text  text  text </div>
+                    <div class="extraExtra">
+                        This is an an area for additional information regarding the character. Stay tuned for more features in Version 2.0! 
+                    </div>
                 </div>
 
                 
