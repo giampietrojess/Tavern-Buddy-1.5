@@ -44,7 +44,10 @@
                                 </div>
                                 <div class="col-md-4"></div>
                             </div>
-                            <p>Test 3</p>
+                            <p>
+                                {{Form::label('Chaotic Good')}}
+                                {{Form::radio('alignment', 'Chaotic Good', false, ['class' => 'radio radio-inline'])}}
+                            </p>
                         </div>
                         <div class="carousel-item">
                             
@@ -55,7 +58,10 @@
                                 </div>
                                 <div class="col-md-4"></div>
                             </div>
-                            <p>Test 4</p>    
+                            <p>
+                                {{Form::label('Lawful Neutral')}}
+                                {{Form::radio('alignment', 'Lawful Neutral', false, ['class' => 'radio'])}}
+                            </p>    
                         
                         </div>
                         <div class="carousel-item">
@@ -66,7 +72,10 @@
                             </div>
                             <div class="col-md-4"></div>
                             </div>
-                            <p>Test 5</p>
+                            <p>
+                                {{Form::label('True Neutral')}}
+                                {{Form::radio('alignment', 'True Neutral', false, ['class' => 'radio radio-inline'])}}
+                            </p>
                             
                         </div>
                         <div class="carousel-item">
@@ -77,7 +86,10 @@
                             </div>
                             <div class="col-md-4"></div>
                             </div>
-                            <p>Test 6</p>
+                            <p>
+                                {{Form::label('Chaotic Neutral')}}
+                                {{Form::radio('alignment', 'Chaotic Neutral', false, ['class' => 'radio radio-inline'])}}
+                            </p>
                         
                         </div>
                         <div class="carousel-item">
@@ -88,7 +100,10 @@
                             </div>
                             <div class="col-md-4"></div>
                             </div>
-                            <p>Test 7</p>
+                            <p>
+                                {{Form::label('Lawful Evil')}}
+                                {{Form::radio('alignment', 'Lawful Evil', false, ['class' => 'radio'])}}
+                            </p>
                         </div>
                         <div class="carousel-item">
                         <div class="row">
@@ -98,7 +113,10 @@
                             </div>
                             <div class="col-md-4"></div>
                             </div>
-                            <p>Test 8</p>
+                            <p>                    
+                                {{Form::label('Neutral Evil')}}
+                                {{Form::radio('alignment', 'Neutral Evil', false, ['class' => 'radio radio-inline'])}}
+                            </p>
                         </div>
                         <div class="carousel-item">
                         <div class="row">
@@ -108,7 +126,10 @@
                             </div>
                             <div class="col-md-4"></div>
                             </div>
-                            <p>Test 9</p>
+                            <p>
+                                {{Form::label('Chaotic Evil')}}
+                                {{Form::radio('alignment', 'Chaotic Evil', false, ['class' => 'radio radio-inline'])}}
+                            </p>
                         </div>
                     </div>  
 
@@ -126,7 +147,8 @@
         </div>
     
         <div class="col-md-3"></div>
-            {!! Form::open(['action' => 'Character\AlignmentController@alignQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+            
+            <!-- {!! Form::open(['action' => 'Character\AlignmentController@alignQuest', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                 {{ csrf_field() }}
                 <div class="form-group">
                     <h3>{{Form::label('What is your Character\'s Alignment?')}}</h3>
@@ -161,10 +183,10 @@
                     </p>
                     <hr>
                 </div>
-                {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
-            {!! Form::close() !!}
+            {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
+        {!! Form::close() !!} -->
 
-        </div>
+      
     </div>
 </div>    
 @endsection
