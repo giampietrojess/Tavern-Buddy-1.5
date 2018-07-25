@@ -23,7 +23,7 @@
                     <th><a href="/characters/{{$character->id}}/edit" class="btn btn-primary">Edit</a></th>
                         <th> <th>{!!Form::open(['action' => ['Character\CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
                                     {{Form::hidden('_method', 'DELETE')}}
-                                    {{Form::submit('Delete?', ['class' => 'ham'])}}
+                                    {{Form::submit('Delete?', ['class' => 'btn btn-primary'])}}
                                 {!!Form::close()!!}</th></th>
                     </tr>
                 @endforeach
