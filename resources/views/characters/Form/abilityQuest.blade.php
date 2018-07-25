@@ -45,8 +45,7 @@
         {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
 
-    {{-- <a href="/backgroundQuest" class="btn btn-lg">Next</a> --}}
-    <div>{{$strength->full_name}} | {{$dexterity->full_name}} | {{$constitution->full_name}} | {{$intelligence->full_name}} | {{$wisdom->full_name}}</div>
+
 
 
 @endsection
