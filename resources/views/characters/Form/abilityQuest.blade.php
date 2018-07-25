@@ -13,32 +13,32 @@
                 
                 <div class="col-md-2">
                 {{Form::label('name', 'Strength')}}
-                <p>{{Form::number('str_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                <p>{{Form::selectRange('str_score', 8, 19)}}</p>    
                 </div>
                 <!-- Dexterity -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Dexterity')}}
-                <p>{{Form::number('dex_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                <p>{{Form::selectRange('dex_score', 8, 19)}}</p>
                 </div>
                 <!-- Constitution -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Constitution')}}
-                <p>{{Form::number('con_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                <p>{{Form::selectRange('con_score', 8, 19)}}</p>
                 </div>
                 <!-- Intelligence -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Intelligence')}}
-                <p>{{Form::number('int_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                <p>{{Form::selectRange('int_score', 8, 19)}}</p>
                 </div>
-                <!-- Intelligence -->
+                <!-- Wisdom -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Wisdom')}}
-                <p>{{Form::number('wis_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                <p>{{Form::selectRange('wis_score', 8, 19)}}</p>
                 </div>
                 <!-- Charisma -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Charisma')}}
-                <p>{{Form::number('cha_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                <p>{{Form::selectRange('cha_score', 8, 19)}}</p>
                 </div>
             </div>
         </div>
