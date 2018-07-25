@@ -10707,10 +10707,6 @@ section {
   text-align: center;
 }
 
-img {
-  pointer-events: none;
-}
-
 .characterSheetHead {
   background: url("/img/CharacterSheetTop.png") no-repeat top center;
   position: relative;
