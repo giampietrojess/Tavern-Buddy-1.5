@@ -11,16 +11,114 @@
                 <h3>A Dungeons and Dragons 5th Edition Character Manager for the New Adventurer!</h3>
             </div>   
             <div class="flex-center position-ref full-height text-center">
+            
             @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a class="btn btn-primary btn-lg" href="{{ url('/dashboard') }}">Home</a>
-                    @else
-                        <a class="btn btn-primary btn-lg" href="{{ route('login') }}">Login</a>
-                        <a class="btn btn-primary btn-lg" href="{{ route('register') }}">Register</a>
-                    @endauth
+            <div class="diceLinks">
+                @auth
+
+                <div class="linkCont">
+                    <img src="/img/LandingDice/D4.png" title="Home" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="/dashboard" title="home" class="ham wiggle-me">Home</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="linkCont">
+                    <img src="/img/LandingDice/D8.png" title="Add a Character" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="/nameQuest" title="Add Character" class="ham wiggle-me">Add a Character</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linkCont">
+                    <img src="/img/LandingDice/D10.png" title="What" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="#" title="What is it?" class="ham wiggle-me">What is it?</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="linkCont">
+                    <img src="/img/LandingDice/d20.png" title="Who" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="#" title="Who are we?" class="ham wiggle-me">Who are We?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linkCont">
+                    <img src="/img/LandingDice/d20.png" title="Credits" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="#" title="Credits" class="ham wiggle-me">Credits</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                @else
+
+                <div class="linkCont">
+                    <img src="/img/LandingDice/D4.png" title="Login" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="{{ route('login') }}" alt="login" class="ham wiggle-me">Login</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linkCont">
+                    <img src="/img/LandingDice/D8.png" title="Register" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="{{ route('register') }}" title="Register" class="ham wiggle-me">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linkCont">
+                    <img src="/img/LandingDice/D10.png" title="What" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="#" title="What is it?" class="ham wiggle-me">What is it?</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="linkCont">
+                    <img src="/img/LandingDice/d20.png" title="Who" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="#" title="Who are we?" class="ham wiggle-me">Who are We?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linkCont">
+                    <img src="/img/LandingDice/d20.png" title="Credits" class="imageLink">
+                    <div class="middle">
+                        <div class="text2">
+                        <a href="#" title="Credits" class="ham wiggle-me">Credits</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="{{ route('login') }}" alt="login"><img src="/img/LandingDice/D4.png"></a> 
+                <a href="{{ route('register') }}" alt="register"><img src="/img/LandingDice/D8.png"></a>
+                <a href="#" alt="What is It?"><img src="/img/LandingDice/D10.png"></a>
+                <a href="#" alt="Who are We?"><img src="/img/LandingDice/d20.png"></a>
+                <a href="#" alt="credits"><img src="/img/LandingDice/D12.png"></a> -->
+                @endauth
+            </div>
             @endif
+
+           
 
         </div>
         </div>
