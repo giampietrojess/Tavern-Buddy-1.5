@@ -10,7 +10,6 @@
             <h3>{{Form::label('Establish your Ability Scores!')}}</h3>
             <div class="row">
                 <!-- Strength -->
-                
                 <div class="col-md-2">
                 {{Form::label('name', 'Strength')}}
                 <p>{{Form::selectRange('str_score', 8, 19)}}</p>    
