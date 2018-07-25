@@ -5,12 +5,12 @@
   <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-      @foreach ($classArray as $class)    
-      <div class="modal fade" id="yourModal{{$class->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      @foreach ($raceArray as $race)    
+      <div class="modal fade" id="yourModal{{$race->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
           <div class="modal-body">
-              <div class="text-center"><h3>{{$class->name}}</h3></div>
+              <div class="text-center"><h3>{{$race->name}}</h3></div>
               <div class="text-left">
                   <p><strong>Hit Die: </strong> 1 D{{$class->hit_die}}</p>
                   <p><strong>Saving Throws: </strong>{{$class->saving_throws[0]->name}}, {{$class->saving_throws[1]->name}}</p>
