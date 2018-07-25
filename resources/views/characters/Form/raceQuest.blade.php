@@ -35,13 +35,13 @@
         <div class="card">
           <div class="card-header" id="headingOne">
             <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 {{$human->name}}
               </button>
             </h5>
           </div>
       
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
               <p><strong>Ability Bonus:</strong> +1 to each Ability Score</p>
               <p><strong>Size:</strong> {{$human->size_description}}</p>
@@ -72,13 +72,13 @@
         <div class="card">
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                   {{$dwarf->name}}
                 </button>
               </h5>
             </div>
         
-            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="card-body">
                 <p><strong>Ability Bonus:</strong> +2 to Constitution</p>
                 <p><strong>Size:</strong> {{$dwarf->size_description}}</p>
@@ -91,13 +91,13 @@
           <div class="card">
             <div class="card-header" id="headingFour">
               <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                     {{$halfling->name}}
                 </button>
               </h5>
             </div>
         
-            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
               <div class="card-body">
                 <p><strong>Ability Bonus:</strong> +2 to Dexterity</p>
                 <p><strong>Size:</strong> {{$halfling->size_description}}</p>
@@ -110,13 +110,13 @@
           <div class="card">
             <div class="card-header" id="headingFive">
               <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                     {{$gnome->name}}
                 </button>
               </h5>
             </div>
         
-            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
               <div class="card-body">
                 <p><strong>Ability Bonus:</strong> +2 to Intelligence</p>
                 <p><strong>Size:</strong> {{$gnome->size_description}}</p>
@@ -129,13 +129,13 @@
           <div class="card">
             <div class="card-header" id="headingSix">
               <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
                     {{$dragonborn->name}}
                 </button>
               </h5>
             </div>
         
-            <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-parent="#accordion">
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
               <div class="card-body">
                 <p><strong>Ability Bonus:</strong> +2 to Strength, +1 to Charisma</p>
                 <p><strong>Size:</strong> {{$dragonborn->size_description}}</p>
@@ -145,7 +145,8 @@
               </div>
             </div>
           </div>
-      </div>
+    </div>
+    <br>
 
 
 @endsection
