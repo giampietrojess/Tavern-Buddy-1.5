@@ -14,11 +14,22 @@
                     <div class="modal-content">
                     <div class="modal-body">
                         <div class="text-center"><h3>{{$class->name}}</h3></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet quos dolor ipsam rem recusandae nihil ratione molestias nulla. Nisi aliquam doloribus cupiditate sequi ab delectus aspernatur ea itaque neque?
-                        Eos natus ipsam itaque asperiores repudiandae soluta aliquid labore cupiditate eligendi. Delectus voluptate asperiores facere, quidem quos ipsum? A ipsam sit cumque sunt ab minima dolore saepe libero alias est?
-                        Maxime delectus quibusdam, nam natus, sed iure similique eum voluptatum magnam dolore obcaecati laborum fugit incidunt optio quam ratione esse quo dolores, eaque nulla voluptate? Nesciunt facilis vero ipsam distinctio!
-                        Architecto tenetur aspernatur unde incidunt tempore voluptatibus officia amet, id provident quis odio blanditiis ipsam officiis nihil a excepturi aut culpa consequatur temporibus minus voluptatem esse reprehenderit voluptatum iusto. Iure.
-                        Dolorum consectetur quis modi voluptate earum numquam. Saepe inventore recusandae sapiente sunt ullam hic vitae non, laboriosam cupiditate beatae, quidem obcaecati rem qui et a, molestias sequi. Ad, omnis voluptatum.</p>
+                        <div class="text-left">
+                            <p><strong>Hit Die: </strong> 1 D{{$class->hit_die}}</p>
+                            <p><strong>Saving Throws: </strong>{{$class->saving_throws[0]->name}}, {{$class->saving_throws[1]->name}}</p>
+                            <h5><strong>Weapon and Armor Proficiencies: </strong></h5>
+                                <ul>
+                                @foreach ($class->proficiencies as $proficiencies)
+                                    <li>{{$proficiencies->name}}</li>
+                                @endforeach
+                                </ul>
+                            <h5><strong>Skill Proficiency Choices (you may choose {{$class->proficiency_choices[0]->choose}}): </strong></h5>
+                                <ul>
+                                    @foreach ($class->proficiency_choices[0]->from as $choices)
+                                        <li>{{$choices->name}}</li>
+                                    @endforeach
+                                </ul>
+                        </div>
                         
                     </div>
                     <div class="modal-footer">
