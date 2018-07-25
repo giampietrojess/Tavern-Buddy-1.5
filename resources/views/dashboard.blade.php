@@ -39,7 +39,7 @@
                                 @foreach($characters as $character)
                                     <tr>
                                         <th><a href="/characters/{{$character->id}}">{{$character->character_name}}</a></th>
-                                    <th><a href="#" class="btn btn-primary">Edit</a></th>
+                                    <th><a href="/characters/{{$character->id}}/edit" class="btn btn-primary">Edit</a></th>
                                         <th>{!!Form::open(['action' => ['Character\CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
                                     {{Form::hidden('_method', 'DELETE')}}
                                     {{Form::submit('Delete?', ['class' => 'ham'])}}

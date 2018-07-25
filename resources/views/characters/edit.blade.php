@@ -4,16 +4,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                            <h1>Add a Character questions</h1><hr>
+                            <h1>Edit Your Character</h1><hr>
             
-                {!! Form::open(['action' => 'Character\CharactersController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+                {!! Form::open(['action' => ['Character\CharactersController@update', $character->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                     <!-- Character Name -->
                     <div class="form-group">
-                        <h3>{{Form::label('Choose a Name for your Character')}}</h3>
+                        <h3>{{Form::label('Change your Character\'s Name?')}}</h3>
                             <div class="row">
                                 <div class="col-md-3"></div>
                                 <div class="col-md-6">
-                                    {{Form::text('character_name', '', ['class' => 'form-control character-name', 'placeholder' => 'Title'])}}
+                                    {{Form::text('character_name', $character->character_name, ['class' => 'form-control character-name', 'placeholder' => 'Title'])}}
                                 </div> 
                                 <div class="col-md-3"></div>
                             </div>
@@ -21,31 +21,33 @@
                     <hr>
                     <!-- Character Race -->
                     <div class="form-group">
-                        <h3>{{Form::label('What Race is your Character?')}}</h3>
+                        <h3>{{Form::label('Change your Character\'s Race?')}}</h3>
+                        <p>Your character's race is currently: {{$character->race}}</p>
                         <p>
                         {{Form::label('Human')}}
                         {{Form::radio('race', 'Human', ['class' => 'radio'])}}
 
                         {{Form::label('Elf')}}
-                        {{Form::radio('race', 'Elf', ['class' => 'radio radio-inline'])}}
+                        {{Form::radio('race', 'Elf', ['class' => 'radio'])}}
 
                         {{Form::label('Dwarf')}}
-                        {{Form::radio('race', 'Dwarf', ['class' => 'radio radio-inline'])}}
+                        {{Form::radio('race', 'Dwarf', ['class' => 'radio'])}}
 
                         {{Form::label('Halfling')}}
-                        {{Form::radio('race', 'Halfling', ['class' => 'radio radio-inline'])}}
+                        {{Form::radio('race', 'Halfling', ['class' => 'radio'])}}
 
                         {{Form::label('Gnome')}}
-                        {{Form::radio('race', 'Gnome', ['class' => 'radio radio-inline'])}}
+                        {{Form::radio('race', 'Gnome', ['class' => 'radio'])}}
                         </p>
                         <hr>
                     </div>
                     <!-- Character Class -->
                     <div class="form-group">
-                        <h3>{{Form::label('What Class is your Character?')}}</h3>
+                        <h3>{{Form::label('Change your Character\'s Class?')}}</h3>
+                        <p> Your character's current class is: {{$character->class}}</p>
                         <p>
                         {{Form::label('Barbarian')}}
-                        {{Form::radio('class', 'Human', ['class' => 'radio'])}}
+                        {{Form::radio('class', 'Barbarian', ['class' => 'radio'])}}
 
                         {{Form::label('Bard')}}
                         {{Form::radio('class', 'Bard', ['class' => 'radio radio-inline'])}}
@@ -88,45 +90,47 @@
 
                     <!-- Ability Scores: Strength, Dex, Constitution, Intelligence, Wisdom, Charisma -->
                     <div class="form-group">
-                        <h3>{{Form::label('Establish your Ability Scores!')}}</h3>
+                        <h3>{{Form::label('Change your Ability Scores?')}}</h3>
+                    
                         <div class="row">
                             <!-- Strength -->
                             
                             <div class="col-md-2">
                             {{Form::label('name', 'Strength')}}
-                            <p>{{Form::number('str_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('str_score', $character->str_score, ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                             <!-- Dexterity -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Dexterity')}}
-                            <p>{{Form::number('dex_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('dex_score', $character->dex_score, ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                             <!-- Constitution -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Constitution')}}
-                            <p>{{Form::number('con_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('con_score', $character->con_score, ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                             <!-- Intelligence -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Intelligence')}}
-                            <p>{{Form::number('int_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('int_score', $character->int_score, ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                             <!-- Intelligence -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Wisdom')}}
-                            <p>{{Form::number('wis_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('wis_score', $character->wis_score, ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                             <!-- Charisma -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Charisma')}}
-                            <p>{{Form::number('cha_score', '', ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
+                            <p>{{Form::number('cha_score', $character->cha_score, ['class' => 'form-control-small', 'type' => 'number', 'min' => 0, 'placeholder' => '--'])}}</p>
                             </div>
                         </div>
                     </div>
                     <hr>
                     <!-- Background: Acolyte, Criminal/Spy, Folk Hero, Haunted One, Noble, Sage, Soldier   -->
                     <div class="form-group">
-                        <h3>{{Form::label('What is your Character\'s Background?')}}</h3>
+                        <h3>{{Form::label('Change your Character\'s Background?')}}</h3>
+                        <p>Your Current Background is: {{$character->background}}</p>
                         {{Form::select('background', 
                             [   'acolyte' => 'Acolyte', 
                                 'criminal/spy' => 'Criminal/Spy', 
@@ -134,13 +138,14 @@
                                 'haunted one' => 'Haunted One', 
                                 'noble' => 'Noble', 
                                 'sage' => 'Sage', 
-                                'soldier' => 'Soldier'] 
+                                'soldier' => 'Soldier'], $character->background 
                                 )}}
                     </div>
                     <hr>
                     <!-- Alignment: Lawful Good, Neutral Good, Chaotic Good, Lawful Neutral, True Neutral, Chaotic Neutral, Lawful Evil, Neutral Evil, Chaotic Evil -->
                     <div class="form-group">
-                        <h3>{{Form::label('What is your Character\'s Alignment?')}}</h3>
+                        <h3>{{Form::label('Change your Character\'s Alignment?')}}</h3>
+                        <p>Your Current Alignment is: {{$character->alignment}}</p>
                         <p>
                         {{Form::label('Lawful Good')}}
                         {{Form::radio('alignment', 'Lawful Good', true, ['class' => 'radio'])}}
@@ -172,8 +177,8 @@
                         </p>
                         <hr>
                     </div>
-
-
+                    
+                    {{Form::hidden('_method', 'PUT')}}
 
                     {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
             {!! Form::close() !!}
