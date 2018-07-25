@@ -20,7 +20,7 @@ class RaceController extends Controller
         $tiefling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/9'));
         array_push($raceArray, $dragonborn, $dwarf, $elf, $gnome, $halfling, $human, $tiefling);
         $character = $request->session()->get('character');
-        return view('characters.Form.raceQuest', compact('dwarf', 'elf', 'halfling', 'human', 'dragonborn', 'gnome', 'character'));
+        return view('characters.Form.raceQuest', compact('raceArray', 'character'));
     }
 
     public function postraceQuest(Request $request)
