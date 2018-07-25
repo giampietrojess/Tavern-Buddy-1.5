@@ -5,6 +5,37 @@
   <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
+      @foreach ($classArray as $class)    
+      <div class="modal fade" id="yourModal{{$class->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+          <div class="modal-body">
+              <div class="text-center"><h3>{{$class->name}}</h3></div>
+              <div class="text-left">
+                  <p><strong>Hit Die: </strong> 1 D{{$class->hit_die}}</p>
+                  <p><strong>Saving Throws: </strong>{{$class->saving_throws[0]->name}}, {{$class->saving_throws[1]->name}}</p>
+                  <h5><strong>Weapon and Armor Proficiencies: </strong></h5>
+                      <ul>
+                      @foreach ($class->proficiencies as $proficiencies)
+                          <li>{{$proficiencies->name}}</li>
+                      @endforeach
+                      </ul>
+                  <h5><strong>Skill Proficiency Choices (you may choose {{$class->proficiency_choices[0]->choose}}): </strong></h5>
+                      <ul>
+                          @foreach ($class->proficiency_choices[0]->from as $choices)
+                              <li>{{$choices->name}}</li>
+                          @endforeach
+                      </ul>
+              </div>
+              
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+          </div>
+      </div>
+      </div>
+  @endforeach
     {!! Form::open(['action' => 'Character\RaceController@index', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
       {{ csrf_field() }}
 
