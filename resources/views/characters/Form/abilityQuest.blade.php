@@ -41,6 +41,7 @@
                 </div>
             </div>
         </div>
+        <a href="/classQuest" alt="go back" class="btn btn-primary">Back</a>
         {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
 

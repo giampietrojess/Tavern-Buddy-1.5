@@ -160,12 +160,18 @@
                         <p>Your Current Background is: {{$character->background}}</p>
                         {{Form::select('background', 
                             [   'acolyte' => 'Acolyte', 
+                                'charlatan' => 'Charlatan', 
                                 'criminal/spy' => 'Criminal/Spy', 
+                                'entertainer' => 'Entertainer', 
                                 'folk hero' => 'Folk Hero', 
-                                'haunted one' => 'Haunted One', 
-                                'noble' => 'Noble', 
+                                'guild artisan' => 'Guild Artisan', 
+                                'hermit' => 'Hermit', 
+                                'Noble' => 'Noble', 
+                                'outlander' => 'Outlander', 
                                 'sage' => 'Sage', 
-                                'soldier' => 'Soldier'], $character->background 
+                                'sailor' => 'Sailor', 
+                                'soldier' => 'Soldier', 
+                                'urchin' => 'Urchin'], $character->background 
                                 )}}
                     </div>
                     <hr>

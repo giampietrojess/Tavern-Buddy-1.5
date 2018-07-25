@@ -63,12 +63,12 @@
                 <div class="col-md-4">
                     <img id="img-sorcerer" class="img-fluid" src="/img/RaceIcons/HumanIcon.png" data-toggle="modal" data-target="#yourModal10">
                     <p>{{Form::label('Human')}}
-                    {{Form::radio('class', 'Human', false, ['class' => 'radio radio-inline'])}}</p>
+                    {{Form::radio('race', 'Human', false, ['class' => 'radio radio-inline'])}}</p>
                 </div>
                 <div class="col-md-4">
                     <img id="img-warlock" class="img-fluid" src="/img/RaceIcons/TieflingIcon.png" data-toggle="modal" data-target="#yourModal11">
                     <p>{{Form::label('Tiefling')}}
-                    {{Form::radio('class', 'Tiefling', false, ['class' => 'radio radio-inline'])}}</p>
+                    {{Form::radio('race', 'Tiefling', false, ['class' => 'radio radio-inline'])}}</p>
                 </div>
                   
               </div>
@@ -78,7 +78,7 @@
 
           <hr>          
         </div>
-
+        <a href="/nameQuest" alt="go back" class="btn btn-primary">Back</a>
       {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
   </div>

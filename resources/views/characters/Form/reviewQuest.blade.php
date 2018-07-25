@@ -39,7 +39,7 @@
                     <td><strong>{{$character->alignment}}</strong></td>
                 </tr>
             </table>
-
+                <a href="/alignQuest" alt="go back" class="btn btn-primary">Back</a>
                 {{Form::submit('Create Character', ['class'=>'btn btn-primary'])}}
         {!! Form::close() !!}
 

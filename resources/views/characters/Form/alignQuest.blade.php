@@ -98,7 +98,7 @@
 
                     <hr>          
                 </div>
-
+                <a href="/backgroundQuest" alt="go back" class="btn btn-primary">Back</a>
                 {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
             {!! Form::close() !!}
 
