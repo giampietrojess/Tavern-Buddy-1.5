@@ -34,6 +34,7 @@
                 <!-- Character Class -->
                 <div class="form-group">
                     <h1>{{Form::label('What Class is your Character?')}}</h1>
+                    <h4>Click on an image to see more information</h4>
                     <p>
                         <div class="container">   
                             <div class="row">
