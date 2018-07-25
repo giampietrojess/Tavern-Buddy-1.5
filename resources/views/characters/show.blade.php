@@ -128,10 +128,10 @@
                     <div class="profskiCon">   
                         <div class="proficiency">
                             <div class="row">
-                                <div class="col-md-3 text-center proficiencyScore">
+                                <div class="text-center proficiencyScore">
                                 ?
                                 </div>
-                                <div class="col-md-9 text-center">
+                                <div class="profTitle">
                                     Proficiency Bonus
                                 </div>
                             </div>
@@ -229,7 +229,7 @@
             
                     <img class="iconR" src="/img/weaponicon.png" alt="weapon"><div class="head">Weapons</div>
 
-                    <div class="inner clearfix">
+                    <div class="innerWeapon">
                             
                         Text text text text text text text text text text text text text text
                         Text text text text text text text text text text text text text text
@@ -244,7 +244,7 @@
 
                 <div class="extraBox">
                     <img class="iconL" src="/img/inventoryicon.png" alt="bag"><div class="head">Inventory</div>
-                    <div class="inner clearfix">
+                    <div class="innerInventory">
                             
                         text text text text text text text text text text text
                         Text text text text text text text text text text text text text text
@@ -255,17 +255,41 @@
 
                     </div>
                 </div>
-                <div class="extraBox">
-                <img class="iconR" src="/img/moneyIcon.png" alt="money"><div class="head">Money Pouch</div>
-                    <div class="inner clearfix">
-                            
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-                        Text text text text text text text text text text text text text text
-
+                <div class="extraBox clearfix">
+                    
+                    <img class="iconR" src="/img/moneyIcon.png" alt="money"><div class="head">Money Pouch</div>
+                    <div class="moneySection">
+                        <div class="outerMoney">
+                            <div class="moneyBox">
+                                ?
+                            </div>
+                            Platinum
+                        </div>
+                        <div class="outerMoney">
+                            <div class="moneyBox">
+                                ?
+                            </div>
+                            Gold
+                        </div>
+                        <div class="outerMoney">
+                            <div class="moneyBox">
+                                ?
+                            </div>
+                            Silver
+                        </div>
+                        <div class="outerMoney">
+                            <div class="moneyBox">
+                                ?
+                            </div>
+                            Copper
+                        </div>
                     </div>
+
+                    <hr>
+                    <img class="iconL" src="/img/MiscBg.png" alt="money"><div class="head">Other</div>
+                    <div class="extraExtra">text text  text  text  text  text  text  text  text  text  text  text  text  text  text  text  text 
+                    text  text  text  text  text  text  text 
+                    text  text  text  text  text  text  text  text </div>
                 </div>
 
                 
