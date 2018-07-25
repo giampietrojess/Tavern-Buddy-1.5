@@ -42,7 +42,7 @@
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <img id="img-monk" class="img-fluid" src="/img/RaceIcons/GnomeIcon.png" data-toggle="modal" data-target="#yourModal6">
+                    <img id="img-monk" class="img-fluid" src="/img/RaceIcons/Half-Elf.png" data-toggle="modal" data-target="#yourModal6">
                     <p>{{Form::label('Half-Elf')}}
                     {{Form::radio('race', 'Half-Elf', false, ['class' => 'radio radio-inline'])}}
                 </div>
