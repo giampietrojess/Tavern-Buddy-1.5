@@ -105,7 +105,7 @@
                     <img src="/img/LandingDice/d20.png" title="Credits" class="imageLink">
                     <div class="middle">
                         <div class="text2">
-                        <a href="#" title="Credits" class="ham wiggle-me">Credits</a>
+                        <a href="#section5" title="Credits" class="ham wiggle-me">Credits</a>
                         </div>
                     </div>
                 </div>
@@ -195,8 +195,8 @@
         <div class="divider" id="section6"></div>
  
         <section class="bg-3">
-            <div class="col-sm-6 col-sm-offset-3 text-center">      
-                <h5>Section 6</h5>
+            <div class="col-md-12 text-center">      
+                <span class="secText">CREDITS</span>
             </div>
         </section>
 
@@ -205,12 +205,14 @@
     
         <div class="container">
             <div class="text-center">
-                <h3>WHO WE ARE</h3>
-                <p>Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
-                Here's where we'll describe our site and stuff at a longer length than just the tagline. Think 'elevator pitch' but in writing.
+                <h1>CREDITS</h1>
+                <p>
+                    All Dungeons and Dragons information belongs to <a href="http://dnd.wizards.com/">Wizards of the Coast</a>, which
+                        was harnassed with the use of the <a href="http://www.dnd5eapi.co/">DnD5eAPI</a>. 
+                    The images on the front page here were created by artist <a href="#">ArtistNameHere</a>. 
+                    The images used in the character creation form were created by <a href="r-n-w.net">R-N-W.net</a>. 
                 </p> 
+                <p> This is a nonprofit site made for the purposes of the UCF Coding Bootcamp.</p>
             </div>   
         </div>
 
