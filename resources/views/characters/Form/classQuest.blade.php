@@ -12,12 +12,14 @@
                 <div class="modal fade" id="yourModal{{$class->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">{{$class->name}}</h4>
-                    </div>
                     <div class="modal-body">
-                        {{$class->name}}
+                        <div class="text-center"><h3>{{$class->name}}</h3></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet quos dolor ipsam rem recusandae nihil ratione molestias nulla. Nisi aliquam doloribus cupiditate sequi ab delectus aspernatur ea itaque neque?
+                        Eos natus ipsam itaque asperiores repudiandae soluta aliquid labore cupiditate eligendi. Delectus voluptate asperiores facere, quidem quos ipsum? A ipsam sit cumque sunt ab minima dolore saepe libero alias est?
+                        Maxime delectus quibusdam, nam natus, sed iure similique eum voluptatum magnam dolore obcaecati laborum fugit incidunt optio quam ratione esse quo dolores, eaque nulla voluptate? Nesciunt facilis vero ipsam distinctio!
+                        Architecto tenetur aspernatur unde incidunt tempore voluptatibus officia amet, id provident quis odio blanditiis ipsam officiis nihil a excepturi aut culpa consequatur temporibus minus voluptatem esse reprehenderit voluptatum iusto. Iure.
+                        Dolorum consectetur quis modi voluptate earum numquam. Saepe inventore recusandae sapiente sunt ullam hic vitae non, laboriosam cupiditate beatae, quidem obcaecati rem qui et a, molestias sequi. Ad, omnis voluptatum.</p>
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
