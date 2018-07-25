@@ -409,7 +409,7 @@ section {
 }
 
 .linkCont:hover .imageLink {
-  opacity: 0.3;
+  opacity: 0.2;
   -ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;
 }
 // Makes links wiggle! 
@@ -421,7 +421,6 @@ section {
 
 .linkCont:hover .middle {
   opacity: 1;
-
   
 }
 
@@ -430,8 +429,19 @@ section {
   font-size: 30px;
   padding: 16px 32px;
   text-transform: uppercase;
+  line-height:.5;
+}
+.text2 {
+  color: #000;
+  font-size: 35px;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  line-height:1;
 }
 
+.diceLinks {
+  padding-top:20px;
+}
 
 a.ham {
   color: #000!important;
