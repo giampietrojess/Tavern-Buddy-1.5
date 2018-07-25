@@ -11214,3 +11214,21 @@ hr {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
+.jumbotron {
+  background: url("/img/dashboard scroll.png") no-repeat top center;
+  height: 300px;
+  background-size: 100%;
+  margin-bottom: 0px;
+}
+
+.top {
+  font-size: 2.0rem;
+  padding-top: 60px;
+}
+
+.scrolly {
+  overflow: auto;
+  overflow-x: hidden;
+  height: 300px;
+}
+

@@ -4,7 +4,7 @@
 <div class="container">
     <div class="jumbotron text-center">
         
-            <h2>Welcome {{ Auth::user()->name }}! Here are your adventurers!</h2>
+            <div class="top">Welcome {{ Auth::user()->name }}! Here are your adventurers!</div>
     </div>
     <div class="container text-center">
         

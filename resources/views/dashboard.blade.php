@@ -4,7 +4,7 @@
 <div class="container">
     <div class="jumbotron text-center">
         
-            <h2>Welcome {{ Auth::user()->name }}! Your Adventure Begins Now!</h2>
+            <div class="top">Welcome {{ Auth::user()->name }}! Your Adventure Begins Now!</div>
     </div>
     <div class="container text-center">
         
@@ -14,7 +14,11 @@
 
                 <div class="card">
 
-                    <div class="card-header">Dashboard</div>
+                    <div class="card-header">
+                        <a href="/nameQuest" class="btn btn-lg btn-primary">Add a Character</a>
+                        <a href="/mycharacters" class="btn btn-lg btn-primary">View Your Characters</a>
+                        <a href="/characters" class="btn btn-lg btn-primary">View All Characters</a>
+                    </div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -23,30 +27,32 @@
                             </div>
                         @endif
 
-                        You are logged in!
-
-                        <div class="col-md-12 justify-content-center">
-                            <a href="/nameQuest" class="btn btn-lg btn-primary">Add a Character</a>
-                            <a href="/mycharacters" class="btn btn-lg btn-primary">View Characters</a>
-                        </div>
-                        <div class="col-md-12 justify-content-center">
-                            <table class="table table-striped">
-                                <tr>
-                                    <th>Character Name</th>
-                                    <th></th>
-                                    <th></th>
-                                </tr>
-                                @foreach($characters as $character)
-                                    <tr>
-                                        <th><a href="/characters/{{$character->id}}">{{$character->character_name}}</a></th>
-                                    <th><a href="/characters/{{$character->id}}/edit" class="btn btn-primary">Edit</a></th>
-                                        <th>{!!Form::open(['action' => ['Character\CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
-                                    {{Form::hidden('_method', 'DELETE')}}
-                                    {{Form::submit('Delete?', ['class' => 'btn btn-primary'])}}
-                                {!!Form::close()!!}</th>
-                                    </tr>
-                                @endforeach
-                            </table>
+                        <div class="row">
+                            <div class="col-md-6 justify-content-center">
+                                <h3>Your Characters</h3>
+                                <div class="scrolly">
+                                    <table class="table table-striped">
+                                        <tr>
+                                            <th>Character Name</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                        @foreach($characters as $character)
+                                            <tr>
+                                                <th><a href="/characters/{{$character->id}}">{{$character->character_name}}</a></th>
+                                            <th><a href="/characters/{{$character->id}}/edit" class="btn btn-primary">Edit</a></th>
+                                                <th>{!!Form::open(['action' => ['Character\CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
+                                            {{Form::hidden('_method', 'DELETE')}}
+                                            {{Form::submit('Delete?', ['class' => 'btn btn-primary'])}}
+                                        {!!Form::close()!!}</th>
+                                            </tr>
+                                        @endforeach
+                                    </table>   
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-fluid" src="/img/bw4.jpg">
+                            </div>
                         </div>
                     </div>
                 </div>
