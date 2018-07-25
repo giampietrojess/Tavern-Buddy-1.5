@@ -127,6 +127,7 @@ class AbilityController extends Controller
                     $character->int_mod = 3;
                     break;
                 case 18:
+                case 19:
                     $character->int_mod = 4;
                     break;
             }
@@ -153,6 +154,7 @@ class AbilityController extends Controller
                     $character->wis_mod = 3;
                     break;
                 case 18:
+                case 19:
                     $character->wis_mod = 4;
                     break;
             }
