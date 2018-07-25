@@ -6,7 +6,8 @@
             <div class="col-md-12 text-center">
                             <h1>Edit Your Character</h1><hr>
             
-                {!! Form::open(['action' => ['Character\CharactersController@update', $character->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+                {!! Form::model($character, ['action' => ['Character\CharactersController@update', $character->id], 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+        
                     <!-- Character Name -->
                     <div class="form-group">
                         <h3>{{Form::label('Change your Character\'s Name?')}}</h3>
@@ -24,20 +25,47 @@
                         <h3>{{Form::label('Change your Character\'s Race?')}}</h3>
                         <p>Your character's race is currently: {{$character->race}}</p>
                         <p>
-                        {{Form::label('Human')}}
-                        {{Form::radio('race', 'Human', ['class' => 'radio'])}}
-
-                        {{Form::label('Elf')}}
-                        {{Form::radio('race', 'Elf', ['class' => 'radio'])}}
-
+                            
+                        {{Form::label('Dragonborn')}}
+                        {{Form::radio('race', 'Dragonborn', ['class' => 'radio'])}}
+                        
                         {{Form::label('Dwarf')}}
                         {{Form::radio('race', 'Dwarf', ['class' => 'radio'])}}
-
-                        {{Form::label('Halfling')}}
-                        {{Form::radio('race', 'Halfling', ['class' => 'radio'])}}
-
+                        
+                        {{Form::label('Elf')}}
+                        {{Form::radio('race', 'Elf', ['class' => 'radio'])}}
+                       
                         {{Form::label('Gnome')}}
                         {{Form::radio('race', 'Gnome', ['class' => 'radio'])}}
+                        
+                        {{Form::label('Half-Elf')}}
+                        {{Form::radio('race', 'Half-Elf', ['class' => 'radio'])}}
+                        
+                        {{Form::label('Half-Orc')}}
+                        {{Form::radio('race', 'Half-Orc', ['class' => 'radio'])}}
+                        
+                        {{Form::label('Halfling')}}
+                        {{Form::radio('race', 'Halfling', ['class' => 'radio'])}}
+                        
+                        {{Form::label('Human')}}
+                        {{Form::radio('race', 'Human', ['class' => 'radio'])}}
+                        
+                        {{Form::label('Tiefling')}}
+                        {{Form::radio('race', 'Tiefling', ['class' => 'radio'])}}
+       
+                        <!-- {{Form::radio('race', 'Human', false, ['class' => 'radio'])}}
+
+                        {{Form::label('Elf')}}
+                        {{Form::radio('race', 'Elf', false, ['class' => 'radio'])}}
+
+                        {{Form::label('Dwarf')}}
+                        {{Form::radio('race', 'Dwarf', false, ['class' => 'radio'])}}
+
+                        {{Form::label('Halfling')}}
+                        {{Form::radio('race', 'Halfling', false, ['class' => 'radio'])}}
+
+                        {{Form::label('Gnome')}}
+                        {{Form::radio('race', 'Gnome', false, ['class' => 'radio'])}} -->
                         </p>
                         <hr>
                     </div>
