@@ -11,6 +11,7 @@ class ClassController extends Controller
 {
     public function index(Request $request)
     {
+        $classArray = [];
         $barbarian = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/1'));
         $bard = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/2'));
         $cleric = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/3'));
@@ -23,8 +24,9 @@ class ClassController extends Controller
         $sorcerer = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/10'));
         $warlock = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/11'));
         $wizard = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/12'));
+        array_push($classArray, $barbarian, $bard, $cleric, $druid, $fighter, $monk, $paladin, $ranger, $rogue, $sorcerer, $warlock, $wizard);
         $character = $request->session()->get('character');
-        return view('characters.Form.classQuest', compact('barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk', 'paladin', 'ranger', 'rogue', 'sorcerer', 'warlock', 'wizard', 'character'));
+        return view('characters.Form.classQuest', compact('classArray', 'character'));
     }
 
     public function postclassQuest(Request $request)
