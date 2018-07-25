@@ -2,8 +2,109 @@
 
 @section('content')
 <div class="container text-center">
-    <h1>What is your Character's Race?</h1>
+  <div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
     {!! Form::open(['action' => 'Character\RaceController@index', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+      {{ csrf_field() }}
+
+        <!-- Character Class -->
+        <div class="form-group">
+          <h1>{{Form::label('What Class is your Character?')}}</h1>
+          <h4>Click on an image to see more information</h4>
+          <p>
+            <div class="container">   
+              <div class="row">
+                <div class="col-md-4">
+                    <img id="img-barbarian" class="img-fluid" src="/img/RaceIcons/DragonBornIcon.png" data-toggle="modal" data-target="#yourModal1">
+                    <p> {{Form::label('Dragonborn')}}
+                    {{Form::radio('race', 'Dragonborn', false, ['class' => 'radio'])}}</p>
+                </div>
+                <div class="col-md-4">
+                    <img id="img-bard" class="img-fluid" src="/img/RaceIcons/DwarfIcon.png" data-toggle="modal" data-target="#yourModal2">
+                    <p>{{Form::label('Dwarf')}}
+                    {{Form::radio('race', 'Dwarf', false, ['class' => 'radio radio-inline'])}}</p>
+                </div>
+                <div class="col-md-4">
+                    <img id="img-cleric" class="img-fluid" src="/img/RaceIcons/ElfIcon.png" data-toggle="modal" data-target="#yourModal3">
+                    <p>{{Form::label('Elf')}}
+                    {{Form::radio('race', 'Elf', false, ['class' => 'radio radio-inline'])}}</p>
+                </div>
+                
+              </div>
+
+              <div class="row">
+
+                <div class="col-md-4">
+                    <img id="img-fighter" class="img-fluid" src="/img/RaceIcons/GnomeIcon.png" data-toggle="modal" data-target="#yourModal5">
+                    <p>{{Form::label('Gnome')}}
+                    {{Form::radio('race', 'Gnome', false, ['class' => 'radio radio-inline'])}}
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img id="img-monk" class="img-fluid" src="/img/RaceIcons/GnomeIcon.png" data-toggle="modal" data-target="#yourModal6">
+                    <p>{{Form::label('Half-Elf')}}
+                    {{Form::radio('race', 'Half-Elf', false, ['class' => 'radio radio-inline'])}}
+                </div>
+                <div class="col-md-4">
+                    <img id="img-paladin" class="img-fluid" src="/img/RaceIcons/Half-Orc.png" data-toggle="modal" data-target="#yourModal7">
+                    <p>{{Form::label('Half-Orc')}}
+                    {{Form::radio('race', 'Half-Orc', false, ['class' => 'radio radio-inline'])}}</p>
+                </div>
+        
+              </div>
+              <div class="row">
+
+                <div class="col-md-4">
+                    <img id="img-rogue" class="img-fluid" class="img-fluid" src="/img/RaceIcons/Halfling.png" data-toggle="modal" data-target="#yourModal9">
+                    <p>{{Form::label('Halfling')}}
+                    {{Form::radio('race', 'Halfling', false, ['class' => 'radio radio-inline'])}}</p>
+                </div>
+                <div class="col-md-4">
+                    <img id="img-sorcerer" class="img-fluid" src="/img/RaceIcons/HumanIcon.png" data-toggle="modal" data-target="#yourModal10">
+                    <p>{{Form::label('Human')}}
+                    {{Form::radio('class', 'Human', false, ['class' => 'radio radio-inline'])}}</p>
+                </div>
+                <div class="col-md-4">
+                    <img id="img-warlock" class="img-fluid" src="/img/RaceIcons/TieflingIcon.png" data-toggle="modal" data-target="#yourModal11">
+                    <p>{{Form::label('Tiefling')}}
+                    {{Form::radio('class', 'Tiefling', false, ['class' => 'radio radio-inline'])}}</p>
+                </div>
+                  
+              </div>
+            </div>
+              
+          </p>
+
+          <hr>          
+        </div>
+
+      {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
+    {!! Form::close() !!}
+  </div>
+  <div class="col-md-2"></div>
+  </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- {!! Form::open(['action' => 'Character\RaceController@index', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         <div class="form-group">
             <h3>{{Form::label('What Race is your Character?')}}</h3>
             <p>
@@ -28,9 +129,9 @@
             <hr>
         </div>
     {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
-    {!! Form::close() !!}
+    {!! Form::close() !!} -->
     <br>
-    {{-- <a href="/classQuest" class="btn btn-lg">Not Next</a> --}}
+    
     <div id="accordion">
         <div class="card">
           <div class="card-header" id="headingOne">
