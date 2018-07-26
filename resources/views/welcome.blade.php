@@ -209,8 +209,8 @@
                 <p>
                     All Dungeons and Dragons information belongs to <a href="http://dnd.wizards.com/">Wizards of the Coast</a>, which
                         was harnassed with the use of the <a href="http://www.dnd5eapi.co/">DnD5eAPI</a>. 
-                    The images on the front page here were created by artist <a href="#">ArtistNameHere</a>. 
-                    The images used in the character creation form were created by <a href="r-n-w.net">R-N-W.net</a>. 
+                    The images on the front page here were created by artist <a href="http://luschekillustrationblog.blogspot.com/">Richard Luschek</a>. 
+                    The images used in the character creation form were created by <a href="http://www.r-n-w.net/">R-N-W.net</a>. 
                 </p> 
                 <p> This is a nonprofit site made for the purposes of the UCF Coding Bootcamp.</p>
             </div>   
