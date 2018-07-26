@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="linkCont">
-                    <img src="/img/LandingDice/D8.png" title="Add a Character" class="imageLink">
+                    <img src="/img/LandingDice/D10.png" title="Add a Character" class="imageLink">
                     <div class="middle">
                         <div class="text2">
                         <a href="/nameQuest" title="Add Character" class="ham wiggle-me">Add a Character</a>
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="linkCont">
-                    <img src="/img/LandingDice/D10.png" title="What" class="imageLink">
+                    <img src="/img/LandingDice/D8.png" title="What" class="imageLink">
                     <div class="middle">
                         <div class="text2">
                         <a href="#" title="What is it?" class="ham wiggle-me">What is it?</a>
@@ -75,7 +75,7 @@
                 </div>
 
                 <div class="linkCont">
-                    <img src="/img/LandingDice/D8.png" title="Register" class="imageLink">
+                    <img src="/img/LandingDice/D10.png" title="Register" class="imageLink">
                     <div class="middle">
                         <div class="text2">
                         <a href="{{ route('register') }}" title="Register" class="ham wiggle-me">Register</a>
@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="linkCont">
-                    <img src="/img/LandingDice/D10.png" title="What" class="imageLink">
+                    <img src="/img/LandingDice/D8.png" title="What" class="imageLink">
                     <div class="middle">
                         <div class="text2">
                         <a href="#" title="What is it?" class="ham wiggle-me">What is it?</a>
