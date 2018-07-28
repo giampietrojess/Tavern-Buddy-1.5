@@ -44,7 +44,7 @@
                 </div>
 
                  <div class="linkCont">
-                    <img src="/img/LandingDice/d12.png" title="Who" class="imageLink">
+                    <img src="/img/LandingDice/D12.png" title="Who" class="imageLink">
                     <div class="middle">
                         <div class="text2">
                         <a href="#" title="Who are we?" class="ham wiggle-me">Who are We?</a>
