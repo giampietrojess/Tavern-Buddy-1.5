@@ -287,17 +287,17 @@ section {
   position: relative;
   height: 180px;
   display: inline-block;
-  width: 530px;
+  width: 550px;
   padding-top: 36px;
   z-index: 999;
   font-family: 'Gaegu', cursive;
-  font-size: 1.5vw;
+  font-size: calc(8px + 1vw);
   margin-left: 20px;
   margin-top: 0px;
   text-transform: capitalize;
 }
 .up {
-  margin-top: 0px;
+  margin-top: -5px;
 }
 
 .nameBox {

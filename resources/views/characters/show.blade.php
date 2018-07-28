@@ -71,26 +71,26 @@
                     <div class="characterSheetHeadRight">
                         <div class="topRight">
                             <div class="row">
-                                <div class="col-sm-4 col-md-4 text-center">
+                                <div class="col-4 col-sm-4 col-md-4 text-center">
                                     {{$character->class}} - X
                                 </div>
-                                <div class="col-sm-4 col-md-4 text-center">
+                                <div class="col-4 col-sm-4 col-md-4 text-center">
                                     {{$character->background}}
                                 </div>
-                                <div class="col-sm-4 col-md-4 text-center">
+                                <div class="col-4 col-sm-4 col-md-4 text-center">
                                     {{$character->user->name}}
                                 </div>
                             </div>
                             <div class="row up">
-                                <div class="col-sm-4 col-md-4 text-center">
+                                <div class="col-4 col-sm-4 col-md-4 text-center">
                                     {{$character->race}}
                                     
                                 </div>
-                                <div class="col-sm-4 col-md-4 text-center">
+                                <div class="col-4 col-sm-4 col-md-4 text-center">
                                     {{$character->alignment}}
                                    
                                 </div>
-                                <div class="col-sm-4 col-md-4 text-center">
+                                <div class="col-4 col-sm-4 col-md-4 text-center">
                                    X
                                 </div>
                             </div>
