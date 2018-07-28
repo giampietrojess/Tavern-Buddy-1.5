@@ -49,6 +49,10 @@ class AbilityController extends Controller
                 case 19:
                     $character->str_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->str_mod = 5;
+                    break;
             }
         $character->dex_score = $request->input('dex_score');
             switch ($character->dex_score) {

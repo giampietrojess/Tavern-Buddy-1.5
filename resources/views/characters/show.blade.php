@@ -205,7 +205,7 @@
                     </div>
                     <div class="row">
                         <div class="currentHP">
-                                Current Hit Points
+                            Current Hit Points
                         </div>
                     </div>
                     <div class="row">
