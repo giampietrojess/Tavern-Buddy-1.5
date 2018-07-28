@@ -63,15 +63,39 @@
         <div class="row">
 
             <div class="container">
-                <div class="characterSheetHead">
-                    <div class="nameBox">{{$character->character_name}}</div>
-                    <div class="raceBox">{{$character->race}}</div>
-                    <div class="classBox">{{$character->class}}</div>
-                    <div class="levelBox">X</div>
-                    <div class="bgBox">{{$character->background}}</div>
-                    <div class="alignmentBox">{{$character->alignment}}</div>
-                    <div class="xpBox">X</div>
-                    <div class="userBox">{{$character->user->name}}</div>
+                <div class="row">
+                    <div class="characterSheetHead">
+                        <div class="nameBox text-center">{{$character->character_name}}</div>
+
+                    </div>
+                    <div class="characterSheetHeadRight">
+                        <div class="topRight">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 text-center">
+                                    {{$character->class}} - X
+                                </div>
+                                <div class="col-sm-4 col-md-4 text-center">
+                                    {{$character->background}}
+                                </div>
+                                <div class="col-sm-4 col-md-4 text-center">
+                                    {{$character->user->name}}
+                                </div>
+                            </div>
+                            <div class="row up">
+                                <div class="col-sm-4 col-md-4 text-center">
+                                    {{$character->race}}
+                                    
+                                </div>
+                                <div class="col-sm-4 col-md-4 text-center">
+                                    {{$character->alignment}}
+                                   
+                                </div>
+                                <div class="col-sm-4 col-md-4 text-center">
+                                   X
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="attributesHere">
