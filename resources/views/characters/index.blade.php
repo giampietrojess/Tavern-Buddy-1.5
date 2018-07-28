@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container text-center">
     <h1>View All Characters</h1>
         @if(count($characters) > 0)
             @foreach($characters as $character)
