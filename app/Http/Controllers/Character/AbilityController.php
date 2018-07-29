@@ -80,6 +80,10 @@ class AbilityController extends Controller
                 case 19:
                     $character->dex_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->dex_mod = 5;
+                    break;
             }
         $character->con_score = $request->input('con_score');
             switch ($character->con_score) {
@@ -106,6 +110,10 @@ class AbilityController extends Controller
                 case 18:
                 case 19:
                     $character->con_mod = 4;
+                    break;
+                case 20:
+                case 21:
+                    $character->con_mod = 5;
                     break;
             }
         $character->int_score = $request->input('int_score');
@@ -134,6 +142,10 @@ class AbilityController extends Controller
                 case 19:
                     $character->int_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->int_mod = 5;
+                    break;
             }
         $character->wis_score = $request->input('wis_score');
             switch ($character->wis_score) {
@@ -161,6 +173,10 @@ class AbilityController extends Controller
                 case 19:
                     $character->wis_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->wis_mod = 5;
+                    break;
             }
         $character->cha_score = $request->input('cha_score');
             switch ($character->cha_score) {
@@ -187,6 +203,10 @@ class AbilityController extends Controller
                 case 18:
                 case 19:
                     $character->cha_mod = 4;
+                    break;
+                case 20:
+                case 21:
+                    $character->cha_mod = 5;
                     break;
             }
         $character->user_id = auth()->user()->id;

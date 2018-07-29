@@ -17,27 +17,27 @@
                 <!-- Dexterity -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Dexterity')}}
-                <p>{{Form::selectRange('dex_score', 8, 19)}}</p>
+                <p>{{Form::selectRange('dex_score', 8, 21)}}</p>
                 </div>
                 <!-- Constitution -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Constitution')}}
-                <p>{{Form::selectRange('con_score', 8, 19)}}</p>
+                <p>{{Form::selectRange('con_score', 8, 21)}}</p>
                 </div>
                 <!-- Intelligence -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Intelligence')}}
-                <p>{{Form::selectRange('int_score', 8, 19)}}</p>
+                <p>{{Form::selectRange('int_score', 8, 21)}}</p>
                 </div>
                 <!-- Wisdom -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Wisdom')}}
-                <p>{{Form::selectRange('wis_score', 8, 19)}}</p>
+                <p>{{Form::selectRange('wis_score', 8, 21)}}</p>
                 </div>
                 <!-- Charisma -->
                 <div class="col-md-2">
                 {{Form::label('name', 'Charisma')}}
-                <p>{{Form::selectRange('cha_score', 8, 19)}}</p>
+                <p>{{Form::selectRange('cha_score', 8, 21)}}</p>
                 </div>
             </div>
         </div>
