@@ -37,17 +37,17 @@
             <div class="container">   
               <div class="row">
                 <div class="col-md-4">
-                    <img id="img-dwarf" class="img-fluid" src="/img/RaceIcons/DwarfIcon.png" data-toggle="modal" data-target="#yourModal1">
+                    <img id="img-dwarf" class="img-fluid test" src="/img/RaceIcons/DwarfIcon.png" data-toggle="modal" data-target="#yourModal1">
                     <p>{{Form::label('Dwarf')}}
                     {{Form::radio('race', 'Dwarf', false, ['class' => 'radio radio-inline'])}}</p>
                 </div>
                 <div class="col-md-4">
-                    <img id="img-elf" class="img-fluid" src="/img/RaceIcons/ElfIcon.png" data-toggle="modal" data-target="#yourModal2">
+                    <img id="img-elf" class="img-fluid test" src="/img/RaceIcons/ElfIcon.png" data-toggle="modal" data-target="#yourModal2">
                     <p>{{Form::label('Elf')}}
                     {{Form::radio('race', 'Elf', false, ['class' => 'radio radio-inline'])}}</p>
                 </div>
                 <div class="col-md-4">
-                    <img id="img-halfling" class="img-fluid" class="img-fluid" src="/img/RaceIcons/Halfling.png" data-toggle="modal" data-target="#yourModal3">
+                    <img id="img-halfling" class="img-fluid test" class="img-fluid" src="/img/RaceIcons/Halfling.png" data-toggle="modal" data-target="#yourModal3">
                     <p>{{Form::label('Halfling')}}
                     {{Form::radio('race', 'Halfling', false, ['class' => 'radio radio-inline'])}}</p>
                 </div>                
@@ -55,17 +55,17 @@
 
               <div class="row">
                 <div class="col-md-4">
-                    <img id="img-human" class="img-fluid" src="/img/RaceIcons/HumanIcon.png" data-toggle="modal" data-target="#yourModal4">
+                    <img id="img-human" class="img-fluid test" src="/img/RaceIcons/HumanIcon.png" data-toggle="modal" data-target="#yourModal4">
                     <p>{{Form::label('Human')}}
                     {{Form::radio('race', 'Human', false, ['class' => 'radio radio-inline'])}}</p>
                 </div>
                 <div class="col-md-4">
-                    <img id="img-dragonborn" class="img-fluid" src="/img/RaceIcons/DragonBornIcon.png" data-toggle="modal" data-target="#yourModal5">
+                    <img id="img-dragonborn" class="img-fluid test" src="/img/RaceIcons/DragonBornIcon.png" data-toggle="modal" data-target="#yourModal5">
                     <p> {{Form::label('Dragonborn')}}
                     {{Form::radio('race', 'Dragonborn', false, ['class' => 'radio'])}}</p>
                 </div>
                 <div class="col-md-4">
-                    <img id="img-gnome" class="img-fluid" src="/img/RaceIcons/GnomeIcon.png" data-toggle="modal" data-target="#yourModal6">
+                    <img id="img-gnome" class="img-fluid test" src="/img/RaceIcons/GnomeIcon.png" data-toggle="modal" data-target="#yourModal6">
                     <p>{{Form::label('Gnome')}}
                     {{Form::radio('race', 'Gnome', false, ['class' => 'radio radio-inline'])}}
                     </p>
@@ -73,17 +73,17 @@
               </div>
               <div class="row">
                 <div class="col-md-4">
-                    <img id="img-half-elf" class="img-fluid" src="/img/RaceIcons/Half-Elf.png" data-toggle="modal" data-target="#yourModal7">
+                    <img id="img-half-elf" class="img-fluid test" src="/img/RaceIcons/Half-Elf.png" data-toggle="modal" data-target="#yourModal7">
                     <p>{{Form::label('Half-Elf')}}
                     {{Form::radio('race', 'Half-Elf', false, ['class' => 'radio radio-inline'])}}
                 </div>
                 <div class="col-md-4">
-                    <img id="img-half-orc" class="img-fluid" src="/img/RaceIcons/Half-Orc.png" data-toggle="modal" data-target="#yourModal8">
+                    <img id="img-half-orc" class="img-fluid test" src="/img/RaceIcons/Half-Orc.png" data-toggle="modal" data-target="#yourModal8">
                     <p>{{Form::label('Half-Orc')}}
                     {{Form::radio('race', 'Half-Orc', false, ['class' => 'radio radio-inline'])}}</p>
                 </div>
                 <div class="col-md-4">
-                    <img id="img-tiefling" class="img-fluid" src="/img/RaceIcons/TieflingIcon.png" data-toggle="modal" data-target="#yourModal9">
+                    <img id="img-tiefling" class="img-fluid test" src="/img/RaceIcons/TieflingIcon.png" data-toggle="modal" data-target="#yourModal9">
                     <p>{{Form::label('Tiefling')}}
                     {{Form::radio('race', 'Tiefling', false, ['class' => 'radio radio-inline'])}}</p>
                 </div>
