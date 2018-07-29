@@ -38,7 +38,7 @@
                     <img src="/img/LandingDice/D8.png" title="What" class="imageLink">
                     <div class="middle">
                         <div class="text2">
-                        <a href="#" title="What is it?" class="ham wiggle-me">What is it?</a>
+                        <a href="#WhatisIt" title="What is it?" id="nav" class="ham wiggle-me">What is it?</a>
                         </div>
                     </div>
                 </div>
@@ -125,13 +125,13 @@
         
         <div class="divider" id="section2"></div>
     
-        <section class="bg-1">
+        <section class="bg-1"  id="WhatisIt">
             <div class="col-md-12 text-center">
                 <span class="secText">WHAT IS TAVERN BUDDY?</span>
             </div>
         </section>
     
-        <div class="divider" id="section3"></div>
+        <div class="divider"></div>
     
         <div class="container">
             <div class="text-center">
@@ -236,4 +236,6 @@
         
     </div>
 
+
+	
 @endsection
