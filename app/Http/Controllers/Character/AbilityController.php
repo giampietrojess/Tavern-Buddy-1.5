@@ -24,6 +24,48 @@ class AbilityController extends Controller
     {
         $character = $request->session()->get('character');
         $character->str_score = $request->input('str_score');
+        $character->dex_score = $request->input('dex_score');
+        $character->con_score = $request->input('con_score');
+        $character->int_score = $request->input('int_score');
+        $character->wis_score = $request->input('wis_score');
+        $character->cha_score = $request->input('cha_score');
+        switch ($character->race) {
+            case 'Dwarf':
+                $character->con_score += 2;
+                break;
+            case 'Elf':
+            case 'Halfling':
+                $character->dex_score += 2;
+                break;
+            case 'Human':
+                $character->str_score += 1;
+                $character->dex_score += 1;
+                $character->con_score += 1;
+                $character->int_score += 1;
+                $character->wis_score += 1;
+                $character->cha_score += 1;
+                break;
+            case 'Dragonborn':
+                $character->str_score += 2;
+                $character->cha_score += 1;
+                break;
+            case 'Gnome':
+                $character->int_score += 2;
+                break;
+            case 'Half-Elf':
+                $character->cha_score += 2;
+                // Need to add choice for +1 to two additional modifiers
+                break;
+            case 'Half-Orc':
+                $character->str_score += 2;
+                $character->con_score += 1;
+                break;
+            case 'Tiefling':
+                $character->int_score += 1;
+                $character->cha_score += 2;
+                break;
+        }
+
             switch ($character->str_score) {
                 case 8:
                 case 9:
@@ -54,7 +96,7 @@ class AbilityController extends Controller
                     $character->str_mod = 5;
                     break;
             }
-        $character->dex_score = $request->input('dex_score');
+
             switch ($character->dex_score) {
                 case 8:
                 case 9:
@@ -85,7 +127,7 @@ class AbilityController extends Controller
                     $character->dex_mod = 5;
                     break;
             }
-        $character->con_score = $request->input('con_score');
+
             switch ($character->con_score) {
                 case 8:
                 case 9:
@@ -116,7 +158,7 @@ class AbilityController extends Controller
                     $character->con_mod = 5;
                     break;
             }
-        $character->int_score = $request->input('int_score');
+
             switch ($character->int_score) {
                 case 8:
                 case 9:
@@ -147,7 +189,7 @@ class AbilityController extends Controller
                     $character->int_mod = 5;
                     break;
             }
-        $character->wis_score = $request->input('wis_score');
+
             switch ($character->wis_score) {
                 case 8:
                 case 9:
@@ -178,7 +220,7 @@ class AbilityController extends Controller
                     $character->wis_mod = 5;
                     break;
             }
-        $character->cha_score = $request->input('cha_score');
+
             switch ($character->cha_score) {
                 case 8:
                 case 9:
