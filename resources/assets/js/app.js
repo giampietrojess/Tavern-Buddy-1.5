@@ -25,13 +25,18 @@ const app = new Vue({
       return {
         step:1,
         characterCreation:{
-          character_name:null,
+          character_name: '',
           race:null,
-          street:null,
-          city:null,
-          state:null,
-          numtickets:0,
-          shirtsize:'XL'
+          class:null,
+          str_score:'',
+          dex_score:'',
+          con_score:'',
+          int_score:'',
+          wis_score:'',
+          cha_score:'',
+          background:null,
+          alignment:null
+
         }
       }
     },
