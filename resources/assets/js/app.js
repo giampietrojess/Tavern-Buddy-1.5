@@ -17,9 +17,33 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
+
+
 const app = new Vue({
-    el: '#app'
-});
-
-
+    el:'#app',
+    data() {
+      return {
+        step:1,
+        characterCreation:{
+          character_name:null,
+          race:null,
+          street:null,
+          city:null,
+          state:null,
+          numtickets:0,
+          shirtsize:'XL'
+        }
+      }
+    },
+    methods:{
+      prev() {
+        this.step--;
+      },
+      next() {
+        this.step++;
+      }
+    }
+  });
+  
+  
 
