@@ -198,7 +198,7 @@
                         </div>
 
                         <div class="speedBox">
-                            speed
+                            speed<br>{{$character->speed}} ft.
                         </div>
 
                     
