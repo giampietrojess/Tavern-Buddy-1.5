@@ -8,7 +8,7 @@ use App\User;
 
 class RaceController extends Controller
 {
-    private $raceArray;
+    private $raceArray = array();
 
     public function index(Request $request)
     {   
@@ -22,7 +22,7 @@ class RaceController extends Controller
         $half_elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/7'));
         $half_orc = json_decode(file_get_contents('http://dnd5eapi.co/api/races/8'));
         $tiefling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/9'));
-        array_push($raceArray, $dwarf, $elf, $halfling, $human, $dragonborn, $gnome, $half_elf, $half_orc, $tiefling);
+        array_push($this->raceArray, $dwarf, $elf, $halfling, $human, $dragonborn, $gnome, $half_elf, $half_orc, $tiefling);
         $character = $request->session()->get('character');
         return view('characters.Form.raceQuest', compact('raceArray', 'character'));
     }
