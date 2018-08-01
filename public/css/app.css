@@ -10771,7 +10771,9 @@ section {
 }
 
 .levelBox {
-  position: relative;
+  position: absolute;
+  top: 60px;
+  left: 610px;
   z-index: 999;
   float: left;
   font-family: 'Gaegu', cursive;
