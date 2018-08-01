@@ -129,7 +129,7 @@
                         <div class="proficiency">
                             <div class="row">
                                 <div class="text-center proficiencyScore">
-                                ?
+                                +{{$character->proficiency_bonus}}
                                 </div>
                                 <div class="profTitle">
                                     Proficiency Bonus
@@ -198,14 +198,16 @@
                         </div>
 
                         <div class="speedBox">
-                            speed<br>{{$character->speed}} ft.
+                            <p>speed</p>
+                            <h5>{{$character->speed}} ft.</h5>
                         </div>
 
                     
                     </div>
                     <div class="row">
                         <div class="currentHP">
-                                Current Hit Points
+                                <p>Current Hit Points</p>
+                                <h3>{{$character->hit_points}}</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -215,7 +217,8 @@
                     </div>
                     <div class="row">
                         <div class="hitDice">
-                            Hit Dice
+                            <p>Hit Dice</p>
+                            <h5>1 d{{$character->hit_dice}}</h5>
                         </div>
                         <div class="hitDice">
                             Death Saves
