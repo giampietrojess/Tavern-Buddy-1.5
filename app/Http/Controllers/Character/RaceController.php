@@ -8,11 +8,12 @@ use App\User;
 
 class RaceController extends Controller
 {
-    private $raceArray = array();
+    private $raceArray;
 
-    public function index(Request $request)
-    {   
-        $this->raceArray = [];
+    public function createArray()
+    {
+        $this->raceArray = array();
+        $raceArray = $this->raceArray;
         $dwarf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/1'));
         $elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/2'));
         $halfling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/3'));
@@ -22,14 +23,20 @@ class RaceController extends Controller
         $half_elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/7'));
         $half_orc = json_decode(file_get_contents('http://dnd5eapi.co/api/races/8'));
         $tiefling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/9'));
-        array_push($this->raceArray, $dwarf, $elf, $halfling, $human, $dragonborn, $gnome, $half_elf, $half_orc, $tiefling);
+        array_push($raceArray, $dwarf, $elf, $halfling, $human, $dragonborn, $gnome, $half_elf, $half_orc, $tiefling);
+        echo $raceArray;
+        return $raceArray;
+    }
+    public function index(Request $request)
+    {   
+        $raceArray = $this->raceArray;
         $character = $request->session()->get('character');
         return view('characters.Form.raceQuest', compact('raceArray', 'character'));
     }
 
     public function postraceQuest(Request $request)
     {
-        echo $this->raceArray;
+        $raceArray = $this->raceArray;
         $this->validate($request, [
             'race' => 'required'
         ]);
