@@ -5,7 +5,7 @@
   <div class="row">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-      @foreach ( (array)$raceArray as $race)    
+      @foreach ($races as $race)    
       <div class="modal fade" id="yourModal{{$race->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
