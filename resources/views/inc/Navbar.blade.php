@@ -35,7 +35,7 @@
                                         Home
                                     </a>
 
-                                    <a class="dropdown-item" href="/nameQuest">
+                                    <a class="dropdown-item" href="/characters/create">
                                         Add Character
                                     </a>
 

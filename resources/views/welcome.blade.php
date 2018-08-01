@@ -29,7 +29,7 @@
                     <img src="/img/LandingDice/D10.png" title="Add a Character" class="imageLink">
                     <div class="middle">
                         <div class="text2">
-                        <a href="/nameQuest" title="Add Character" class="ham wiggle-me">Add a Character</a>
+                        <a href="/characters/create" title="Add Character" class="ham wiggle-me">Add a Character</a>
                         </div>
                     </div>
                 </div>

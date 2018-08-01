@@ -21,6 +21,7 @@ Route::get('/test', function () {
 });
 
 
+
 // Login and Registration (authentication) Routes
 Auth::routes();
 
