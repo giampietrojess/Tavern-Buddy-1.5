@@ -8,13 +8,6 @@ use App\User;
 
 class RaceController extends Controller
 {
-    
-    public function createRaceArray()
-    {
-
-
-        return $this->raceArray;
-    }
     public function index(Request $request)
     {   
         $raceArray = [];
@@ -39,6 +32,21 @@ class RaceController extends Controller
         ]);
         $character = $request->session()->get('character');
         $character->race = $request->input('race');
+        switch ($character->race) {
+            case 'Dwarf':
+            case 'Halfling':
+            case 'Gnome':
+                $character->speed = 25;
+                break;
+            case 'Elf':
+            case 'Human':
+            case 'Dragonborn':
+            case 'Half-Elf':
+            case 'Half-Orc':
+            case 'Tiefling':
+                $character->speed = 30;
+                break;
+        }
         $character->user_id = auth()->user()->id;
         $request->session()->put('character', $character);
 
