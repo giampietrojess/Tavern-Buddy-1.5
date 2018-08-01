@@ -8,9 +8,11 @@ use App\User;
 
 class RaceController extends Controller
 {
+    private $raceArray;
+
     public function index(Request $request)
     {   
-        $raceArray = [];
+        $this->raceArray = [];
         $dwarf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/1'));
         $elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/2'));
         $halfling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/3'));
@@ -27,11 +29,15 @@ class RaceController extends Controller
 
     public function postraceQuest(Request $request)
     {
+        echo $this->raceArray;
         $this->validate($request, [
             'race' => 'required'
         ]);
         $character = $request->session()->get('character');
         $character->race = $request->input('race');
+        foreach ($raceArray as $race) {
+            $character->speed = $race->speed;
+        }
         $character->user_id = auth()->user()->id;
         $request->session()->put('character', $character);
 
