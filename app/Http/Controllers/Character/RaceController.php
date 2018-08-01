@@ -8,28 +8,27 @@ use App\User;
 
 class RaceController extends Controller
 {
-    private $raceArray;
-    const $dwarf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/1'));
-    const $elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/2'));
-    var $halfling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/3'));
-    var $human = json_decode(file_get_contents('http://dnd5eapi.co/api/races/4'));
-    var $dragonborn = json_decode(file_get_contents('http://dnd5eapi.co/api/races/5'));
-    var $gnome = json_decode(file_get_contents('http://dnd5eapi.co/api/races/6'));
-    var $half_elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/7'));
-    var $half_orc = json_decode(file_get_contents('http://dnd5eapi.co/api/races/8'));
-    var $tiefling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/9'));
+    protected $raceArray = array();
     
     public function createRaceArray()
     {
-        $this->raceArray = array();
+        $dwarf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/1'));
+        $elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/2'));
+        $halfling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/3'));
+        $human = json_decode(file_get_contents('http://dnd5eapi.co/api/races/4'));
+        $dragonborn = json_decode(file_get_contents('http://dnd5eapi.co/api/races/5'));
+        $gnome = json_decode(file_get_contents('http://dnd5eapi.co/api/races/6'));
+        $half_elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/7'));
+        $half_orc = json_decode(file_get_contents('http://dnd5eapi.co/api/races/8'));
+        $tiefling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/9'));
         array_push($raceArray, $dwarf, $elf, $halfling, $human, $dragonborn, $gnome, $half_elf, $half_orc, $tiefling);
         return $this->raceArray;
     }
     public function index(Request $request)
     {   
-        $races = $this->raceArray;
+        $raceArray = $this->raceArray;
         $character = $request->session()->get('character');
-        return view('characters.Form.raceQuest', compact('races', 'character'));
+        return view('characters.Form.raceQuest', compact('raceArray', 'character'));
     }
 
     public function postraceQuest(Request $request)
