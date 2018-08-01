@@ -36,6 +36,35 @@ class ClassController extends Controller
         ]);
         $character = $request->session()->get('character');
         $character->class = $request->input('class');
+        switch ($character->class) {
+            case 'Barbarian':
+                $character->hit_dice = 12;
+                $character->hit_points = $character->con_mod + 12;
+                $character->proficiency_bonus = 2;
+                break;
+            case 'Fighter':
+            case 'Paladin':
+            case 'Ranger':
+                $character->hit_dice = 10;
+                $character->hit_points = $character->con_mod + 10;
+                $character->proficiency_bonus = 2;
+                break;
+            case 'Bard':
+            case 'Cleric':
+            case 'Druid':
+            case 'Monk':
+            case 'Rogue':
+            case 'Warlock':
+                $character->hit_dice = 8;
+                $character->hit_points = $character->con_mod + 8;
+                $character->proficiency_bonus = 2;
+            case 'Sorcerer':
+            case 'Wizard':
+                $character->hit_dice = 6;
+                $character->hit_points = $character->con_mod + 6;
+                $character->proficiency_bonus = 2;
+                break;
+        }
         $character->user_id = auth()->user()->id;
         $request->session()->put('character', $character);
 
