@@ -261,32 +261,32 @@
                             <!-- Strength -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Strength')}}
-                            <p>{{Form::selectRange('str_score', 8, 21, null, ['v-model' => 'characterCreation.str_score'])}}</p>    
+                            <p>{{Form::selectRange('str_score', 8, 18, null, ['v-model' => 'characterCreation.str_score'])}}</p>    
                             </div>
                             <!-- Dexterity -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Dexterity')}}
-                            <p>{{Form::selectRange('dex_score', 8, 21, null, ['v-model' => 'characterCreation.dex_score'])}}</p>
+                            <p>{{Form::selectRange('dex_score', 8, 18, null, ['v-model' => 'characterCreation.dex_score'])}}</p>
                             </div>
                             <!-- Constitution -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Constitution')}}
-                            <p>{{Form::selectRange('con_score', 8, 21, null, ['v-model' => 'characterCreation.con_score'])}}</p>
+                            <p>{{Form::selectRange('con_score', 8, 18, null, ['v-model' => 'characterCreation.con_score'])}}</p>
                             </div>
                             <!-- Intelligence -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Intelligence')}}
-                            <p>{{Form::selectRange('int_score', 8, 21, null, ['v-model' => 'characterCreation.int_score'])}}</p>
+                            <p>{{Form::selectRange('int_score', 8, 18, null, ['v-model' => 'characterCreation.int_score'])}}</p>
                             </div>
                             <!-- Wisdom -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Wisdom')}}
-                            <p>{{Form::selectRange('wis_score', 8, 21, null, ['v-model' => 'characterCreation.wis_score'])}}</p>
+                            <p>{{Form::selectRange('wis_score', 8, 18, null, ['v-model' => 'characterCreation.wis_score'])}}</p>
                             </div>
                             <!-- Charisma -->
                             <div class="col-md-2">
                             {{Form::label('name', 'Charisma')}}
-                            <p>{{Form::selectRange('cha_score', 8, 21, null, ['v-model' => 'characterCreation.cha_score'])}}</p>
+                            <p>{{Form::selectRange('cha_score', 8, 18, null, ['v-model' => 'characterCreation.cha_score'])}}</p>
                             </div>
                         </div>
                     </div>

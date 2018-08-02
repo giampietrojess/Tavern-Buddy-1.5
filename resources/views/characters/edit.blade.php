@@ -124,32 +124,32 @@
                                 <!-- Strength -->
                                 <div class="col-md-2">
                                 {{Form::label('name', 'Strength')}}
-                                <p>{{Form::selectRange('str_score', 8, 21)}}</p>    
+                                <p>{{Form::selectRange('str_score', 8, 18)}}</p>    
                                 </div>
                                 <!-- Dexterity -->
                                 <div class="col-md-2">
                                 {{Form::label('name', 'Dexterity')}}
-                                <p>{{Form::selectRange('dex_score', 8, 21)}}</p>
+                                <p>{{Form::selectRange('dex_score', 8, 18)}}</p>
                                 </div>
                                 <!-- Constitution -->
                                 <div class="col-md-2">
                                 {{Form::label('name', 'Constitution')}}
-                                <p>{{Form::selectRange('con_score', 8, 21)}}</p>
+                                <p>{{Form::selectRange('con_score', 8, 18)}}</p>
                                 </div>
                                 <!-- Intelligence -->
                                 <div class="col-md-2">
                                 {{Form::label('name', 'Intelligence')}}
-                                <p>{{Form::selectRange('int_score', 8, 21)}}</p>
+                                <p>{{Form::selectRange('int_score', 8, 18)}}</p>
                                 </div>
                                 <!-- Wisdom -->
                                 <div class="col-md-2">
                                 {{Form::label('name', 'Wisdom')}}
-                                <p>{{Form::selectRange('wis_score', 8, 21)}}</p>
+                                <p>{{Form::selectRange('wis_score', 8, 18)}}</p>
                                 </div>
                                 <!-- Charisma -->
                                 <div class="col-md-2">
                                 {{Form::label('name', 'Charisma')}}
-                                <p>{{Form::selectRange('cha_score', 8, 21)}}</p>
+                                <p>{{Form::selectRange('cha_score', 8, 18)}}</p>
                                 </div>
                             </div>
                     </div>

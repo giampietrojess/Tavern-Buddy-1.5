@@ -274,7 +274,7 @@ class CharactersController extends Controller
                     break;
                 case 16: 
                 case 17:
-                    $character->dex_mod = 0;
+                    $character->dex_mod = 3;
                     break;
                 case 18:
                 case 19:
@@ -609,7 +609,7 @@ class CharactersController extends Controller
                     break;
                 case 16: 
                 case 17:
-                    $character->dex_mod = 0;
+                    $character->dex_mod = 3;
                     break;
                 case 18:
                 case 19:
