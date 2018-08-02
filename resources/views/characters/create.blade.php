@@ -25,7 +25,7 @@
                     </div>
                     <hr>
 
-                    <button @click.prevent="next()">Next</button>
+                    <button @click.prevent="next()" class="btn btn-lg btn-primary">Next</button>
 
                 </div>
 
@@ -45,7 +45,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -118,8 +118,8 @@
                         <hr>          
                     </div>
                             
-                    <button @click.prevent="prev()">Previous</button>
-                    <button @click.prevent="next()">Next</button>
+                    <button @click.prevent="prev()" class="btn btn-lg btn-primary">Previous</button>
+                    <button @click.prevent="next()" class="btn btn-lg btn-primary">Next</button>
                             
             
                 </div>
@@ -153,7 +153,7 @@
                                 
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button type="button"  class="btn btn-lg btn-primary" data-dismiss="modal">Close</button>
                             </div>
                             </div>
                         </div>
@@ -244,8 +244,8 @@
                     </div>
                 
 
-                    <button @click.prevent="prev()">Previous</button>
-                    <button @click.prevent="next()">Next</button>
+                    <button @click.prevent="prev()" class="btn btn-lg btn-primary">Previous</button>
+                    <button @click.prevent="next()" class="btn btn-lg btn-primary">Next</button>
 
                 </div>
 
@@ -289,8 +289,8 @@
                         </div>
                     </div>
 
-                    <button @click.prevent="prev()">Previous</button>
-                    <button @click.prevent="next()">Next</button>
+                    <button @click.prevent="prev()"  class="btn btn-lg btn-primary">Previous</button>
+                    <button @click.prevent="next()"  class="btn btn-lg btn-primary">Next</button>
 
 
                 </div>
@@ -392,8 +392,8 @@
                         <hr>          
                     </div> 
                 
-                    <button @click.prevent="prev()">Previous</button>
-                    <button @click.prevent="next()">Next</button>
+                    <button @click.prevent="prev()" class="btn btn-lg btn-primary">Previous</button>
+                    <button @click.prevent="next()" class="btn btn-lg btn-primary">Next</button>
 
 
                 </div>
@@ -488,8 +488,8 @@
 
                         <hr>          
                     </div>
-                    <button @click.prevent="prev()">Previous</button>
-                    <button @click.prevent="next()">Next</button>
+                    <button @click.prevent="prev()" class="btn btn-lg btn-primary">Previous</button>
+                    <button @click.prevent="next()" class="btn btn-lg btn-primary">Next</button>
 
                 </div>
 
@@ -532,8 +532,8 @@
                         <td><strong>@{{characterCreation.alignment}}</strong></td>
                     </tr>
                     </table>
-                    <button @click.prevent="prev()">Previous</button>
-                    {{Form::submit('Create Character!', ['class'=>'btn btn-primary'])}}
+                    <button @click.prevent="prev()" class="btn btn-lg btn-primary">Previous</button>
+                    {{Form::submit('Create Character!', ['class'=>'btn btn-lg btn-primary'])}}
                 </div>
                                 <!-- <input type="submit" value="Save"> -->
                                 
