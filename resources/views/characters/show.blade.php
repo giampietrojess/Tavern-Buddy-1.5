@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
          
-            <div class="col-4 col-md-9">    
+            <div class="col-3 col-md-9">    
                 <!-- Dice Link -->
          
                 <div class="linkCont">
