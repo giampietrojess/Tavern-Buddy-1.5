@@ -497,7 +497,44 @@ class CharactersController extends Controller
                 $character->cha_score += 2;
                 break;
         }
-
+        switch($character->class) {
+            case 'Barbarian':
+                $character->image = 'Barbarian.png';
+                break;
+            case 'Bard':
+                $character->image = 'Bard.png';
+                break;
+            case 'Cleric':
+                $character->image = 'Cleric.png';
+                break;
+            case 'Druid':
+                $character->image = 'Druid.png';
+                break;
+            case 'Fighter':
+                $character->image = 'Fighter.png';
+                break;
+            case 'Monk':
+                $character->image = 'Monk.png';
+                break;
+            case 'Paladin':
+                $character->image = 'Paladin.png';
+                break;
+            case 'Ranger':
+                $character->image = 'Ranger.png';
+                break;
+            case 'Rogue':
+                $character->image = 'Rogue.png';
+                break;
+            case 'Sorcerer':
+                $character->image = 'Sorcerer.png';
+                break;
+            case 'Warlock':
+                $character->image = 'Warlock.png';
+                break;
+            case 'Wizard':
+                $character->image = 'Wizard.png';
+                break;
+        }
             switch ($character->str_score) {
                 case 8:
                 case 9:
