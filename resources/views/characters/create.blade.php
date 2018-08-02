@@ -534,7 +534,7 @@
             {!! Form::close() !!}
             </div>
         </div>
-        <br/><br/>Debug: @{{characterCreation}}
+       
     </div>
     <script type="text/javascript" language="javascript">
         $(document).ready(function () {
