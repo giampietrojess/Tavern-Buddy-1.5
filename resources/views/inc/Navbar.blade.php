@@ -1,4 +1,4 @@
-<nav class="navbar sticky-top navbar-expand-md navbar-light navbar-laravel">
+<nav class="navbar sticky-top navbar-expand-md navbar-dark navbar-laravel">
             <div class="container">
 
                 <a class="navbar-brand" href="{{ url('/') }}">
