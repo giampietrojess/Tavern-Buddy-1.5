@@ -30,7 +30,6 @@
                 </div>
 
                 <div v-show="step === 2">
-                    <h1>Step Two</h1>
                     @foreach ($raceArray as $race)    
                         <div class="modal fade" id="raceModal{{$race->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                             <div class="modal-dialog" role="document">
@@ -54,7 +53,7 @@
                     <!-- Character Race -->
                     <div class="form-group">
                         <h1>{{Form::label('What Race is your Character?')}}</h1>
-                        <h4>Click on an image to see more information</h4>
+                        <h4>Click on an image to see more information!</h4>
                         <p>
                         <div class="container">   
                             <div class="row">
@@ -127,7 +126,6 @@
 
 
                 <div v-show="step === 3">
-                    <h1>Step Three</h1>
                     @foreach ($classArray as $class)    
                         <div class="modal fade" id="classModal{{$class->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                         <div class="modal-dialog" role="document">
@@ -162,7 +160,7 @@
                     <!-- Character Class -->
                     <div class="form-group">
                         <h1>{{Form::label('What Class is your Character?')}}</h1>
-                        <h4>Click on an image to see more information</h4>
+                        <h4>Click on an image to see more information!</h4>
                         <p>
                             <div class="container">   
                                 <div class="row">
@@ -252,9 +250,8 @@
 
 
                 <div v-show="step === 4">
-                    <h1>Step 4</h1>
                     <div class="form-group">
-                        <h3>{{Form::label('Establish your Ability Scores!')}}</h3>
+                        <h1>{{Form::label('Establish your Ability Scores!')}}</h1>
                         <div class="row">
                             <!-- Strength -->
                             <div class="col-md-2">
@@ -296,11 +293,9 @@
                 </div>
 
                 <div v-show="step === 5">
-                    <h1>Step 5</h1>
                     
                     <div class="form-group">
                         <h1>{{Form::label('What is your Character\'s Background?')}}</h1>
-                        <h4>Click on an image to see more information</h4>
                         <p>
                             <div class="container">   
                                 <div class="row">
@@ -399,7 +394,6 @@
                 </div>
 
                 <div v-show="step === 6">
-                    <h1>Step 6</h1>
 
                     <div class="form-group">
                         <h1>{{Form::label('What Alignment is your Character?')}}</h1>
