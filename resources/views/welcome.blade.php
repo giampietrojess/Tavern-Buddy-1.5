@@ -161,8 +161,8 @@
                             <img class="card-img-top" src="/img/me.png" alt="Card image" style="width:50%">
                             <div class="card-body">
                                 <h4 class="card-title">Jess Giampietro</h4>
-                                <p class="card-text">Jess is a web developer and adventurer with a penchant for playing rangers and rolling poorly. Heres her profile which totally isn’t done now but may be done for demo day.</p>
-                                <a href="#" class="btn btn-lg btn-primary">See Profile</a>
+                                <p class="card-text">Jess is a web developer and adventurer with a penchant for playing rangers and rolling poorly. Here's her profile which totally isn’t done now but will hopefully be done soon!</p>
+                                <a href="https://www.jessgiampietro.com" class="btn btn-lg btn-primary">See Profile</a>
                             </div>
                         </div>
 
@@ -175,8 +175,8 @@
                             <img class="card-img-top" src="/img/you.png" alt="Card image" style="width:50%">
                             <div class="card-body">
                                 <h4 class="card-title">Hillary B. Lavin</h4>
-                                <p class="card-text">Hillary is a web developer and creative-type who wishes she played more Dungeons and Dragons than she currently does.  Here’s her profile which totally isn’t done now but may be done for demo day.</p>
-                                <a href="#" class="btn btn-lg btn-primary">See Profile</a>
+                                <p class="card-text">Hillary is a web developer and creative-type who wishes she played more Dungeons and Dragons than she currently does.  Here’s her profile which totally is done because she's a pro.</p>
+                                <a href="https://www.hillaryblavin.com" class="btn btn-lg btn-primary">See Profile</a>
                             </div>
                         </div>
 
@@ -213,21 +213,6 @@
 
         <div class="divider" id="section5"></div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- <div class="jumbotron text-center">
-
-        <img class="img-fluid" src="./img/TBHeader.png">
-        <h3>A Dungeons and Dragons 5th Edition Character Manager for the New Adventurer!</h3> -->
-
         
     </div>
 
