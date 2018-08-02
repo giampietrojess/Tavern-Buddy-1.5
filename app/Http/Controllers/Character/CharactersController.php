@@ -36,7 +36,34 @@ class CharactersController extends Controller
     {
         $character = new Character();
 
-        return view('characters.create', compact('character', $character));
+        $raceArray = [];
+        $classArray = [];
+
+        $dwarf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/1'));
+        $elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/2'));
+        $halfling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/3'));
+        $human = json_decode(file_get_contents('http://dnd5eapi.co/api/races/4'));
+        $dragonborn = json_decode(file_get_contents('http://dnd5eapi.co/api/races/5'));
+        $gnome = json_decode(file_get_contents('http://dnd5eapi.co/api/races/6'));
+        $half_elf = json_decode(file_get_contents('http://dnd5eapi.co/api/races/7'));
+        $half_orc = json_decode(file_get_contents('http://dnd5eapi.co/api/races/8'));
+        $tiefling = json_decode(file_get_contents('http://dnd5eapi.co/api/races/9'));
+        array_push($raceArray, $dwarf, $elf, $halfling, $human, $dragonborn, $gnome, $half_elf, $half_orc, $tiefling);
+        $barbarian = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/1'));
+        $bard = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/2'));
+        $cleric = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/3'));
+        $druid = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/4'));
+        $fighter = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/5'));
+        $monk = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/6'));
+        $paladin = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/7'));
+        $ranger = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/8'));
+        $rogue = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/9'));
+        $sorcerer = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/10'));
+        $warlock = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/11'));
+        $wizard = json_decode(file_get_contents('http://dnd5eapi.co/api/classes/12'));
+        array_push($classArray, $barbarian, $bard, $cleric, $druid, $fighter, $monk, $paladin, $ranger, $rogue, $sorcerer, $warlock, $wizard);
+
+        return view('characters.create', compact('character', 'raceArray', 'classArray'));
     }
 
     public function reviewQuest(Request $request)
