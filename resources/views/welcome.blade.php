@@ -47,7 +47,7 @@
                     <img src="/img/LandingDice/D12.png" title="Who" class="imageLink">
                     <div class="middle">
                         <div class="text2">
-                        <a href="#" title="Who are we?" class="ham wiggle-me">Who are We?</a>
+                        <a href="#WhoAreWe" title="Who are we?" class="ham wiggle-me">Who are We?</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                     <img src="/img/LandingDice/d20.png" title="Credits" class="imageLink">
                     <div class="middle">
                         <div class="text2">
-                        <a href="#" title="Credits" class="ham wiggle-me">Credits</a>
+                        <a href="#Credits" title="Credits" class="ham wiggle-me">Credits</a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                     <img src="/img/LandingDice/D8.png" title="What" class="imageLink">
                     <div class="middle">
                         <div class="text2">
-                        <a href="#" title="What is it?" class="ham wiggle-me">What is it?</a>
+                        <a href="#WhatisIt" title="What is it?" class="ham wiggle-me">What is it?</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                     <img src="/img/LandingDice/D12.png" title="Who" class="imageLink">
                     <div class="middle">
                         <div class="text2">
-                        <a href="#" title="Who are we?" class="ham wiggle-me">Who are We?</a>
+                        <a href="#WhoAreWe" title="Who are we?" class="ham wiggle-me">Who are We?</a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                     <img src="/img/LandingDice/d20.png" title="Credits" class="imageLink">
                     <div class="middle">
                         <div class="text2">
-                        <a href="#section5" title="Credits" class="ham wiggle-me">Credits</a>
+                        <a href="#Credits" title="Credits" class="ham wiggle-me">Credits</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
    
         <div class="divider" id="section4"></div>
  
-        <section class="bg-2">
+        <section class="bg-2" id="WhoAreWe">
             <div class="col-md-12 text-center">      
             <span class="secText">WHO ARE WE?</span>
             </div>
@@ -161,13 +161,14 @@
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="col-md-5">
+                    
                         
                         <div class="card" style="width:400px">
                             <img class="card-img-top" src="/img/me.png" alt="Card image" style="width:50%">
                             <div class="card-body">
                                 <h4 class="card-title">Jess Giampietro</h4>
                                 <p class="card-text">Jess is a web developer and adventurer with a penchant for playing rangers and rolling poorly. Heres her profile which totally isn’t done now but may be done for demo day.</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
+                                <a href="#" class="btn btn-lg btn-primary">See Profile</a>
                             </div>
                         </div>
 
@@ -181,7 +182,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Hillary B. Lavin</h4>
                                 <p class="card-text">Hillary is a web developer and creative-type who wishes she played more Dungeons and Dragons than she currently does.  Here’s her profile which totally isn’t done now but may be done for demo day.</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
+                                <a href="#" class="btn btn-lg btn-primary">See Profile</a>
                             </div>
                         </div>
 
@@ -194,7 +195,7 @@
 
         <div class="divider" id="section6"></div>
  
-        <section class="bg-3">
+        <section class="bg-3" id="Credits">
             <div class="col-md-12 text-center">      
                 <span class="secText">CREDITS</span>
             </div>

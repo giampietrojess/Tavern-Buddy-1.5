@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400);@import url(https://fonts.googleapis.com/css?family=Gaegu);@import url(https://fonts.googleapis.com/css?family=Rammetto+One);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:400);@import url(https://fonts.googleapis.com/css?family=Gaegu);@import url(https://fonts.googleapis.com/css?family=Bowlby+One);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.1.2 (https://getbootstrap.com/)
@@ -10581,7 +10581,20 @@ img {
   font-size: 1.125rem;
   line-height: 1.5;
   border-radius: 0.3rem;
+  border-color: pink !important;
   margin-top: 20px !important;
+}
+
+.btn-primary {
+  color: black;
+  background-color: pink !important;
+  border-color: white !important;
+}
+
+.btn-primary:hover {
+  color: black;
+  background-color: white !important;
+  border-color: pink !important;
 }
 
 .nav-link {
@@ -10673,16 +10686,19 @@ section {
 .bg-1 {
   background: url("/img/bridge2.jpg") no-repeat top center fixed;
   background-size: cover;
+  padding: 100px;
 }
 
 .bg-2 {
   background: url("/img/pumpkin heads.jpg") no-repeat top center fixed;
   background-size: cover;
+  padding: 200px;
 }
 
 .bg-3 {
   background: url("/img/players Handbook new.jpg") no-repeat top center fixed;
   background-size: cover;
+  padding: 200px;
 }
 
 .form-control-small {
@@ -10935,12 +10951,11 @@ section {
 }
 
 .secText {
-  font-size: 6rem;
-  padding-top: 70px;
+  font-size: 8rem;
   color: pink;
-  -webkit-text-stroke: 10px black;
+  -webkit-text-stroke: 2px black;
   paint-order: stroke fill;
-  font-family: 'Rammetto One', cursive;
+  font-family: 'Bowlby One', cursive;
 }
 
 .card-img-top {
@@ -10948,6 +10963,11 @@ section {
   border-radius: 50%;
   border: 2px solid black;
   margin-top: 20px;
+}
+
+.card {
+  border-top: 20px solid black !important;
+  border-bottom: 20px solid black !important;
 }
 
 a.ham {
@@ -11279,5 +11299,13 @@ hr {
   -moz-transform: scale(1.2);
   transition: all 200ms ease-in;
   transform: scale(1.2);
+}
+
+.mylinks {
+  margin-top: 0px !important;
+}
+
+h3 {
+  text-transform: uppercase;
 }
 
