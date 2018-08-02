@@ -30,7 +30,26 @@
 
                 <div v-show="step === 2">
                     <h1>Step Two</h1>
-
+                    @foreach ($raceArray as $race)    
+                        <div class="modal fade" id="yourModal{{$race->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <div class="text-center"><h3>{{$race->name}}</h3></div>
+                                        <div class="text-left">
+                                            <p><strong>Size:</strong> {{$race->size_description}}</p>
+                                            <p><strong>Alignment:</strong> {{$race->alignment}}</p>
+                                            <p><strong>Age:</strong> {{$race->age}}</p>
+                                            <p><strong>Languages:</strong> {{$race->language_desc}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                     <!-- Character Race -->
                     <div class="form-group">
                         <h1>{{Form::label('What Race is your Character?')}}</h1>
@@ -110,7 +129,37 @@
 
                 <div v-show="step === 3">
                     <h1>Step Three</h1>
-
+                    @foreach ($classArray as $class)    
+                        <div class="modal fade" id="yourModal{{$class->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="text-center"><h3>{{$class->name}}</h3></div>
+                                <div class="text-left">
+                                    <p><strong>Hit Die: </strong> 1 D{{$class->hit_die}}</p>
+                                    <p><strong>Saving Throws: </strong>{{$class->saving_throws[0]->name}}, {{$class->saving_throws[1]->name}}</p>
+                                    <h5><strong>Weapon and Armor Proficiencies: </strong></h5>
+                                        <ul>
+                                        @foreach ($class->proficiencies as $proficiencies)
+                                            <li>{{$proficiencies->name}}</li>
+                                        @endforeach
+                                        </ul>
+                                    <h5><strong>Skill Proficiency Choices (you may choose {{$class->proficiency_choices[0]->choose}}): </strong></h5>
+                                        <ul>
+                                            @foreach ($class->proficiency_choices[0]->from as $choices)
+                                                <li>{{$choices->name}}</li>
+                                            @endforeach
+                                        </ul>
+                                </div>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    @endforeach
                     <!-- Character Class -->
                     <div class="form-group">
                         <h1>{{Form::label('What Class is your Character?')}}</h1>
@@ -493,7 +542,68 @@
         </div>
         <br/><br/>Debug: @{{characterCreation}}
     </div>
-
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $("#img-barbarian").on('click','#pop',function () {
+                $('#yourModal1').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-bard").on('click','#pop',function () {
+                $('#yourModal2').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-cleric").on('click','#pop',function () {
+                $('#yourModal3').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-druid").on('click','#pop',function () {
+                $('#yourModal4').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-fighter").on('click','#pop',function () {
+                $('#yourModal5').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-monk").on('click','#pop',function () {
+                $('#yourModal6').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-paladin").on('click','#pop',function () {
+                $('#yourModal7').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-ranger").on('click','#pop',function () {
+                $('#yourModal8').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-rogue").on('click','#pop',function () {
+                $('#yourModal9').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-sorcerer").on('click','#pop',function () {
+                $('#yourModal10').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-warlock").on('click','#pop',function () {
+                $('#yourModal11').modal('show'); 
+            });
+        });
+        $(document).ready(function () {
+            $("#img-wizard").on('click','#pop',function () {
+                $('#yourModal12').modal('show'); 
+            });
+        });
+    </script>
 @endsection
 
 
