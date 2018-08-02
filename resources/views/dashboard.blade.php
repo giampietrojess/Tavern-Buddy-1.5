@@ -3,8 +3,7 @@
 @section('content')
 <div class="container">
     <div class="jumbotron text-center">
-        
-            <div class="top">Welcome {{ Auth::user()->name }}! Your Adventure Begins Now!</div>
+        <div class="top">Welcome {{ Auth::user()->name }}! Your Adventure Begins Now!</div>
     </div>
     <div class="container text-center">
         
@@ -31,22 +30,33 @@
                             <div class="col-md-6 justify-content-center">
                                 <h3>Your Characters</h3>
                                 <div class="scrolly">
-                                    <table class="table table-striped">
-                                        <tr>
-                                            <th>Character Name</th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
+                                    <table class="table table-striped table-responsive-sm">
+                                        <!-- <thead>
+                                            <tr>
+                                                <th>Character Name</th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead> -->
+                                        <tbody>
                                         @foreach($characters as $character)
                                             <tr>
-                                                <th><a href="/characters/{{$character->id}}">{{$character->character_name}}</a></th>
-                                            <th><a href="/characters/{{$character->id}}/edit" class="btn btn-primary">Edit</a></th>
-                                                <th>{!!Form::open(['action' => ['Character\CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
-                                            {{Form::hidden('_method', 'DELETE')}}
-                                            {{Form::submit('Delete?', ['class' => 'btn btn-primary'])}}
-                                        {!!Form::close()!!}</th>
+                                                <td>
+                                                    <a href="/characters/{{$character->id}}">{{$character->character_name}}</a>
+                                                </td>
+
+                                                <td>
+                                                    <a href="/characters/{{$character->id}}/edit" class="btn btn-primary">Edit</a>
+                                                </td>
+                                                <td>
+                                                    {!!Form::open(['action' => ['Character\CharactersController@destroy', $character->id], 'method' => 'POST'])!!}
+                                                    {{Form::hidden('_method', 'DELETE')}}
+                                                    {{Form::submit('Delete?', ['class' => 'btn btn-primary'])}}
+                                                    {!!Form::close()!!}
+                                                </td>
                                             </tr>
                                         @endforeach
+                                        </tbody>
                                     </table>   
                                 </div>
                             </div>

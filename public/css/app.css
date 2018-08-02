@@ -10983,7 +10983,8 @@ section {
 }
 
 .character-icon {
-  width: 100%;
+  width: 75%;
+  margin: auto;
 }
 
 a.ham {
@@ -11332,5 +11333,75 @@ h3 {
 
 a {
   color: #f06292 !important;
+}
+
+@media (max-width: 575.98px) {
+  .jumbotron {
+    background: url();
+    height: auto;
+  }
+
+  .nameBox {
+    font-size: 2rem;
+    padding-top: 55px;
+  }
+
+  .characterSheetHead {
+    height: 120px;
+  }
+
+  .characterSheetHeadRight {
+    height: 120px;
+  }
+
+  .topRight {
+    width: 300px;
+    font-size: calc(9px + 1vw);
+    padding-top: 23px;
+    margin-left: 10px;
+    line-height: .7;
+  }
+
+  .attributesHere {
+    background: url();
+  }
+
+  .attBox {
+    margin: 0px;
+    width: 105px;
+    padding: 15px;
+    font-size: 2.6vw;
+  }
+
+  .score {
+    font-size: 2rem;
+    margin-top: -16px !important;
+  }
+
+  .HPcontainer {
+    margin-left: -10px !important;
+    margin-top: 0px;
+  }
+
+  .inventoryContainer {
+    margin-left: -10px;
+  }
+
+  .profskiCon {
+    height: 830px;
+  }
+
+  .extraBox {
+    margin-left: -10px;
+  }
+
+  .proficiencyScore {
+    padding-left: 40px;
+  }
+
+  .proficiency {
+    height: 110px;
+    padding-top: 28px;
+  }
 }
 
