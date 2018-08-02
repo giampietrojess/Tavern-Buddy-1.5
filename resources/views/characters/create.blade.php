@@ -121,9 +121,7 @@
                     <button @click.prevent="prev()">Previous</button>
                     <button @click.prevent="next()">Next</button>
                             
-                            <!-- <a href="/nameQuest" alt="go back" class="btn btn-primary">Back</a>
-                        {{Form::submit('Next', ['class'=>'btn btn-primary'])}}
-                        {!! Form::close() !!} -->
+            
                 </div>
             
 
