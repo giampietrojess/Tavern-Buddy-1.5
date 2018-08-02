@@ -11423,7 +11423,7 @@ a {
   .bg-3 {
     background-position: center center fixed;
     background-size: cover;
-    padding: 90px;
+    padding: 50px;
   }
 
   section {
@@ -11448,6 +11448,10 @@ a {
   h3 {
     font-size: 4vw;
     text-transform: capitalize;
+  }
+
+  .diceLinks {
+    display: none;
   }
 }
 

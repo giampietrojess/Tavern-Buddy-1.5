@@ -12,115 +12,109 @@
             </div>   
             <div class="flex-center position-ref full-height text-center">
             
-            @if (Route::has('login'))
-            <div class="diceLinks">
-                @auth
+                @if (Route::has('login'))
+                    <div class="diceLinks">
+                        @auth
 
-                <div class="linkCont">
-                    <img src="/img/LandingDice/D4.png" title="Home" class="img-fluid imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="/dashboard" title="home" class="ham wiggle-me">Home</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/D4.png" title="Home" class="img-fluid imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="/dashboard" title="home" class="ham wiggle-me">Home</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="linkCont">
-                    <img src="/img/LandingDice/D10.png" title="Add a Character" class="imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="/characters/create" title="Add Character" class="ham wiggle-me">Add a Character</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/D10.png" title="Add a Character" class="imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="/characters/create" title="Add Character" class="ham wiggle-me">Add a Character</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="linkCont">
-                    <img src="/img/LandingDice/D8.png" title="What" class="imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="#WhatisIt" title="What is it?" id="nav" class="ham wiggle-me">What is it?</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/D8.png" title="What" class="imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="#WhatisIt" title="What is it?" id="nav" class="ham wiggle-me">What is it?</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                 <div class="linkCont">
-                    <img src="/img/LandingDice/D12.png" title="Who" class="imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="#WhoAreWe" title="Who are we?" class="ham wiggle-me">Who are We?</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/D12.png" title="Who" class="imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="#WhoAreWe" title="Who are we?" class="ham wiggle-me">Who are We?</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="linkCont">
-                    <img src="/img/LandingDice/d20.png" title="Credits" class="imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="#Credits" title="Credits" class="ham wiggle-me">Credits</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/d20.png" title="Credits" class="imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="#Credits" title="Credits" class="ham wiggle-me">Credits</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
 
-                
-                @else
+                        
+                        @else
 
-                <div class="linkCont">
-                    <img src="/img/LandingDice/D4.png" title="Login" class="img-fluid imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="{{ route('login') }}" alt="login" class="ham wiggle-me">Login</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/D4.png" title="Login" class="img-fluid imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="{{ route('login') }}" alt="login" class="ham wiggle-me">Login</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="linkCont">
-                    <img src="/img/LandingDice/D10.png" title="Register" class="imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="{{ route('register') }}" title="Register" class="ham wiggle-me">Register</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/D10.png" title="Register" class="imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="{{ route('register') }}" title="Register" class="ham wiggle-me">Register</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="linkCont">
-                    <img src="/img/LandingDice/D8.png" title="What" class="imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="#WhatisIt" title="What is it?" class="ham wiggle-me">What is it?</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/D8.png" title="What" class="imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="#WhatisIt" title="What is it?" class="ham wiggle-me">What is it?</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                 <div class="linkCont">
-                    <img src="/img/LandingDice/D12.png" title="Who" class="imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="#WhoAreWe" title="Who are we?" class="ham wiggle-me">Who are We?</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/D12.png" title="Who" class="imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="#WhoAreWe" title="Who are we?" class="ham wiggle-me">Who are We?</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="linkCont">
-                    <img src="/img/LandingDice/d20.png" title="Credits" class="imageLink">
-                    <div class="middle">
-                        <div class="text2">
-                        <a href="#Credits" title="Credits" class="ham wiggle-me">Credits</a>
+                        <div class="linkCont">
+                            <img src="/img/LandingDice/d20.png" title="Credits" class="imageLink">
+                            <div class="middle">
+                                <div class="text2">
+                                <a href="#Credits" title="Credits" class="ham wiggle-me">Credits</a>
+                                </div>
+                            </div>
                         </div>
+            
+                        @endauth
                     </div>
-                </div>
-                <!-- <a href="{{ route('login') }}" alt="login"><img src="/img/LandingDice/D4.png"></a> 
-                <a href="{{ route('register') }}" alt="register"><img src="/img/LandingDice/D8.png"></a>
-                <a href="#" alt="What is It?"><img src="/img/LandingDice/D10.png"></a>
-                <a href="#" alt="Who are We?"><img src="/img/LandingDice/d20.png"></a>
-                <a href="#" alt="credits"><img src="/img/LandingDice/D12.png"></a> -->
-                @endauth
+                @endif
+
             </div>
-            @endif
-
-           
-
-        </div>
         </div>
         
         <div class="divider" id="section2"></div>
