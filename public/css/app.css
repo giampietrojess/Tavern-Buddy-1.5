@@ -10978,6 +10978,10 @@ section {
   border-bottom: 20px solid black !important;
 }
 
+.character-icon {
+  width: 100%;
+}
+
 a.ham {
   color: #000 !important;
   background-color: transparent !important;
