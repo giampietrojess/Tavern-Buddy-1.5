@@ -11429,6 +11429,7 @@ a {
   section {
     min-height: 100px;
     padding: 0px;
+    height: 100px;
   }
 
   .secText {

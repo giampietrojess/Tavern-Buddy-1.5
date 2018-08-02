@@ -249,6 +249,10 @@ class CharactersController extends Controller
                 case 19:
                     $character->str_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->str_mod = 5;
+                    break;
             }
 
             switch ($character->dex_score) {
@@ -275,6 +279,10 @@ class CharactersController extends Controller
                 case 18:
                 case 19:
                     $character->dex_mod = 4;
+                    break;
+                case 20:
+                case 21:
+                    $character->dex_mod = 5;
                     break;
             }
 
@@ -303,6 +311,10 @@ class CharactersController extends Controller
                 case 19:
                     $character->con_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->con_mod = 5;
+                    break;
             }
 
             switch ($character->int_score) {
@@ -329,6 +341,10 @@ class CharactersController extends Controller
                 case 18:
                 case 19:
                     $character->int_mod = 4;
+                    break;
+                case 20:
+                case 21:
+                    $character->int_mod = 5;
                     break;
             }
 
@@ -357,6 +373,10 @@ class CharactersController extends Controller
                 case 19:
                     $character->wis_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->wis_mod = 5;
+                    break;
             }
 
             switch ($character->cha_score) {
@@ -383,6 +403,10 @@ class CharactersController extends Controller
                 case 18:
                 case 19:
                     $character->cha_mod = 4;
+                    break;
+                case 20:
+                case 21:
+                    $character->cha_mod = 5;
                     break;
             }
 
@@ -560,6 +584,10 @@ class CharactersController extends Controller
                 case 19:
                     $character->str_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->str_mod = 5;
+                    break;
             }
 
             switch ($character->dex_score) {
@@ -587,6 +615,10 @@ class CharactersController extends Controller
                 case 19:
                     $character->dex_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->dex_mod = 5;
+                    break;    
             }
 
             switch ($character->con_score) {
@@ -613,6 +645,10 @@ class CharactersController extends Controller
                 case 18:
                 case 19:
                     $character->con_mod = 4;
+                    break;
+                case 20:
+                case 21:
+                    $character->con_mod = 5;
                     break;
             }
 
@@ -641,6 +677,10 @@ class CharactersController extends Controller
                 case 19:
                     $character->int_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->int_mod = 5;
+                    break;
             }
 
             switch ($character->wis_score) {
@@ -668,6 +708,10 @@ class CharactersController extends Controller
                 case 19:
                     $character->wis_mod = 4;
                     break;
+                case 20:
+                case 21:
+                    $character->wis_mod = 5;
+                    break;
             }
 
             switch ($character->cha_score) {
@@ -694,6 +738,10 @@ class CharactersController extends Controller
                 case 18:
                 case 19:
                     $character->cha_mod = 4;
+                    break;
+                case 20:
+                case 21:
+                    $character->cha_mod = 5;
                     break;
             }
 
