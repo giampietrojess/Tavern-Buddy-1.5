@@ -11410,19 +11410,19 @@ a {
 
   .bg-1 {
     background: url("/img/bridge2.jpg") no-repeat center center fixed;
-    background-size: cover;
+    background-size: 575px;
     padding: 50px;
   }
 
   .bg-2 {
     background-position: center center fixed;
-    background-size: cover;
+    background-size: 575px;
     padding: 50px;
   }
 
   .bg-3 {
     background-position: center center fixed;
-    background-size: cover;
+    background-size: 575px;
     padding: 50px;
   }
 
@@ -11442,7 +11442,7 @@ a {
 
   .headhead {
     min-width: 350px;
-    margin-left: -70px;
+    margin-left: -100px;
   }
 
   h3 {
