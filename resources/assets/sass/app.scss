@@ -124,14 +124,15 @@ img {
 
 .btn-primary {    
   color: black;
-  background-color:pink!important;
-  border-color: white!important;
+  text-transform:uppercase;
+  background-color:white!important;
+  border-color: pink!important;
 }
 
 .btn-primary:hover {    
   color: black;
-  background-color:white!important;
-  border-color: pink!important;
+  background-color:pink!important;
+  border-color: white!important;
 }
 .nav-link {
   display: block;
@@ -501,6 +502,13 @@ font-family: 'Bowlby One', cursive;
   border-radius: 50%;
   border: 2px solid black;
   margin-top: 20px;
+}
+
+.card-header {
+  background-color: black;
+  padding-top: 0px!important;
+  padding-bottom: 20px;
+  margin-top: -20px;
 }
 .card {
 border-top: 20px solid black!important;
@@ -890,4 +898,9 @@ overflow-x: hidden;
 
 h3 {
   text-transform: uppercase;
+}
+
+.formCard{
+margin-top: 20px;
+padding: 20px;
 }

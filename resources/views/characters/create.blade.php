@@ -4,8 +4,9 @@
 
     
     <div id="app">
-        <!-- <form action="https://postman-echo.com/post" method="post"> -->
+       
         <div class="container text-center">
+            <div class="card formCard">
             {!! Form::open(['action' => 'Character\CharactersController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
                 {{ csrf_field() }}
 
@@ -13,7 +14,7 @@
                     <!-- Character Name -->
                     <div class="form-group">
                     
-                        <h3>{{Form::label('Choose a Name for your Character')}}</h3>
+                        <h1>{{Form::label('Choose a Name for your Character')}}</h1>
                         <div class="row">
                             <div class="col-md-3"></div>
                             <div class="col-md-6">
@@ -539,6 +540,7 @@
                                 <!-- <input type="submit" value="Save"> -->
                                 
             {!! Form::close() !!}
+            </div>
         </div>
         <br/><br/>Debug: @{{characterCreation}}
     </div>

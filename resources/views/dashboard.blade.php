@@ -5,25 +5,22 @@
     <div class="jumbotron text-center">
         
             <div class="top">Welcome {{ Auth::user()->name }}! Your Adventure Begins Now!</div>
-            <div class="col-md-12 mylinks">
-                <a href="/characters/create" class="btn btn-lg btn-primary">Add a Character</a>
-                <a href="/mycharacters" class="btn btn-lg btn-primary">View Your Characters</a>
-                <a href="/characters" class="btn btn-lg btn-primary">View All Characters</a>
-            
-            </div>
     </div>
     <div class="container text-center">
-   
+        
         <div class="row justify-content-center">
 
             <div class="col-md-12">
 
                 <div class="card">
 
-                    <div class="card-body">
+                    <div class="card-header">
+                        <a href="/characters/create" class="btn btn-lg btn-primary">Add a Character</a>
+                        <a href="/mycharacters" class="btn btn-lg btn-primary">View Your Characters</a>
+                        <a href="/characters" class="btn btn-lg btn-primary">View All Characters</a>
+                    </div>
 
-                    
-                
+                    <div class="card-body">
                         @if (session('status'))
                             <div class="alert alert-success" role="alert">
                                 {{ session('status') }}
@@ -61,7 +58,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row justify-content-center">
 
           

@@ -10587,14 +10587,15 @@ img {
 
 .btn-primary {
   color: black;
-  background-color: pink !important;
-  border-color: white !important;
+  text-transform: uppercase;
+  background-color: white !important;
+  border-color: pink !important;
 }
 
 .btn-primary:hover {
   color: black;
-  background-color: white !important;
-  border-color: pink !important;
+  background-color: pink !important;
+  border-color: white !important;
 }
 
 .nav-link {
@@ -10965,6 +10966,13 @@ section {
   margin-top: 20px;
 }
 
+.card-header {
+  background-color: black;
+  padding-top: 0px !important;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
 .card {
   border-top: 20px solid black !important;
   border-bottom: 20px solid black !important;
@@ -11307,5 +11315,10 @@ hr {
 
 h3 {
   text-transform: uppercase;
+}
+
+.formCard {
+  margin-top: 20px;
+  padding: 20px;
 }
 
