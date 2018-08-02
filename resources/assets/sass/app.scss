@@ -1109,4 +1109,89 @@ a {
     font-size: 2.5rem;
     margin-top: -20px !important;
   }
+  .HPcontainer {
+  height: 480px;
+  width: 350px;
+  margin-top: 20px;
+  padding: 10px;
+  float: left;
+  position: relative;
+  background-size: 100% auto;
+  margin-left: 50px;
+  }
+  .inventoryContainer {
+    height: 580px;
+    width: 430px;
+    padding: 30px;
+    float: left;
+    position: relative;
+    background-size: 100% auto;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .extraBox {
+    height: 450px!important;
+    width: 450px!important;
+    padding: 20px;
+    float: left;
+
+  }
+  .extraExtra {
+    width: 370px!important;
+    height: 160px!important;
+  }
+  .profskiCon {
+    margin-left: 70px!important;
+    height: 810px!important;
+  }
+}
+
+//med devices (landscape phones, 576px and up)
+@media (min-width: 768px) and (max-width: 992.98px) {  
+
+  .invisaBut {
+    display:none;
+  }
+  .characterSheetHead {
+    height: 240px;
+    width: 700px;
+  }
+  .nameBox {
+    padding-top: 120px;
+  }
+  .characterSheetHeadRight {
+    height: 210px;
+    width: 660px;
+  }
+  .topRight {
+    width: 630px;
+    padding-top: 46px;
+    font-size: calc(15px + 1vw);
+  }
+  .attributesHere {
+    background:url()!important;
+    margin: 0px 80px!important;
+  }
+  .attBox{
+    margin: 7px!important;
+  }
+  .profskiCon {
+    margin-left: -20px!important;
+  }
+  .inventoryContainer {
+    height: 470px!important;
+    width: 340px!important;
+  }
+  .extraBox{
+    height: 350px!important;
+    width: 335px!important;
+    margin-left: -5px!important;
+    padding: 0px!important;
+  }
+  .extraExtra {
+    width: 293px;
+    height: 70px;
+    margin: 0px 20px;
+    padding: 0px;
+  }
 }
