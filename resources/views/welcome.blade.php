@@ -7,7 +7,7 @@
     
         <div class="container1">
             <div class="text-center">
-                <img class="img-fluid" src="./img/TBHeader.png">
+                <img class="img-fluid headhead" src="./img/TBHeader.png">
                 <h3>A Dungeons and Dragons 5th Edition Character Manager for the New Adventurer!</h3>
             </div>   
             <div class="flex-center position-ref full-height text-center">
@@ -17,7 +17,7 @@
                 @auth
 
                 <div class="linkCont">
-                    <img src="/img/LandingDice/D4.png" title="Home" class="imageLink">
+                    <img src="/img/LandingDice/D4.png" title="Home" class="img-fluid imageLink">
                     <div class="middle">
                         <div class="text2">
                         <a href="/dashboard" title="home" class="ham wiggle-me">Home</a>
@@ -66,7 +66,7 @@
                 @else
 
                 <div class="linkCont">
-                    <img src="/img/LandingDice/D4.png" title="Login" class="imageLink">
+                    <img src="/img/LandingDice/D4.png" title="Login" class="img-fluid imageLink">
                     <div class="middle">
                         <div class="text2">
                         <a href="{{ route('login') }}" alt="login" class="ham wiggle-me">Login</a>
@@ -163,7 +163,7 @@
                     <div class="col-md-5">
                     
                         
-                        <div class="card" style="width:400px">
+                        <div class="card">
                             <img class="card-img-top" src="/img/me.png" alt="Card image" style="width:50%">
                             <div class="card-body">
                                 <h4 class="card-title">Jess Giampietro</h4>
@@ -177,7 +177,7 @@
 
                     <div class="col-md-5">
                         
-                        <div class="card" style="width:400px">
+                        <div class="card">
                             <img class="card-img-top" src="/img/you.png" alt="Card image" style="width:50%">
                             <div class="card-body">
                                 <h4 class="card-title">Hillary B. Lavin</h4>

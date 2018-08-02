@@ -980,6 +980,53 @@ a {
     font-size: 2vw;
 
   }
+  .bg-1 {
+    background: url('/img/bridge2.jpg') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size:cover;
+      padding:50px;
+
+  }
+  .bg-2 {
+    background-position: center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size:cover;
+      padding:50px;
+
+  }
+  .bg-3 {
+    background-position: center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size:cover;
+      padding:90px;
+
+  }
+
+  section {
+    min-height:100px;
+    padding:0px;
+  }
+  .secText {
+    font-size: 9vw;
+    padding:0px;
+  }
+  .divider {
+    margin:0px;
+  }
+  .headhead {
+    min-width: 350px;
+    margin-left:-70px;
+  }
+  h3 {
+    font-size:4vw;
+    text-transform:capitalize;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
