@@ -14,9 +14,11 @@
                 <div class="card">
 
                     <div class="card-header">
-                        <a href="/characters/create" class="btn btn-lg btn-primary">Add a Character</a>
-                        <a href="/mycharacters" class="btn btn-lg btn-primary">View Your Characters</a>
-                        <a href="/characters" class="btn btn-lg btn-primary">View All Characters</a>
+                        <div class="invisaBut">
+                            <a href="/characters/create" class="btn btn-lg btn-primary">Add a Character</a>
+                            <a href="/mycharacters" class="btn btn-lg btn-primary">View Your Characters</a>
+                            <a href="/characters" class="btn btn-lg btn-primary">View All Characters</a>
+                        </div>
                     </div>
 
                     <div class="card-body">

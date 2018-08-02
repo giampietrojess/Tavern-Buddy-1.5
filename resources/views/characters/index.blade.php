@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container text-center">
-    <h1>View All Characters</h1>
+        <h1>View All Characters</h1>
         @if(count($characters) > 0)
             @foreach($characters as $character)
                 <div class="col-md-4 float-left text-center">

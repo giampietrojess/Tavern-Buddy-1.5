@@ -39,6 +39,10 @@
                                         Add Character
                                     </a>
 
+                                    <a class="dropdown-item" href="/mycharacters">
+                                        View My Characters
+                                    </a>
+
                                     <a class="dropdown-item" href="/characters">
                                         View All Characters
                                     </a>
