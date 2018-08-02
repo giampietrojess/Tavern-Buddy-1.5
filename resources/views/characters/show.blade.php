@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
          
-            <div class="col-3 col-md-9">    
+            <div class="col-2 col-md-9">    
                 <!-- Dice Link -->
          
                 <div class="linkCont">
@@ -19,7 +19,7 @@
                 </div>
             </div>
                 
-            <div class="col-8 col-md-3">    
+            <div class="col-10 col-md-3">    
                 <!-- If the user who is viewing the character is 
                 the one who created the character, show 
                 edit and delete buttons -->
