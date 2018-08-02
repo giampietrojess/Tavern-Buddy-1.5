@@ -32,7 +32,7 @@
                 <div v-show="step === 2">
                     <h1>Step Two</h1>
                     @foreach ($raceArray as $race)    
-                        <div class="modal fade" id="yourModal{{$race->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal fade" id="raceModal{{$race->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
@@ -59,17 +59,17 @@
                         <div class="container">   
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img id="img-dwarf" class="img-fluid test" src="/img/RaceIcons/DwarfIcon.png" data-toggle="modal" data-target="#yourModal1">
+                                    <img id="img-dwarf" class="img-fluid test" src="/img/RaceIcons/DwarfIcon.png" data-toggle="modal" data-target="#raceModal1">
                                     <p>{{Form::label('Dwarf')}}
                                     {{Form::radio('race', 'Dwarf', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.race', 'id' => 'race'])}}</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img id="img-elf" class="img-fluid test" src="/img/RaceIcons/ElfIcon.png" data-toggle="modal" data-target="#yourModal2">
+                                    <img id="img-elf" class="img-fluid test" src="/img/RaceIcons/ElfIcon.png" data-toggle="modal" data-target="#raceModal2">
                                     <p>{{Form::label('Elf')}}
                                     {{Form::radio('race', 'Elf', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.race', 'id' => 'race'])}}</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img id="img-halfling" class="img-fluid test" class="img-fluid" src="/img/RaceIcons/Halfling.png" data-toggle="modal" data-target="#yourModal3">
+                                    <img id="img-halfling" class="img-fluid test" class="img-fluid" src="/img/RaceIcons/Halfling.png" data-toggle="modal" data-target="#raceModal3">
                                     <p>{{Form::label('Halfling')}}
                                     {{Form::radio('race', 'Halfling', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.race', 'id' => 'race'])}}</p>
                                 </div>                
@@ -77,17 +77,17 @@
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img id="img-human" class="img-fluid test" src="/img/RaceIcons/HumanIcon.png" data-toggle="modal" data-target="#yourModal4">
+                                    <img id="img-human" class="img-fluid test" src="/img/RaceIcons/HumanIcon.png" data-toggle="modal" data-target="#raceModal4">
                                     <p>{{Form::label('Human')}}
                                     {{Form::radio('race', 'Human', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.race', 'id' => 'race'])}}</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img id="img-dragonborn" class="img-fluid test" src="/img/RaceIcons/DragonBornIcon.png" data-toggle="modal" data-target="#yourModal5">
+                                    <img id="img-dragonborn" class="img-fluid test" src="/img/RaceIcons/DragonBornIcon.png" data-toggle="modal" data-target="#raceModal5">
                                     <p> {{Form::label('Dragonborn')}}
                                     {{Form::radio('race', 'Dragonborn', false, ['class' => 'radio', 'v-model' => 'characterCreation.race', 'id' => 'race'])}}</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img id="img-gnome" class="img-fluid test" src="/img/RaceIcons/GnomeIcon.png" data-toggle="modal" data-target="#yourModal6">
+                                    <img id="img-gnome" class="img-fluid test" src="/img/RaceIcons/GnomeIcon.png" data-toggle="modal" data-target="#raceModal6">
                                     <p>{{Form::label('Gnome')}}
                                     {{Form::radio('race', 'Gnome', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.race', 'id' => 'race'])}}
                                     </p>
@@ -96,17 +96,17 @@
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img id="img-half-elf" class="img-fluid test" src="/img/RaceIcons/Half-Elf.png" data-toggle="modal" data-target="#yourModal7">
+                                    <img id="img-half-elf" class="img-fluid test" src="/img/RaceIcons/Half-Elf.png" data-toggle="modal" data-target="#raceModal7">
                                     <p>{{Form::label('Half-Elf')}}
                                     {{Form::radio('race', 'Half-Elf', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.race', 'id' => 'race'])}}
                                 </div>
                                 <div class="col-md-4">
-                                    <img id="img-half-orc" class="img-fluid test" src="/img/RaceIcons/Half-Orc.png" data-toggle="modal" data-target="#yourModal8">
+                                    <img id="img-half-orc" class="img-fluid test" src="/img/RaceIcons/Half-Orc.png" data-toggle="modal" data-target="#raceModal8">
                                     <p>{{Form::label('Half-Orc')}}
                                     {{Form::radio('race', 'Half-Orc', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.race', 'id' => 'race'])}}</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img id="img-tiefling" class="img-fluid test" src="/img/RaceIcons/TieflingIcon.png" data-toggle="modal" data-target="#yourModal9">
+                                    <img id="img-tiefling" class="img-fluid test" src="/img/RaceIcons/TieflingIcon.png" data-toggle="modal" data-target="#raceModal9">
                                     <p>{{Form::label('Tiefling')}}
                                     {{Form::radio('race', 'Tiefling', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.race', 'id' => 'race'])}}</p>
                                 </div>
@@ -131,7 +131,7 @@
                 <div v-show="step === 3">
                     <h1>Step Three</h1>
                     @foreach ($classArray as $class)    
-                        <div class="modal fade" id="yourModal{{$class->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal fade" id="classModal{{$class->index}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                             <div class="modal-body">
@@ -169,22 +169,22 @@
                             <div class="container">   
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img id="img-barbarian" class="img-fluid test" src="/img/ClassIcons/BarbarianIcon.png" data-toggle="modal" data-target="#yourModal1">
+                                        <img id="img-barbarian" class="img-fluid test" src="/img/ClassIcons/BarbarianIcon.png" data-toggle="modal" data-target="#classModal1">
                                         <p>{{Form::label('Barbarian')}}
                                         {{Form::radio('class', 'Barbarian', false, ['class' => 'radio', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img id="img-bard" class="img-fluid test" src="/img/ClassIcons/BardIcon.png" data-toggle="modal" data-target="#yourModal2">
+                                        <img id="img-bard" class="img-fluid test" src="/img/ClassIcons/BardIcon.png" data-toggle="modal" data-target="#classModal2">
                                         <p>{{Form::label('Bard')}}
                                         {{Form::radio('class', 'Bard', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img id="img-cleric" class="img-fluid test" src="/img/ClassIcons/ClericIcon.png" data-toggle="modal" data-target="#yourModal3">
+                                        <img id="img-cleric" class="img-fluid test" src="/img/ClassIcons/ClericIcon.png" data-toggle="modal" data-target="#classModal3">
                                         <p>{{Form::label('Cleric')}}
                                         {{Form::radio('class', 'Cleric', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img id="img-druid" class="img-fluid test" src="/img/ClassIcons/DruidIcon.png" data-toggle="modal" data-target="#yourModal4">
+                                        <img id="img-druid" class="img-fluid test" src="/img/ClassIcons/DruidIcon.png" data-toggle="modal" data-target="#classModal4">
                                         <p>{{Form::label('Druid')}}
                                         {{Form::radio('class', 'Druid', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}} </p>
                                     </div>
@@ -193,22 +193,22 @@
                                 <div class="row">
 
                                     <div class="col-md-3">
-                                        <img id="img-fighter" class="img-fluid test" src="/img/ClassIcons/FighterIcon.png" data-toggle="modal" data-target="#yourModal5">
+                                        <img id="img-fighter" class="img-fluid test" src="/img/ClassIcons/FighterIcon.png" data-toggle="modal" data-target="#classModal5">
                                         <p>{{Form::label('Fighter')}}
                                         {{Form::radio('class', 'Fighter', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img id="img-monk" class="img-fluid test" src="/img/ClassIcons/MonkIcon.png" data-toggle="modal" data-target="#yourModal6">
+                                        <img id="img-monk" class="img-fluid test" src="/img/ClassIcons/MonkIcon.png" data-toggle="modal" data-target="#classModal6">
                                         <p>{{Form::label('Monk')}}
                                         {{Form::radio('class', 'Monk', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img id="img-paladin" class="img-fluid test" src="/img/ClassIcons/Paladin.png" data-toggle="modal" data-target="#yourModal7">
+                                        <img id="img-paladin" class="img-fluid test" src="/img/ClassIcons/Paladin.png" data-toggle="modal" data-target="#classModal7">
                                         <p>{{Form::label('Paladin')}}
                                         {{Form::radio('class', 'Paladin', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img id="img-ranger" class="img-fluid test" src="/img/ClassIcons/RangerIcon.png" data-toggle="modal" data-target="#yourModal8">
+                                        <img id="img-ranger" class="img-fluid test" src="/img/ClassIcons/RangerIcon.png" data-toggle="modal" data-target="#classModal8">
                                         <p>{{Form::label('Ranger')}}
                                         {{Form::radio('class', 'Ranger', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
@@ -218,22 +218,22 @@
                                 <div class="row">
 
                                     <div class="col-md-3">
-                                        <img id="img-rogue" class="img-fluid test" class="img-fluid" src="/img/ClassIcons/RogueIcon.png" data-toggle="modal" data-target="#yourModal9">
+                                        <img id="img-rogue" class="img-fluid test" class="img-fluid" src="/img/ClassIcons/RogueIcon.png" data-toggle="modal" data-target="#classModal9">
                                         <p>{{Form::label('Rogue')}}
                                         {{Form::radio('class', 'Rogue', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img id="img-sorcerer" class="img-fluid test" src="/img/ClassIcons/SorcererIcon.png" data-toggle="modal" data-target="#yourModal10">
+                                        <img id="img-sorcerer" class="img-fluid test" src="/img/ClassIcons/SorcererIcon.png" data-toggle="modal" data-target="#classModal10">
                                         <p>{{Form::label('Sorcerer')}}
                                         {{Form::radio('class', 'Sorcerer', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img id="img-warlock" class="img-fluid test" src="/img/ClassIcons/WarlockIcon.png" data-toggle="modal" data-target="#yourModal11">
+                                        <img id="img-warlock" class="img-fluid test" src="/img/ClassIcons/WarlockIcon.png" data-toggle="modal" data-target="#classModal11">
                                         <p>{{Form::label('Warlock')}}
                                         {{Form::radio('class', 'Warlock', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
                                     <div class="col-md-3">
-                                        <img id="img-wizard" class="img-fluid test" src="/img/ClassIcons/WizardIcon.png" data-toggle="modal" data-target="#yourModal12">
+                                        <img id="img-wizard" class="img-fluid test" src="/img/ClassIcons/WizardIcon.png" data-toggle="modal" data-target="#classModal12">
                                         <p>{{Form::label('Wizard')}}
                                         {{Form::radio('class', 'Wizard', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.class', 'id' => 'class'])}}</p>
                                     </div>
@@ -308,22 +308,22 @@
                                 <div class="row">
                                     <div class="col-md-2"></div>
                                     <div class="col-md-2">
-                                        <img id="img-barbarian" class="img-fluid" src="/img/Backgrounds/Acolyte.png" data-toggle="modal" data-target="#yourModal1">
+                                        <img id="img-acolyte" class="img-fluid" src="/img/Backgrounds/Acolyte.png" data-toggle="modal" data-target="#backgroundModal1">
                                         <p>{{Form::label('Acolyte')}}
                                         {{Form::radio('background', 'Acolyte', false, ['class' => 'radio', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-bard" class="img-fluid" src="/img/Backgrounds/Charlatan.png" data-toggle="modal" data-target="#yourModal2">
+                                        <img id="img-carlatan" class="img-fluid" src="/img/Backgrounds/Charlatan.png" data-toggle="modal" data-target="#backgroundModal2">
                                         <p>{{Form::label('Charlatan')}}
                                         {{Form::radio('background', 'Charlatan', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-cleric" class="img-fluid" src="/img/Backgrounds/Criminal.png" data-toggle="modal" data-target="#yourModal3">
+                                        <img id="img-criminal" class="img-fluid" src="/img/Backgrounds/Criminal.png" data-toggle="modal" data-target="#backgroundModal3">
                                         <p>{{Form::label('Criminal')}}
                                         {{Form::radio('background', 'Criminal', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-druid" class="img-fluid" src="/img/Backgrounds/Entertainer.png" data-toggle="modal" data-target="#yourModal4">
+                                        <img id="img-entertainer" class="img-fluid" src="/img/Backgrounds/Entertainer.png" data-toggle="modal" data-target="#backgroundModal4">
                                         <p>{{Form::label('Entertainer')}}
                                         {{Form::radio('background', 'Entertainer', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}} </p>
                                     </div>
@@ -333,27 +333,27 @@
                                 <div class="row">
                                     <div class="col-md-1"></div>
                                     <div class="col-md-2">
-                                        <img id="img-fighter" class="img-fluid" src="/img/Backgrounds/FolkHero.png" data-toggle="modal" data-target="#yourModal5">
+                                        <img id="img-folk-hero" class="img-fluid" src="/img/Backgrounds/FolkHero.png" data-toggle="modal" data-target="#backgroundModal5">
                                         <p>{{Form::label('Folk Hero')}}
                                         {{Form::radio('background', 'Folk Hero', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-monk" class="img-fluid" src="/img/Backgrounds/Guild Artisan.png" data-toggle="modal" data-target="#yourModal6">
+                                        <img id="img-guild-artisan" class="img-fluid" src="/img/Backgrounds/Guild Artisan.png" data-toggle="modal" data-target="#backgroundModal6">
                                         <p>{{Form::label('Guild Artisan')}}
                                         {{Form::radio('background', 'Guild Artisan', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-paladin" class="img-fluid" src="/img/Backgrounds/Hermit.png" data-toggle="modal" data-target="#yourModal7">
+                                        <img id="img-hermit" class="img-fluid" src="/img/Backgrounds/Hermit.png" data-toggle="modal" data-target="#backgroundModal7">
                                         <p>{{Form::label('Hermit')}}
                                         {{Form::radio('background', 'Hermit', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-ranger" class="img-fluid" src="/img/Backgrounds/Noble.png" data-toggle="modal" data-target="#yourModal8">
+                                        <img id="img-noble" class="img-fluid" src="/img/Backgrounds/Noble.png" data-toggle="modal" data-target="#backgroundModal8">
                                         <p>{{Form::label('Noble')}}
                                         {{Form::radio('background', 'Noble', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-rogue"  class="img-fluid" src="/img/Backgrounds/Outlander.png" data-toggle="modal" data-target="#yourModal9">
+                                        <img id="img-outlander"  class="img-fluid" src="/img/Backgrounds/Outlander.png" data-toggle="modal" data-target="#outlanderModal9">
                                         <p>{{Form::label('Outlander')}}
                                         {{Form::radio('background', 'Outlander', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
@@ -365,22 +365,22 @@
                                     
                                     <div class="col-md-2"></div>
                                     <div class="col-md-2">
-                                        <img id="img-sorcerer" class="img-fluid" src="/img/Backgrounds/Sage.png" data-toggle="modal" data-target="#yourModal10">
+                                        <img id="img-sage" class="img-fluid" src="/img/Backgrounds/Sage.png" data-toggle="modal" data-target="#backgroundModal10">
                                         <p>{{Form::label('Sage')}}
                                         {{Form::radio('background', 'Sage', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-warlock" class="img-fluid" src="/img/Backgrounds/Sailor.png" data-toggle="modal" data-target="#yourModal11">
+                                        <img id="img-sailor" class="img-fluid" src="/img/Backgrounds/Sailor.png" data-toggle="modal" data-target="#sailorModal11">
                                         <p>{{Form::label('Sailor')}}
                                         {{Form::radio('background', 'Sailor', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-wizard" class="img-fluid" src="/img/Backgrounds/Soldier.png" data-toggle="modal" data-target="#yourModal12">
+                                        <img id="img-solider" class="img-fluid" src="/img/Backgrounds/Soldier.png" data-toggle="modal" data-target="#backgroundModal12">
                                         <p>{{Form::label('Soldier')}}
                                         {{Form::radio('background', 'Soldier', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
                                     <div class="col-md-2">
-                                        <img id="img-wizard" class="img-fluid" src="/img/Backgrounds/Urchin.png" data-toggle="modal" data-target="#yourModal12">
+                                        <img id="img-urchin" class="img-fluid" src="/img/Backgrounds/Urchin.png" data-toggle="modal" data-target="#backgroundModal12">
                                         <p>{{Form::label('Urchin')}}
                                         {{Form::radio('background', 'Urchin', false, ['class' => 'radio radio-inline', 'v-model' => 'characterCreation.background', 'id' => 'background'])}}</p>
                                     </div>
@@ -547,62 +547,62 @@
     <script type="text/javascript" language="javascript">
         $(document).ready(function () {
             $("#img-barbarian").on('click','#pop',function () {
-                $('#yourModal1').modal('show'); 
+                $('#classModal1').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-bard").on('click','#pop',function () {
-                $('#yourModal2').modal('show'); 
+                $('#classModal2').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-cleric").on('click','#pop',function () {
-                $('#yourModal3').modal('show'); 
+                $('#classModal3').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-druid").on('click','#pop',function () {
-                $('#yourModal4').modal('show'); 
+                $('#classModal4').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-fighter").on('click','#pop',function () {
-                $('#yourModal5').modal('show'); 
+                $('#classModal5').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-monk").on('click','#pop',function () {
-                $('#yourModal6').modal('show'); 
+                $('#classModal6').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-paladin").on('click','#pop',function () {
-                $('#yourModal7').modal('show'); 
+                $('#classModal7').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-ranger").on('click','#pop',function () {
-                $('#yourModal8').modal('show'); 
+                $('#classModal8').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-rogue").on('click','#pop',function () {
-                $('#yourModal9').modal('show'); 
+                $('#classModal9').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-sorcerer").on('click','#pop',function () {
-                $('#yourModal10').modal('show'); 
+                $('#classModal10').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-warlock").on('click','#pop',function () {
-                $('#yourModal11').modal('show'); 
+                $('#classModal11').modal('show'); 
             });
         });
         $(document).ready(function () {
             $("#img-wizard").on('click','#pop',function () {
-                $('#yourModal12').modal('show'); 
+                $('#classModal12').modal('show'); 
             });
         });
     </script>
